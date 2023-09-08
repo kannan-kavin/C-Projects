@@ -4,9 +4,9 @@ i am coding
 greetings earthlings
 */
 
- #include <stdio.h>
+#include <stdio.h>
 
- int main(void)
- {
+int main(void)
+{
     printf("Hello, world\n");
- }
+}
