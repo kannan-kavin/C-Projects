@@ -4,6 +4,6 @@
 int main(void)
 {
     float CTemp = get_float("Temperature in Celcius: ");
-    CTemp = %f * 1.8;
+    CTemp = %T * 1.8;
     printf("The Temperature in Fahrenheit is %°\n", FTemp);
 }
