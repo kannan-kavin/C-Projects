@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    float Temp = get_float("Temperature(C): ");
-    
+    float Temp = get_float("Temperature in Celcius: ");
+    decimal 
     printf("Hello %s!\n", name);
 }
