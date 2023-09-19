@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    float Temp = get_float("Temperature in Celcius: ");
-    decimal 
-    printf("Hello %s!\n", name);
+    float CTemp = get_float("Temperature in Celcius: ");
+    decimal FTemp = 32 + %f * 1.8;
+    printf("The Temperature in Fahrenheit is %f°\n", FTemp);
 }
