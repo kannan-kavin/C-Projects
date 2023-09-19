@@ -3,6 +3,7 @@
 
 int main(void)
 {
-    float Temp = get_float("Name: ");
+    float Temp = get_float("Temperature(C): ");
+    
     printf("Hello %s!\n", name);
 }
