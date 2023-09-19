@@ -4,6 +4,6 @@
 int main(void)
 {
     float C = get_float("Temperature in Celcius: ");
-    F = ((C*5)/9)+32
+    F = ((C*5)/9)+32;
     printf("The Temperature in Fahrenheit is %F°\n", F);
 }
