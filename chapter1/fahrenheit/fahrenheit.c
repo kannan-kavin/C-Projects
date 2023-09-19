@@ -3,6 +3,6 @@
 
 int main(void)
 {
-    string name = get_string("Name: ");
+    float Temp = get_float("Name: ");
     printf("Hello %s!\n", name);
 }
