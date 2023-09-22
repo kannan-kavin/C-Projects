@@ -12,6 +12,7 @@ int main(void)
        float C = get_float("Change owed: $");
         while (C < 0);
        float Q = ((C * 100) / 25);
-       float D = 
+       int M = ((C * 100) / 25)
+       float D =
        printf("The total number of coins in change you need is %F\n", T);
 }
