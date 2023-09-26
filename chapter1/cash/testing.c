@@ -15,8 +15,6 @@ int main(void)
     // R1 is the remainder of change in cents still needed after we've taken out all of our Quarters
     int D = (R1 / 10);
     // D is Max Dimes needed
-    int R2 = (R1 % 10);
-    // R2 is the remainder of change in cents still needed after we've taken out all of our Quarters AND Dimes
     int S = Q + D;
     printf("The total number of coins in change you need is %.0i\n", S);
 }
