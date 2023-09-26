@@ -10,6 +10,7 @@
 int main(void)
 {
        float C = get_float("Change owed: $");
+       // C is Change inputed by user
         while (C < 0);
        float Q = ((C * 100) / 25);
        int help = (C * 100);
