@@ -14,21 +14,23 @@ int main(void)
         ;
     // C is Change inputed by user
     int helper = (C * 100);
+    printf("%i\n", helper);
     // helper is a variable which turns decimal inputs into a whole number
     int Q = (helper / 25);
     // Q is Max Quarters needed
-    printf("\i", Q)
+    printf("%i\n", Q);
     int R1 = helper % 25;
     // R1 is the remainder of change in cents still needed after we've taken out all of our Quarters
     int D = (R1 / 10);
     // D is Max Dimes needed
-    printf("\i", D)
+    printf("%i\n", D);
     int R2 = (R1 % 10);
     // R2 is the remainder of change in cents still needed after we've taken out all of our Quarters AND Dimes
     int N = (R2 / 5);
     // N is Max Nickles needed
-    printf("\i", R)
+    printf("%i\n", N);
     int P = (R2 % 5);
+    printf("%i\n", P);
     // P is the remainder of change in cents still needed after we've taken out all of our Quarters AND Dimes AND Nickles leaving
     // just Pennies
     int S = Q + D + N + P;
