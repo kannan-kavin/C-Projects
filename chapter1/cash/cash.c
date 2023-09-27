@@ -13,8 +13,8 @@ int main(void)
     while (C < 0)
         ;
     // C is Change inputed by user
-    int helper = (C * 100);
-    printf("%i\n", helper);
+    float helper = (C * 100);
+    printf("%f\n", helper);
     // helper is a variable which turns decimal inputs into a whole number
     int Q = (helper / 25);
     // Q is Max Quarters needed
