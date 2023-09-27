@@ -14,13 +14,14 @@ int main(void)
         ;
     // C is Change inputed by user
     float helper = (C * 100);
-    helper = (int)helper;
+    int inthelp;
+    inthelp = (int)helper;
     printf("%f\n", helper);
     // helper is a variable which turns decimal inputs into a whole number
-    int Q = (helper / 25);
+    int Q = (inthelp / 25);
     // Q is Max Quarters needed
     printf("%i\n", Q);
-    int R1 = helper % 25;
+    int R1 = inthelp % 25;
     // R1 is the remainder of change in cents still needed after we've taken out all of our Quarters
     int D = (R1 / 10);
     // D is Max Dimes needed
