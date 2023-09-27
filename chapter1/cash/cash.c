@@ -14,6 +14,7 @@ int main(void)
         ;
     // C is Change inputed by user
     float helper = (C * 100);
+    helper = (int)helper;
     printf("%f\n", helper);
     // helper is a variable which turns decimal inputs into a whole number
     int Q = (helper / 25);
