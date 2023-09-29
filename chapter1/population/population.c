@@ -3,5 +3,7 @@
 
 int main(void)
 {
-    get int
+    int Start = get_int("Starting population: ");
+    int End = get_int("Ending population: ");
+    
 }
