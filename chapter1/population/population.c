@@ -2,12 +2,11 @@
 #include <cs50.h>
 
 int main(void)
- {
+{
      int n;
   do
   {
-      n = get_int("Positive Integer: ");
+      Start = get_int("Starting Population: ");
   }
   while (n < 1);
- }
- 
+  }
