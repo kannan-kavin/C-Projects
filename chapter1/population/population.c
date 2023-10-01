@@ -1,4 +1,5 @@
 #include <cs50.h>
+#include <math.h>
 #include <stdio.h>
 
 int main(void)
@@ -10,7 +11,7 @@ int main(void)
         int End = get_int("Ending Population: ");
         do
         {
-            int Now = (Start + (Start / 3) - (Start / 4));
+            int Now = (Start + floor(Start / 3) - floor(Start / 4));
             printf("The amount of years it will take is: %.0i\n", Now)
         }
         while (End < Start);
