@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    float Start
+    int Start
     int Start = get_int("Starting Population: ");
     do
     {
