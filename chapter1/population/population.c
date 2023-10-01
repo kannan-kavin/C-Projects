@@ -18,10 +18,13 @@ int main(void)
     }
     while (End < Start);
     // This will reprompt until our Ending Population Input is greater than our Starting Population Input
+    int years = 0;
     int Intermediate;
-    for(int years = 0; Intermediate > End; years++);
+    while(End < Start)
+        ;
     {
-        Intermediate = (Start + floor(Start/3) - floor(Start/4));
+        End = (Start + floor(Start/3) - floor(Start/4));
+        years++;
     }
     printf("The number of years in order to reach the end population is %.0i\n", years);
 }
