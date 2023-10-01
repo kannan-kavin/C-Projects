@@ -11,7 +11,7 @@ int main(void)
         do
         {
             int Now = (Start + (Start / 3) - (Start / 4));
-            
+            printf("The amount of years it will take is: %.0i\n", Now)
         }
         while (End < Start);
     }
