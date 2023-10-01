@@ -1,6 +1,6 @@
 /*
- * cash.c by YOUR NAME HERE
- * 9/23/2021
+ * cash.c by Kavin Kannan
+ * 10/1/2023
  * Calculate least number of coins to make change
  */
 
