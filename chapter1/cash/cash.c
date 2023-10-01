@@ -21,7 +21,7 @@ int main(void)
     // helper is a variable which turns decimal inputs into a whole number
     int quarter = (helper / 25);
     // quarter is Max Quarters needed
-    int remainder1 = helper % 25;
+    int remainder1 = (helper % 25);
     // remainder1 is the remainder of change in cents still needed after we've taken out all of our Quarters
     int dime = (remainder1 / 10);
     // dime is Max Dimes needed
@@ -31,7 +31,7 @@ int main(void)
     // nickle is Max Nickles needed
     int penny = (remainder2 % 5);
     // penny is the remainder of change in cents still needed after we've taken out all of our Quarters AND Dimes AND Nickles
-    int sum = quarter + dime + nickle + penny;
+    int sum = (quarter + dime + nickle + penny);
     // sum is the sum of all of our max coins needed in each category, returning the answer of max coins
     printf("The total number of coins in change you need is %.0i\n", sum);
 }
