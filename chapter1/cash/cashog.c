@@ -11,7 +11,7 @@
 int main(void)
 {
     float C = get_float("Change owed: $");
-    while (C < 0)
+    while (C > 0)
         ;
     // C is Change inputed by user
     int helper = round(C * 100);
