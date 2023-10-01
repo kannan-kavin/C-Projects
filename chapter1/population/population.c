@@ -20,7 +20,6 @@ int main(void)
     // This will reprompt until our Ending Population Input is greater than our Starting Population Input
     int years = 0;
     while(Start < End)
-        ;
     {
         Start = (Start + floor(Start/3) - floor(Start/4));
         years++;
