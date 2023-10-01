@@ -11,6 +11,7 @@
 int main(void)
 {
     float change;
+    
     do
     {
         change = get_float("Change owed: ");
