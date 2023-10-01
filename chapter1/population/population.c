@@ -10,4 +10,10 @@ int main(void)
         Start = get_int("Starting Population: ");
     }
     while (Start < 9);
+    int End;
+    do
+    {
+        End = get_int("Ending Population: ");
+    }
+    while (End < Start);
 }
