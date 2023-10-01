@@ -10,12 +10,14 @@ int main(void)
         Start = get_int("Starting Population: ");
     }
     while (Start < 9);
+    // This will repromt until our Starting Population Input is greater than 9
     int End;
     do
     {
         End = get_int("Ending Population: ");
     }
     while (End < Start);
+    // This will reprompt until our Ending Population Input is greater than our Starting Population Input
     int Intermediate;
     for(int years = 0; Intermediate > End; years++);
     {
