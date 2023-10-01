@@ -5,8 +5,8 @@
  */
 
 #include <cs50.h>
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
         change = get_float("Change owed: ");
     }
     while (change < 0);
-// C is Change inputed by user
+    // C is Change inputed by user
     int helper = round(change * 100);
     // helper is a variable which turns decimal inputs into a whole number
     int quarter = (helper / 25);
