@@ -17,10 +17,9 @@ int main(void)
     }
     while (End < Start);
     int Intermediate;
-    while (End < Start)
-        ;
+    for(int years = 0; Intermediate < End; years++);
     {
-        Intermediate = (Start + floor(Start / 3) - floor(Start / 4));
+        Intermediate = (Start + floor(Start/3) - floor(Start/4));
     }
-    printf("The number of years in order to reach the end population is %.0i\n", Intermediate);
+    printf("The number of years in order to reach the end population is %.0i\n", years);
 }
