@@ -17,7 +17,7 @@ int main(void)
     }
     while (End < Start);
     int Intermediate;
-    for(int years = 0; Intermediate < End; years++);
+    for(int years = 0; Intermediate > End; years++);
     {
         Intermediate = (Start + floor(Start/3) - floor(Start/4));
     }
