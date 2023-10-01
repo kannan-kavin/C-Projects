@@ -4,17 +4,10 @@
 
 int main(void)
 {
-    int Start
-    int Start = get_int("Starting Population: ");
+    int Start;
     do
     {
-        int End = get_int("Ending Population: ");
-        do
-        {
-            int Now = (Start + floor(Start / 3) - floor(Start / 4));
-            printf("The amount of years it will take is: %.0i\n", Now)
-        }
-        while (End < Start);
+        Start = get_int("Starting Population: ");
     }
     while (Start < 9);
 }
