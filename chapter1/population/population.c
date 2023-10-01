@@ -21,7 +21,7 @@ int main(void)
     int years = 0;
     while(Start < End)
     {
-        End = (Start + floor(Start/3) - floor(Start/4));
+        Start = (Start + floor(Start/3) - floor(Start/4));
         years++;
     }
     printf("The number of years in order to reach the end population is %.0i\n", years);
