@@ -11,12 +11,11 @@
 int main(void)
 {
     float change;
-
     do
     {
         change = get_float("Change owed: ");
     }
-    while (change < 0)
+    while (change < 0);
 // C is Change inputed by user
     int helper = round(C * 100);
     // helper is a variable which turns decimal inputs into a whole number
