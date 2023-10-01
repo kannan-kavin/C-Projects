@@ -3,6 +3,7 @@
 
 int main(void)
 {
+    float Start
     int Start = get_int("Starting Population: ");
     do
     {
@@ -10,8 +11,9 @@ int main(void)
         do
         {
             int Now = (Start + (Start / 3) - (Start / 4));
+            
         }
-        while (End > Start);
+        while (End < Start);
     }
-    while (Start > 9);
+    while (Start < 9);
 }
