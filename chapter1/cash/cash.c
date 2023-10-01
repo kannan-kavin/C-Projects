@@ -15,7 +15,7 @@ int main(void)
     {
         change = get_float("Change owed: ");
     }
-    while (change <= 0);
+    while (change < 0);
     // C is Change inputed by user (I also don't understand why it's while change is less than 0?)
     int helper = round(change * 100);
     // helper is a variable which turns decimal inputs into a whole number
