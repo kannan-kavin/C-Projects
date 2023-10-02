@@ -33,5 +33,5 @@ int main(void)
     // penny is the remainder of change in cents still needed after we've taken out all of our Quarters AND Dimes AND Nickles
     int sum = (quarter + dime + nickle + penny);
     // sum is the sum of all of our max coins needed in each category, returning the answer of max coins
-    printf("The total number of coins in change you need is %.0i\n", sum);
+    printf("The total number of coins in change you need is %i\n", sum);
 }
