@@ -24,5 +24,5 @@ int main(void)
         Start = (Start + floor(Start/3) - floor(Start/4));
         years++;
     }
-    printf("Years: %.0i\n", years);
+    printf("Years: %i\n", years);
 }
