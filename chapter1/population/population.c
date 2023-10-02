@@ -19,9 +19,9 @@ int main(void)
     while (End < Start);
     // This will reprompt until our Ending Population Input is greater than our Starting Population Input
     int years = 0;
-    while(Start < End)
+    while (Start < End)
     {
-        Start = (Start + floor(Start/3) - floor(Start/4));
+        Start = (Start + floor(Start / 3) - floor(Start / 4));
         years++;
     }
     printf("Years: %i\n", years);
