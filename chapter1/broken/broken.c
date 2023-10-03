@@ -31,11 +31,13 @@ int main(void)
     {
         num2 = get_int("Positive integer greater than the first: ");
     }
-    while (num2 < num1);
+    while (num2 <= num1);
 
+    int i;
+    int sum;
     for (i = num1; i < num2; i++)
     {
-        int sum = sum + i;
+        sum = sum + i;
     }
 
     printf("Sum: %i\n", sum);
