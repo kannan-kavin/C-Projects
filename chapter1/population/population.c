@@ -1,3 +1,9 @@
+/*
+ * population.c by Kavin and Kerri
+ * 10/3/2023
+ * Calculate years until end population from start population
+ */
+
 #include <cs50.h>
 #include <math.h>
 #include <stdio.h>
