@@ -19,9 +19,10 @@
 int main(void)
 {
     // First num must be <= second num
+    int num1;
     do
     {
-        int num1 = get_int("Positive integer: ");
+        num1 = get_int("Positive integer: ");
     }
     while (num1 < 1);
 
@@ -30,7 +31,7 @@ int main(void)
     {
         num2 = get_int("Positive integer greater than the first: ");
     }
-    while (/*WHAT CONDITION GOES HERE?*/);
+    while (num2 < num1);
 
     for (i = num1; i < num2; i++)
     {
