@@ -37,7 +37,7 @@ int main(void)
     int sum;
     for (i = num1; i <= num2; i++)
     {
-        sum = num1 + i;
+        sum = i ;
     }
 
     printf("Sum: %i\n", sum);
