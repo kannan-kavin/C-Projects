@@ -24,5 +24,6 @@ int main(void)
         Start = (Start + floor(Start / 3) - floor(Start / 4));
         years++;
     }
+    // This will redefine our "Starting Population" until it eventually reaches the Ending Population adding a year during each loop
     printf("Years: %i\n", years);
 }
