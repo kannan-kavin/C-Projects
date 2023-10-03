@@ -35,7 +35,7 @@ int main(void)
 
     int i;
     int sum;
-    for (i = num1; i < num2; i++)
+    for (i = num1; i <= num2; i++)
     {
         sum = num1 + i;
     }
