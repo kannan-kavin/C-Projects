@@ -14,14 +14,14 @@
 
 int main(void)
 {
-    // First num must be <= second num
+    // First num must be postive
     int num1;
     do
     {
         num1 = get_int("Positive integer: ");
     }
     while (num1 < 1);
-
+    // Second num must be <=
     int num2;
     do
     {
