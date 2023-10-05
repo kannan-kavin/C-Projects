@@ -21,14 +21,14 @@ int main(void)
         num1 = get_int("Positive integer: ");
     }
     while (num1 < 1);
-    // Second num must be <=
+    // Second num must be greater than first num
     int num2;
     do
     {
         num2 = get_int("Positive integer greater than the first: ");
     }
     while (num2 <= num1);
-
+    //sum keeps track of overall sum adding 
     int i;
     int sum;
     for (i = num1; i <= num2; i++)
