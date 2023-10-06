@@ -12,17 +12,35 @@ int main(void)
     // printf("Height: %i\n", height);
 
     int i;
-    for (i = 1; i <= height; i++)
+    int j;
+    for
     {
-        if (i == height)
+        for (i = 1; i <= height; i++)
         {
-            printf("#");
+            if (i == height)
+            {
+                printf("#");
+            }
+            else
+            {
+                printf("-");
+            }
         }
-        else
-        {
-            printf("-");
+        printf("\n");
+    // printf("\n", i);
         }
     }
+        for (i = 1; i <= height; i++)
+        {
+            if (i == height)
+         {
+              printf("#");
+         }
+          else
+          {
+              printf("-");
+           }
+     }
     printf("\n");
     // printf("\n", i);
 }
