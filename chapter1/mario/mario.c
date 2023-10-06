@@ -23,5 +23,6 @@ int main(void)
             printf("-");
         }
     }
-    printf("%i\n", i);
+    printf("\n");
+    // printf("\n", i);
 }
