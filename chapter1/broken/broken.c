@@ -28,7 +28,8 @@ int main(void)
         num2 = get_int("Positive integer greater than the first: ");
     }
     while (num2 <= num1);
-    //sum keeps track of overall sum adding the next number each time as i will keep repeating adding the next number until we reach num2.
+    // sum keeps track of overall sum adding the next number each time as i will keep repeating adding the next number until we
+    // reach num2.
     int i;
     int sum;
     for (i = num1; i <= num2; i++)
