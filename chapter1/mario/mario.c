@@ -12,7 +12,7 @@ int main(void)
     while (height > 8 || height < 1);
     // printf("Height: %i\n", height);
     int i;
-    for (i = 0; i <= height; i++)
+    for (i = 1; i <= height; i++)
     {
         if (i == height)
         {
@@ -20,7 +20,8 @@ int main(void)
         }
         else
         {
-            printf(" ");
+            printf("-");
         }
     }
+    printf("%i\n", i);
 }
