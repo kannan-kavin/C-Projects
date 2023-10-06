@@ -1,5 +1,4 @@
 #include <cs50.h>
-#include <math.h>
 #include <stdio.h>
 
 int main(void)
@@ -11,6 +10,7 @@ int main(void)
     }
     while (height > 8 || height < 1);
     // printf("Height: %i\n", height);
+
     int i;
     for (i = 1; i <= height; i++)
     {
