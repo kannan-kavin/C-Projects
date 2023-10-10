@@ -17,7 +17,7 @@ int main(void)
     // used to calculate hashes per row
     for (i = 1; i <= height; i++)
     {
-        for (j = 1; j > 0; j--)
+        for (j = (height - 1); j > 0; j--)
         {
         if(j>0)
             {
@@ -28,7 +28,7 @@ int main(void)
                 printf("#");
             }
             // printf("\n", i);
-        printf("\n");
         }
+        printf("\n");
     }
 }
