@@ -13,19 +13,19 @@ int main(void)
 
     int i;
     // used to calculate spaces per row
-    int j = 1
+    int j;
     // used to calculate hashes per row
     for (i = 1; i <= height; i++)
     {
-        for (j; j > 0; j++)
+        for (j = 1; j > 0; j++)
         {
-        if(j)
+        if(j>0)
             {
-                 printf("-")
+                printf("-");
             }
         else
             {
-            printf("#")
+                printf("#");
             }
             // printf("\n", i);
         printf("\n");
