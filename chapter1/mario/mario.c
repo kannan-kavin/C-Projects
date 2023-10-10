@@ -15,7 +15,7 @@ int main(void)
     // used to calculate spaces per row
     int j;
     // used to calculate hashes per row
-    for (i = 1; i <= height, i++)
+    for (i = 1; i <= height; i++)
     {
         for (j = 1; j > 0; j++)
         {
