@@ -19,7 +19,7 @@ int main(void)
     {
         for (i = 1; i <= height; i++)
         {
-            
+            printf("-")
         }
         printf("\n");
     // printf("\n", i);
