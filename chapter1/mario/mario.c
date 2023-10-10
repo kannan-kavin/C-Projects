@@ -12,7 +12,9 @@ int main(void)
     // printf("Height: %i\n", height);
 
     int i;
+    // used to calculate spaces per row
     int j;
+    // used to calculate hashes per row
     for
     {
         for (i = 1; i <= height; i++)
@@ -28,19 +30,5 @@ int main(void)
         }
         printf("\n");
     // printf("\n", i);
-        }
     }
-        for (i = 1; i <= height; i++)
-        {
-            if (i == height)
-         {
-              printf("#");
-         }
-          else
-          {
-              printf("-");
-           }
-     }
-    printf("\n");
-    // printf("\n", i);
 }
