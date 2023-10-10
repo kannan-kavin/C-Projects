@@ -15,11 +15,16 @@ int main(void)
     // used to calculate spaces per row
     int j;
     // used to calculate hashes per row
+    int k;
     for (i = 0; i < height; i++)
     {
         for (j = 1; j < (height - i); j++)
         {
            printf("-");
+        }
+        for (k = 1; k == height; k++)
+        {
+            printf("#");
         }
         printf("\n");
     }
