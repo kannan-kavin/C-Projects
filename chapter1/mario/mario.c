@@ -24,7 +24,10 @@ int main(void)
         {
             printf("-");
         }
-        // I DONT KNOW WHATS HAPPENING HERE
+        for (k = 0; k <= (height - i); k++)
+        {
+            printf("#");
+        }
         printf("\n");
     }
 }
