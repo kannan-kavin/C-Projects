@@ -24,16 +24,18 @@ int main(void)
         {
             printf(" ");
         }
+        // all the spaces in each row, decreasing by 1 as we go down every row
         for (k = 0; k <= (height - j); k++)
         {
             printf("#");
         }
+        // all the hashes in each row, increasing by 1 as we go down every row
         printf("  ");
         for (k = 0; k <= (height - j); k++)
         {
             printf("#");
         }
-
+        // printing the same number of hashes as above after 2 spaces
         printf("\n");
     }
 }
