@@ -23,7 +23,7 @@ int main(void)
            printf("-");
         }
         // I DONT KNOW WHATS HAPPENING HERE
-        for (k = 1; k == height; k++)
+        for (k = j; k == height; k++)
         {
             printf("#");
         }
