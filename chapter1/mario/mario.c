@@ -24,7 +24,7 @@ int main(void)
         {
             printf("-");
         }
-        for (k = 0; k <= (height - i); k++)
+        for (k = 0; k <= (height - j); k++)
         {
             printf("#");
         }
