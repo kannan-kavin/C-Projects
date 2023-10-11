@@ -8,7 +8,7 @@ int main(void)
     {
         height = get_int("Height: ");
     }
-    while (1 <= height <= 8);
+    while (height > 8 || height < 1);
     // printf("Height: %i\n", height);
     // used to get an input between 1 and 8 inclusive for our height
 
