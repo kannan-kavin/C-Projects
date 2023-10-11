@@ -25,5 +25,6 @@ int main(void)
             printf("-");
         }
         // I DONT KNOW WHATS HAPPENING HERE
+        printf("\n");
     }
 }
