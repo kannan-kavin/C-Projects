@@ -15,9 +15,9 @@ int main(void)
     int i;
     // used to separate each row from the next
     int j;
-    // used to calculate hashes per row
-    int k;
     // used to calculate spaces per row
+    int k;
+    // used to calculate hashes per row
     for (i = 0; i < height; i++)
     {
         for (j = 1; j < (height - i); j++)
@@ -29,7 +29,7 @@ int main(void)
         {
             printf("#");
         }
-        printf(" ")
+        printf(" ");
         for (k = 0; k <= (height - j); k++)
         {
             printf("#");
