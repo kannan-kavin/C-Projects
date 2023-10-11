@@ -20,15 +20,10 @@ int main(void)
     // used to calculate spaces per row
     for (i = 0; i < height; i++)
     {
-        for (j = 1; j < (height - i); j++)
+        for (j = 1; j < (height); j++)
         {
-            printf(" ");
+            printf("-");
         }
         // I DONT KNOW WHATS HAPPENING HERE
-        for (k = 0; k <= (height - j); k++)
-        {
-            printf("#");
-        }
-        printf("\n");
     }
 }
