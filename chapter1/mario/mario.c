@@ -22,7 +22,7 @@ int main(void)
     {
         for (j = 1; j < (height - i); j++)
         {
-            printf("-");
+            printf(" ");
         }
         // I DONT KNOW WHATS HAPPENING HERE
         for (k = 0; k <= (height - j); k++)
