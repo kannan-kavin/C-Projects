@@ -22,13 +22,13 @@ int main(void)
     {
         for (j = 1; j < (height - i); j++)
         {
-            printf("  ");
+            printf(" ");
         }
         for (k = 0; k <= (height - j); k++)
         {
             printf("#");
         }
-        printf(" ");
+        printf("   ");
         for (k = 0; k <= (height - j); k++)
         {
             printf("#");
