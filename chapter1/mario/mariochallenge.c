@@ -29,6 +29,11 @@ int main(void)
         {
             printf("#");
         }
+        printf(" ")
+        for (k = 0; k <= (height - j); k++)
+        {
+            printf("#");
+        }
         printf("\n");
     }
 }
