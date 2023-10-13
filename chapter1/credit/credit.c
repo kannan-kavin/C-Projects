@@ -9,7 +9,8 @@ int main(void)
     if ((CCN / 1000000000000000 > 1))
     {
         //printf("MASTERCARD OR VISA\n");
-        if ((floor(CCN / 1000000000000000) == 4))
+        int VISA16 = (floor(CCN / 1000000000000000))
+        if (VISA16 == 4)
         {
             printf("VISA\n");
         }
