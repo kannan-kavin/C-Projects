@@ -14,7 +14,7 @@ int main(void)
         if (VISA16 == 4)
         {
             //printf("VISA\n");
-            floor(CCN / 1000000000000000)
+            2 * (floor(CCN / 1000000000000000) + floor(CCN)
         }
         else if (MASTERCARD16 == 51 || MASTERCARD16 == 52 || MASTERCARD16 == 53 || MASTERCARD16 == 54 || MASTERCARD16 == 55)
         {
