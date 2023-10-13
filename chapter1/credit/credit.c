@@ -13,7 +13,7 @@ int main(void)
         {
             printf("VISA\n");
         }
-        else if (floor(CCN / 100000000000000) = 51 || 52 || 53 || 54 || 55)
+        else if (floor(CCN / 100000000000000) == 51 || 52 || 53 || 54 || 55)
         {
             printf("MASTERCARD\n");
         }
