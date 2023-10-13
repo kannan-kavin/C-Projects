@@ -13,24 +13,24 @@ int main(void)
         int MASTERCARD16 = (floor(CCN / 100000000000000));
         if (VISA16 == 4)
         {
-            printf("VISA\n");
+            //printf("VISA\n");
         }
         else if (MASTERCARD16 == 51 || MASTERCARD16 == 52 || MASTERCARD16 == 53 || MASTERCARD16 == 54 || MASTERCARD16 == 55)
         {
-            printf("MASTERCARD\n");
+            //printf("MASTERCARD\n");
         }
         else
         {
-            printf("INVALID\n");
+            //printf("INVALID\n");
         }
     }
     else if ((CCN / 100000000000000) > 1)
     {
-        printf("AMERICAN EXPRESS\n");
+        //printf("AMERICAN EXPRESS\n");
     }
     else if ((CCN / 1000000000000) > 1)
     {
-        printf("VISA\n");
+        //printf("VISA\n");
     }
     else
     {
