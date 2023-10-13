@@ -5,4 +5,11 @@ int main(void)
 {
     long CCN;
     CCN = get_long("Enter Credit Card Number: ");
+    if ((CCN / 1000000000000000 > 1))
+    // mastercard or visa
+    {
+
+    }
+    else if (CCN / 100000000000000)
+
 }
