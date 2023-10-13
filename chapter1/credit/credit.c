@@ -4,5 +4,5 @@
 int main(void)
 {
     long CCN;
-    CCN = get_long("Enter Credit Card Number: "\n)
+    CCN = get_long("Enter Credit Card Number: ");
 }
