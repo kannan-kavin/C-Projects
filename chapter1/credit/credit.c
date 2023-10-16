@@ -7,6 +7,7 @@ int main(void)
     long CCN;
     CCN = get_long("Enter Credit Card Number: ");
     if ((CCN / 1000000000000000 > 1))
+    // 16 Digit Cards
     {
         //printf("MASTERCARD OR VISA\n");
         int VISA16 = (floor(CCN / 1000000000000000));
@@ -14,6 +15,7 @@ int main(void)
         if (VISA16 == 4)
         {
             //printf("VISA\n");
+            //
             int check1 = 2 * (floor(CCN % 100) / 10);
             int check2 = 2 * (floor(CCN % 10000) / 1000);
             int check3 = 2 * (floor(CCN % 1000000) / 100000);
@@ -34,10 +36,12 @@ int main(void)
         }
     }
     else if ((CCN / 100000000000000) > 1)
+    // 15 Digit Cards
     {
         //printf("AMERICAN EXPRESS\n");
     }
     else if ((CCN / 1000000000000) > 1)
+    // 13 Digit Cards
     {
         //printf("VISA\n");
     }
