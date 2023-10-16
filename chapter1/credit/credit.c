@@ -22,7 +22,7 @@ int main(void)
             int check6 = 2 * (floor(CCN % 1000000000000) / 100000000000);
             int check7 = 2 * (floor(CCN % 100000000000000) / 10000000000000);
             int check8 = 2 * (floor(CCN % 10000000000000000) / 1000000000000000);
-            printf("Each one is: %i, %i, %i, %i, %i, %i, %i, %i\n" check1, check2, check3, check4, check5, check6, check7, check8);
+            printf("Each one is: %i, %i, %i, %i, %i, %i, %i, %i\n", check1, check2, check3, check4, check5, check6, check7, check8);
         }
         else if (MASTERCARD16 == 51 || MASTERCARD16 == 52 || MASTERCARD16 == 53 || MASTERCARD16 == 54 || MASTERCARD16 == 55)
         {
