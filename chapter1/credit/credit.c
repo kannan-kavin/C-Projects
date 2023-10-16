@@ -25,7 +25,7 @@ int main(void)
             int c7 = 2 * (floor(CCN % 100000000000000) / 10000000000000);
             int c8 = 2 * (floor(CCN % 10000000000000000) / 1000000000000000);
             //printf("Each one is: %i, %i, %i, %i, %i, %i, %i, %i\n", check1, check2, check3, check4, check5, check6, check7, check8);
-            int add = (floor(c1 / 10) + (c1 % 10) + c2 + ())
+            int add = ((c1 / 10) + (c1 % 10) + (c2 / 10) + (c2 % 10) + (c3 / 10) + (c3 % 10) + (c4 / 10) + (c4 % 10) + (c5 / 10) + (c5 % 10) + (c6 / 10) + ())
 
         }
         else if (MASTERCARD16 == 51 || MASTERCARD16 == 52 || MASTERCARD16 == 53 || MASTERCARD16 == 54 || MASTERCARD16 == 55)
