@@ -9,9 +9,22 @@ int main(void)
     int d = 0;
     long determinant = CCN;
     while (determinant > 0)
+    // d will keep track of digits in the Card Number while determinant helps that occur
     {
         d = d+1;
         determinant = (determinant / 10);
     }
-    printf("determinant:%ld d:%i\n", determinant, d);
+    // printf("determinant:%ld d:%i\n", determinant, d);
+    if (d == 13)
+    {
+        printf("VISA\n")
+    }
+    else if (d == 15)
+    {
+        printf("AMERICAN EXPRESS\n")
+    }
+    else if (d == 16)
+    {
+        printf(")
+    }
 }
