@@ -22,7 +22,7 @@ int main(void)
     int c14 = (floor(CCN % 100000000000000) / 10000000000000);
     int c15 = (floor(CCN % 1000000000000000) / 100000000000000);
     int c16 = (floor(CCN % 10000000000000000) / 1000000000000000);
-    // printf("Each one is: %i, %i, %i, %i, %i, %i, %i, %i\n", check1, check2, check3, check4, check5, check6, check7, check8);
+    printf("Each one is: %i, %i, %i, %i, %i, %i, %i, %i\n", c1, c2, c3, c4, c5, c6, c7, c8);
     if (((CCN / 1000000000000000) > 1) && (c16 == 4))
     // 16 Digit Visa
     {
@@ -32,4 +32,7 @@ int main(void)
     {
         printf("MASTERCARD\n");
     }
-    else if 
+    else if (((CCN / 100000000000000) > 1) && (((c15 * 10) + c14) == 34) || (((c15 * 10) + c14) == 37))
+    {
+        printf("AMERICAN EXPRESS\n");
+    }
