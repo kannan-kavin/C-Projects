@@ -36,3 +36,12 @@ int main(void)
     {
         printf("AMERICAN EXPRESS\n");
     }
+    else if (((CCN / 1000000000000) > 1) && (c13 == 4))
+    {
+        printf("VISA\n");
+    }
+    else
+    {
+        printf("INVALID\n");
+    }
+}
