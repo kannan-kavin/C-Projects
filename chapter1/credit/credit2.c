@@ -6,5 +6,5 @@ int main(void)
 {
     long CCN;
     CCN = get_long("Enter Credit Card Number: ");
-    
+    for (i = 0; i)
 }
