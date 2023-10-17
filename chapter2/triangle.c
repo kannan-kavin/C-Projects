@@ -34,13 +34,12 @@ int main(void)
     int side2 = get_int("Enter the second side: ");
     int side3 = get_int("Enter the third side: ");
 
-    triangle_check(side1, side2, side3)
-    if (true)
+    if (triangle_check(side1, side2, side3) == true)
     {
-        printf("YES\n")
+        printf("YES\n");
     }
-    if (false)
+    else
     {
-        printf("NO\n")
+        printf("NO\n");
     }
 }
