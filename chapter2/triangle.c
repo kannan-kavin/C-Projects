@@ -10,7 +10,10 @@
 #include <cs50.h>
 #include <stdio.h>
 
-// Add something here - what's missing?
+triangle_check(int side1, int side2, int side3)
+{
+    return
+}
 
 int main(void)
 {
