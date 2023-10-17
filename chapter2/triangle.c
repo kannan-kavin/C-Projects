@@ -1,5 +1,5 @@
 /*
- * triangle.c by Mr. Shoutis
+ * triangle.c by Kavin and Nishil
  * Collect 3 integers from a user and test to see if they make a triangle
  *
  * Checking: check50 shoutiss/checks/master/triangle
@@ -34,9 +34,13 @@ int main(void)
     int side2 = get_int("Enter the second side: ");
     int side3 = get_int("Enter the third side: ");
 
-    // COMPLETE THIS MAIN FUNCTION - Print YES\n if the sides could make a triangle
-    // print NO\n if the sides cannot make a traingle.
-    // you MUST use the function triangle_check
     triangle_check(side1, side2, side3)
     if (true)
+    {
+        printf("YES\n")
+    }
+    if (false)
+    {
+        printf("NO\n")
+    }
 }
