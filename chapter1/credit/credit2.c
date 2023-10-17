@@ -6,12 +6,12 @@ int main(void)
 {
     long CCN;
     CCN = get_long("Enter Credit Card Number: ");
-    for (i = 13)
+    int d = 0;
+    do
     {
-        
+        (CCN / 10);
+        (d++);
     }
-    for (i = 0; i = 16; i += 2)
-    {
-
-    }
+    while (CCN < 0);
+    printf("CNN:%ld d:%i", CCN, d);
 }
