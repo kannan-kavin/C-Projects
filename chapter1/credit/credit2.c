@@ -15,16 +15,25 @@ int main(void)
         determinant = (determinant / 10);
     }
     // printf("determinant:%ld d:%i\n", determinant, d);
+    for(i = 0, )
+    {
+
+    }
+
     if (d == 13)
     {
-        printf("VISA\n")
+        printf("VISA\n");
     }
     else if (d == 15)
     {
-        printf("AMERICAN EXPRESS\n")
+        printf("AMERICAN EXPRESS\n");
     }
     else if (d == 16)
     {
-        printf(")
+        printf("VISA OR MASTERCARD\n");
+    }
+    else
+    {
+        printf("INVALID\n");
     }
 }
