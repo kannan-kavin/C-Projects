@@ -10,11 +10,23 @@
 #include <cs50.h>
 #include <stdio.h>
 
-triangle_check(int side1, int side2, int side3)
+bool triangle_check(int a, int b, int c)
 {
-    return
-}
+    // Ensure all side lengths are positive
+    if (a < 0 || b < 0 || c < 0)
+    {
+        return false;
+    }
 
+    // Sum of two sides must be strictly less than the third side
+    if (a + b <= c || a + c <= b || b + c <= a)
+    {
+        return false;
+    }
+
+    // Reaching here means the sides can make a triangle
+    return true;
+}
 int main(void)
 {
     // Collect sides from user
@@ -25,7 +37,7 @@ int main(void)
     // COMPLETE THIS MAIN FUNCTION - Print YES\n if the sides could make a triangle
     // print NO\n if the sides cannot make a traingle.
     // you MUST use the function triangle_check
-
+    triangle_check(side1, side2, side3)
     return 0;
 }
 
