@@ -24,8 +24,12 @@ int main(void)
     int c16 = (floor(CCN % 10000000000000000) / 1000000000000000);
     // printf("Each one is: %i, %i, %i, %i, %i, %i, %i, %i\n", check1, check2, check3, check4, check5, check6, check7, check8);
     if (((CCN / 1000000000000000) > 1) && (c16 == 4))
-    // 16 Digit Cards
+    // 16 Digit Visa
     {
-
+        printf("VISA\n");
     }
-    else if ((CCN / 100000000000000) > 1)
+    else if (((CCN / 1000000000000000) > 1) && (((c16 * 10) + c15) == 51) || (((c16 * 10) + c15) == 52) || (((c16 * 10) + c15) == 53) || (((c16 * 10) + c15) == 54) || (((c16 * 10) + c15) == 55))
+    {
+        printf("MASTERCARD\n");
+    }
+    else if 
