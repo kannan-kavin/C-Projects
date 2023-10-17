@@ -22,5 +22,10 @@ int main(void)
     int c14 = (floor(CCN % 100000000000000) / 10000000000000);
     int c15 = (floor(CCN % 1000000000000000) / 100000000000000);
     int c16 = (floor(CCN % 10000000000000000) / 1000000000000000);
-    if ((CCN / 1000000000000000 > 1) && )
+    // printf("Each one is: %i, %i, %i, %i, %i, %i, %i, %i\n", check1, check2, check3, check4, check5, check6, check7, check8);
+    if (((CCN / 1000000000000000) > 1) && (c16 == 4))
     // 16 Digit Cards
+    {
+
+    }
+    else if ((CCN / 100000000000000) > 1)
