@@ -38,23 +38,5 @@ int main(void)
     // print NO\n if the sides cannot make a traingle.
     // you MUST use the function triangle_check
     triangle_check(side1, side2, side3)
-    return 0;
-}
-
-bool triangle_check(int a, int b, int c)
-{
-    // Ensure all side lengths are positive
-    if (a < 0 || b < 0 || c < 0)
-    {
-        return false;
-    }
-
-    // Sum of two sides must be strictly less than the third side
-    if (a + b <= c || a + c <= b || b + c <= a)
-    {
-        return false;
-    }
-
-    // Reaching here means the sides can make a triangle
-    return true;
+    if (true)
 }
