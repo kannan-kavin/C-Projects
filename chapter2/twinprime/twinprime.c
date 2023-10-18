@@ -1,5 +1,7 @@
-#include <stdio.h>
 #include <cs50.h>
+#include <stdio.h>
+
+// done with Nishil
 
 // What code do you have to add to the for loop so that the program prints all twin prime pairs under 100?
 // Twin Prime Pair: 3, 5 or 5, 7 or 41,43 etc.
@@ -14,7 +16,15 @@ int main(void)
 
     for (int i = 3; i < 100; i++)
     {
-        is_prime(int i)
+        int j = i + 2;
+        is_prime(i);
+        if (is_prime(i))
+        {
+            if (is_prime(j))
+            {
+                printf("%i, %i\n", i, j);
+            }
+        }
     }
 }
 
