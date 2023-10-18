@@ -44,10 +44,9 @@ int main(void)
         {
         printf("AMERICAN EXPRESS\n");
         }
-        else if (d == 16)
+        else (d == 16)
         {
         // printf("VISA OR MASTERCARD\n");
-        (CCN)
         }
     }
     else
