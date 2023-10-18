@@ -44,9 +44,13 @@ int main(void)
         {
         printf("AMERICAN EXPRESS\n");
         }
-        else (d == 16)
+        else if (d == 16)
         {
         // printf("VISA OR MASTERCARD\n");
+            if
+            {
+                
+            }
         }
     }
     else
