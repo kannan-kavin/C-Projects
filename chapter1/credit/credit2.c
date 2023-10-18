@@ -15,9 +15,9 @@ int main(void)
         determinant = (determinant / 10);
     }
     // printf("determinant:%ld d:%i\n", determinant, d);
-    for(i = 0, )
+    for(i = d, ,i = i += 2)
     {
-        CCN / 
+        int runningsum = (CCN / 10
     }
 
     if (d == 13)
