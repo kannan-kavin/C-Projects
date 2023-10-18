@@ -1,5 +1,4 @@
 #include <cs50.h>
-#include <math.h>
 #include <stdio.h>
 
 int main(void)
@@ -8,7 +7,7 @@ int main(void)
     CCN = get_long("Enter Credit Card Number: ");
     int d;
     int step1 = 0;
-    int step2 = 0;
+    int step2 = (CCN % 10);
     for(d = 0; CCN > 0; d++)
     {
         CCN = (CCN / 10);
