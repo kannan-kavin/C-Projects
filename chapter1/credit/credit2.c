@@ -11,9 +11,9 @@ int main(void)
     int runningsum = 0;
     for(d = 0; CCN > 0; d++)
     {
-        runningsum = runningsum + floor(CCN %); // pick up here figure it out
-        printf("sum: %i\n", runningsum);
         CCN = (CCN / 10);
+        runningsum = (runningsum + (CCN % 10));
+        printf("sum: %i\n", runningsum);
     }
 
     if (d == 13)
