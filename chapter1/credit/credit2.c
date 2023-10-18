@@ -6,7 +6,6 @@ int main(void)
 {
     long CCN;
     CCN = get_long("Enter Credit Card Number: ");
-
     int d;
     int runningsum = 0;
     for(d = 0; CCN > 0; d++)
@@ -19,6 +18,8 @@ int main(void)
         // printf("sum: %i\n", runningsum);
     }
     // printf("digits: %i\n", d)
+    // runningsum keeps track of Step 1
+    // d keeps track of digits in the card
     if (d == 13)
     {
         printf("VISA\n");
