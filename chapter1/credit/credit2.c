@@ -19,7 +19,7 @@ int main(void)
     int runningsum = 0;
     for(i = d; i>0; i -= 2)
     {
-        runningsum = runningsum + (CCN / pow(10, i));
+        runningsum = runningsum + floor(CCN %);
         printf("sum: %i\n", runningsum);
     }
 
