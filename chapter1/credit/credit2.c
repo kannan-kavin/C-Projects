@@ -9,11 +9,11 @@ int main(void)
 
     int d;
     int runningsum = 0;
-    for(d = 0; CCN > 0; d++)
+    for(d = 1; CCN > 0; d++)
     {
         CCN = (CCN / 10);
         runningsum = (runningsum + (CCN % 10));
-        printf("sum: %i\n", runningsum);
+        printf("sum: %i digits: %i\n", runningsum, d);
     }
 
     if (d == 13)
