@@ -36,8 +36,10 @@ int main(void)
             int step2 = (step1 + c1 + c3 + c5 + c7 + c9 + c11 + c13 + c15);
             int step3 = (step2 % 10);
             if (step3 == 0)
+
             {
                 printf("VISA\n");
+                printf("%i\n", c16);
             }
         }
         else if (MASTERCARD16 == 51 || MASTERCARD16 == 52 || MASTERCARD16 == 53 || MASTERCARD16 == 54 || MASTERCARD16 == 55)
@@ -59,7 +61,6 @@ int main(void)
             int c14 = 2 * (floor(CCN % 100000000000000) / 10000000000000);
             int c15 = (floor(CCN % 1000000000000000) / 100000000000000);
             int c16 = (floor(CCN % 10000000000000000) / 1000000000000000);
-            printf("%i\n", c16);
             //printf("Each one is: %i, %i, %i, %i, %i, %i, %i, %i\n", check1, check2, check3, check4, check5, check6, check7, check8);
             int step1 = ((c2 / 10) + (c2 % 10) + (c4 / 10) + (c4 % 10) + (c6 / 10) + (c6 % 10) + (c8 / 10) + (c8 % 10) + (c10 / 10) + (c10 % 10) + (c12 / 10) + (c12 % 10) + (c14 / 10) + (c14 % 10) + (c16 / 10) + (c16 % 10));
             int step2 = (step1 + c1 + c3 + c5 + c7 + c9 + c11 + c13 + c15);
