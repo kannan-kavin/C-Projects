@@ -47,7 +47,7 @@ int main(void)
         else if (d == 16)
         {
         // printf("VISA OR MASTERCARD\n");
-        
+        (CCN)
         }
     }
     else
