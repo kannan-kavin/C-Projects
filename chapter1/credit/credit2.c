@@ -47,9 +47,13 @@ int main(void)
         else if (d == 16)
         {
         // printf("VISA OR MASTERCARD\n");
-            if
+            if ((floor(CCN % 10000000000000000) / 1000000000000000) == 4)
             {
-                
+                printf("VISA\n");
+            }
+            else
+            {
+                printf("MASTERCARD\n");
             }
         }
     }
