@@ -10,7 +10,7 @@ int main(void)
     int i;
     int d;
     int runningsum = 0;
-    for(i = 2; i > d; i += 2)
+    for(i = 2; ;i += 2)
     {
         runningsum = runningsum + floor(CCN %);
         printf("sum: %i\n", runningsum);
