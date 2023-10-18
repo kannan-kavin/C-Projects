@@ -17,10 +17,11 @@ int main(void)
     // printf("determinant:%ld d:%i\n", determinant, d);
     int i;
     int runningsum = 0;
-    for(i = 0; i > d; i += 2)
+    for(d = 0; d > d; d++)
     {
         runningsum = runningsum + floor(CCN %);
         printf("sum: %i\n", runningsum);
+
     }
 
     if (d == 13)
