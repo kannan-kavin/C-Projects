@@ -6,15 +6,21 @@ int main(void)
 {
     long CCN;
     CCN = get_long("Enter Credit Card Number: ");
-
+    int d = 0;
+    long determinant = CCN;
+    while (determinant > 0)
+    // d will keep track of digits in the Card Number while determinant helps that occur
+    {
+        d = d+1;
+        determinant = (determinant / 10);
+    }
+    // printf("determinant:%ld d:%i\n", determinant, d);
     int i;
-    int d;
     int runningsum = 0;
-    for(i = 2; ;i += 2)
+    for(i = 0; i > d; i += 2)
     {
         runningsum = runningsum + floor(CCN %);
         printf("sum: %i\n", runningsum);
-        d++;
     }
 
     if (d == 13)
