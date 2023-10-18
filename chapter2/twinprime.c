@@ -14,7 +14,7 @@ int main(void)
 
     for (int i = 3; i < 100; i++)
     {
-        // Add code here (using the function is_prime)
+        is_prime(int i)
     }
 }
 
