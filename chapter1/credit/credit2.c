@@ -23,7 +23,8 @@ int main(void)
         printf("step1sum: %i, step2sum: %i\n", step1, step2);
     }
     // printf("digits: %i\n", d)
-    // step1 keeps track of Step 1 (every other digit added together)
+    // step1 keeps track of Step 1 (every other digit added together starting from the second (we'll multiply by 2 later))
+    // step2 keeps track of Step 2 (every other digit added together)
     // d keeps track of digits in the card
 
     if (d == 13)
