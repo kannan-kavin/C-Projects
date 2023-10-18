@@ -17,7 +17,7 @@ int main(void)
     // printf("determinant:%ld d:%i\n", determinant, d);
     for(i = 0, )
     {
-
+        CCN / 
     }
 
     if (d == 13)
