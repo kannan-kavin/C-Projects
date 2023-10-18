@@ -46,7 +46,8 @@ int main(void)
         }
         else if (d == 16)
         {
-        printf("VISA OR MASTERCARD\n");
+        // printf("VISA OR MASTERCARD\n");
+        
         }
     }
     else
