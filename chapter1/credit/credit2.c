@@ -5,10 +5,11 @@ int main(void)
 {
     long CCN;
     CCN = get_long("Enter Credit Card Number: ");
+    int d = 0;
     int step1sum = 0;
     int step1helper = 0;
     int step2sum = (CCN % 10);
-    for(int d = 0; CCN > 0; d++)
+    for(d = 0; CCN > 0; d++)
     {
         CCN = (CCN / 10);
         if (d % 2 == 0)
@@ -16,11 +17,11 @@ int main(void)
             step1helper = (step1helper + (CCN % 10));
             if (step1helper < 10)
             {
-                step1sum = step1helper +
+                step1sum = (step1sum + step1helper);
             }
-            else (step1helper >= 10)
+            else
             {
-                step1helper = (step1helper / 10) + (step1helper % 10);
+                step1sum = (step1sum + (step1helper / 10) + (step1helper % 10));
             }
         }
         else
