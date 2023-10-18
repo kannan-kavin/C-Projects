@@ -13,9 +13,9 @@ int main(void)
     {
         if (d % 2 == 0)
         {
-            CCN = (CCN / 10);
             runningsum = (runningsum + (CCN % 10));
         }
+        CCN = (CCN / 10);
         printf("sum: %i digits: %i\n", runningsum, d);
     }
 
