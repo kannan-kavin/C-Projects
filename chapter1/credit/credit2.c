@@ -6,8 +6,8 @@ int main(void)
 {
     long CCN;
     CCN = get_long("Enter Credit Card Number: ");
-  
-    int i;
+
+    int d;
     int runningsum = 0;
     for(d = 0; CCN > 0; d++)
     {
