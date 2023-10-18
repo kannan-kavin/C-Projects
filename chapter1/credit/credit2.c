@@ -11,8 +11,11 @@ int main(void)
     int runningsum = 0;
     for(d = 0; CCN > 0; d++)
     {
-        CCN = (CCN / 10);
-        runningsum = (runningsum + (CCN % 10));
+        if (d % 2 == 0)
+        {
+            CCN = (CCN / 10);
+            runningsum = (runningsum + (CCN % 10));
+        }
         printf("sum: %i digits: %i\n", runningsum, d);
     }
 
