@@ -14,7 +14,7 @@ int main(void)
         CCN = (CCN / 10);
         if (d % 2 == 0)
         {
-            step1helper = 2 * (step1helper + (CCN % 10));
+            step1helper = (2 * (CCN % 10));
             if (step1helper < 10)
             {
                 step1sum = (step1sum + step1helper);
@@ -28,24 +28,26 @@ int main(void)
         {
             step2sum = (step2sum + (CCN % 10));
         }
-        printf("step1sum: %i, step2sum: %i\n", step1sum, step2sum);
+        // printf("step1sum: %i, step2sum: %i\n", step1sum, step2sum);
     }
     // printf("digits: %i\n", d)
-    // step1 keeps track of Step 1 (every other digit added together starting from the second (we'll multiply by 2 later))
-    // step2 keeps track of Step 2 (every other digit added together)
+    // step1sum keeps track of Step 1 (every other digit added together starting from the second on the right)
+    // step2 keeps track of Step 2 (every other digit added together starting from the first digit on the right)
     // d keeps track of digits in the card
-
-    if (d == 13)
+    if (((step2sum + step1sum) % 10) == 0)
     {
+        if (d == 13)
+        {
         printf("VISA\n");
-    }
-    else if (d == 15)
-    {
+        }
+        else if (d == 15)
+        {
         printf("AMERICAN EXPRESS\n");
-    }
-    else if (d == 16)
-    {
+        }
+        else if (d == 16)
+        {
         printf("VISA OR MASTERCARD\n");
+        }
     }
     else
     {
