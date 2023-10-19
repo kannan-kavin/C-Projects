@@ -5,7 +5,7 @@ int main(void)
 {
     long CCN;
     CCN = get_long("Enter Credit Card Number: ");
-    ogCCN = CCN;
+    int ogCCN = CCN;
     // the ogCCN will be used later to help differentiate between 16 digits Mastercard and Visa
     int d = 0;
     int step1sum = 0;
@@ -50,7 +50,7 @@ int main(void)
         {
         // printf("VISA OR MASTERCARD\n");
         printf("%ld\n", CCN);
-            if (((CCN % 1000000000000000) / 1000000000000000) == 4)
+            if (((ogCCN % 1000000000000000) / 1000000000000000) == 4)
             {
                 printf("VISA\n");
             }
