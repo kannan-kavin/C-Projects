@@ -48,7 +48,7 @@ int main(void)
         {
         // printf("VISA OR MASTERCARD\n");
         printf
-            if (((CCN % 10000000000000000) / 1000000000000000) == 4)
+            if (((CCN % 1000000000000000) / 1000000000000000) == 4)
             {
                 printf("VISA\n");
             }
