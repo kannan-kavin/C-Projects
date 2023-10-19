@@ -44,7 +44,7 @@ int main(void)
             printf("VISA\n");
         }
         int AMEX2 = (ogCCN / 100000000000000);
-        else if (d == 15 && AMEX2 == 34 || 37)
+        else if (d == 15 && (AMEX2 == 34 || 37))
         {
             printf("AMEX\n");
         }
