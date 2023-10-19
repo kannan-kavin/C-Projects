@@ -43,7 +43,7 @@ int main(void)
         {
             printf("VISA\n");
         }
-        int AMEX2 = (ogCCN / 100000000000000);
+        int AMEX2 = (ogCCN / 10000000000000);
         else if (d == 15 && (AMEX2 == 34 || 37))
         {
             printf("AMEX\n");
@@ -52,13 +52,19 @@ int main(void)
         {
             // printf("VISA OR MASTERCARD\n");
             // printf("%ld\n", ogCCN);
-            if ((ogCCN / 1000000000000000) == 4)
+            int VISA1 = (ogCNN / 1000000000000000);
+            if (VISA1 == 4)
             {
                 printf("VISA\n");
             }
-            else if (ogCCN / 1)
+            int MASTER2 = (ogCNN / 100000000000000);
+            else if (MASTER == 4)
             {
                 printf("MASTERCARD\n");
+            }
+            else
+            {
+                printf("INVALID\n");
             }
         }
         else
