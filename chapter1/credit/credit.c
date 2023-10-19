@@ -39,33 +39,30 @@ int main(void)
     if (((step2sum + step1sum) % 10) == 0)
     {
         int VISA1 = (ogCCN / 1000000000000000);
-        if (d == 13 && VISA1 == 4)
+        // 13 digit cards beginning with 4
+        int AMEX2 = (ogCCN / 10000000000000);
+        // 15 digit cards begining with 34 and 37
+        int VISA1v2 = (ogCCN / 1000000000000000);
+        // 16 digit cards beginning with 4
+        int MASTER2 = (ogCCN / 100000000000000);
+        // 16 digit card beginning with 51, 52, 53, 54, and 55
+        if (VISA1 == 4)
         {
             printf("VISA\n");
         }
-        int AMEX2 = (ogCCN / 10000000000000);
-        else if (d == 15 && (AMEX2 == (34 || AMEX2 == 37)))
+        else if (AMEX2 == 34 || AMEX2 == 34)
         {
             printf("AMEX\n");
         }
-        else if (d == 16)
+        else if (VISA1v2 == 4)
         {
             // printf("VISA OR MASTERCARD\n");
             // printf("%ld\n", ogCCN);
-            int VISA1 = (ogCNN / 1000000000000000);
-            if (VISA1 == 4)
-            {
-                printf("VISA\n");
-            }
-            int MASTER2 = (ogCNN / 100000000000000);
-            else if (MASTER2 == (51 || 52 || 53 || 54 || 55))
-            {
-                printf("MASTERCARD\n");
-            }
-            else
-            {
-                printf("INVALID\n");
-            }
+            printf("VISA\n");
+        }
+        else if (MASTER2 == 51 || MASTER2 == 52 || MASTER2 == 53 || MASTER2 == 54 || MASTER2 == 55)
+        {
+            printf("MASTERCARD\n");
         }
         else
         {
