@@ -56,8 +56,6 @@ int main(void)
         }
         else if (VISA1v2 == 4)
         {
-            // printf("VISA OR MASTERCARD\n");
-            // printf("%ld\n", ogCCN);
             printf("VISA\n");
         }
         else if (MASTER2 == 51 || MASTER2 == 52 || MASTER2 == 53 || MASTER2 == 54 || MASTER2 == 55)
@@ -67,6 +65,10 @@ int main(void)
         else
         {
             printf("INVALID\n");
+            printf("VISA1:%i\n", VISA1);
+            printf("AMEX2:%i\n", AMEX2);
+            printf("VISA1v2:%i\n", VISA1v2);
+            printf("MASTER2:%i\n", MASTER2);
         }
     }
     else
