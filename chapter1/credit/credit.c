@@ -50,11 +50,12 @@ int main(void)
         {
             // printf("VISA OR MASTERCARD\n");
             // printf("%ld\n", ogCCN);
+            int first16 = 
             if ((ogCCN / 1000000000000000) == 4)
             {
                 printf("VISA\n");
             }
-            else
+            else if (ogCCN / 1)
             {
                 printf("MASTERCARD\n");
             }
