@@ -38,14 +38,13 @@ int main(void)
     // d keeps track of digits in the card
     if (((step2sum + step1sum) % 10) == 0)
     {
-        int VISA1 =
-        int AMEX2 =
-        int MASTER2 = 
-        if (d == 13)
+        int VISA1 = (ogCCN / 1000000000000000);
+        if (d == 13 && VISA1 == 4)
         {
             printf("VISA\n");
         }
-        else if (d == 15)
+        int AMEX2 = (ogCCN / 100000000000000);
+        else if (d == 15 && AMEX2 == 34 || 37)
         {
             printf("AMEX\n");
         }
