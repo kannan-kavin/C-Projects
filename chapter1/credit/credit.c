@@ -58,7 +58,7 @@ int main(void)
                 printf("VISA\n");
             }
             int MASTER2 = (ogCNN / 100000000000000);
-            else if (MASTER == 4)
+            else if (MASTER2 == (51 || 52 || 53 || 54 || 55))
             {
                 printf("MASTERCARD\n");
             }
