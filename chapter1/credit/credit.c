@@ -40,7 +40,7 @@ int main(void)
     {
         int VISA1 = (ogCCN / 1000000000000);
         // 13 digit cards beginning with 4
-        int AMEX2 = (ogCCN / 100000000000000);
+        int AMEX2 = (ogCCN / 10000000000000);
         // 15 digit cards begining with 34 and 37
         int VISA1v2 = (ogCCN / 1000000000000000);
         // 16 digit cards beginning with 4
