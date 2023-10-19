@@ -11,7 +11,7 @@ int main(void)
     int step1sum = 0;
     int step1helper = 0;
     int step2sum = (CCN % 10);
-    for(d = 0; CCN > 0; d++)
+    for (d = 0; CCN > 0; d++)
     {
         CCN = (CCN / 10);
         if (d % 2 == 0)
@@ -40,16 +40,16 @@ int main(void)
     {
         if (d == 13)
         {
-        printf("VISA\n");
+            printf("VISA\n");
         }
         else if (d == 15)
         {
-        printf("AMEX\n");
+            printf("AMEX\n");
         }
         else if (d == 16)
         {
-        // printf("VISA OR MASTERCARD\n");
-        // printf("%ld\n", ogCCN);
+            // printf("VISA OR MASTERCARD\n");
+            // printf("%ld\n", ogCCN);
             if ((ogCCN / 1000000000000000) == 4)
             {
                 printf("VISA\n");
