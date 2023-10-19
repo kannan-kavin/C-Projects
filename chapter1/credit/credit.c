@@ -65,10 +65,10 @@ int main(void)
         else
         {
             printf("INVALID\n");
-            printf("VISA1:%i\n", VISA1);
-            printf("AMEX2:%i\n", AMEX2);
-            printf("VISA1v2:%i\n", VISA1v2);
-            printf("MASTER2:%i\n", MASTER2);
+            // printf("VISA1:%i\n", VISA1);
+            // printf("AMEX2:%i\n", AMEX2);
+            // printf("VISA1v2:%i\n", VISA1v2);
+            // printf("MASTER2:%i\n", MASTER2);
         }
     }
     else
