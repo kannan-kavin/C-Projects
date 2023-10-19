@@ -38,7 +38,7 @@ int main(void)
     // d keeps track of digits in the card
     if (((step2sum + step1sum) % 10) == 0)
     {
-        int VISA1 = (ogCCN / 1000000000000000);
+        int VISA1 = (ogCCN / 1000000000000);
         // 13 digit cards beginning with 4
         int AMEX2 = (ogCCN / 10000000000000);
         // 15 digit cards begining with 34 and 37
