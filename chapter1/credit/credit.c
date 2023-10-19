@@ -38,6 +38,9 @@ int main(void)
     // d keeps track of digits in the card
     if (((step2sum + step1sum) % 10) == 0)
     {
+        int VISA1 =
+        int AMEX2 =
+        int MASTER2 = 
         if (d == 13)
         {
             printf("VISA\n");
@@ -50,7 +53,6 @@ int main(void)
         {
             // printf("VISA OR MASTERCARD\n");
             // printf("%ld\n", ogCCN);
-            int first16 = 
             if ((ogCCN / 1000000000000000) == 4)
             {
                 printf("VISA\n");
