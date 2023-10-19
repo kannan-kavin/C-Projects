@@ -1,71 +1,60 @@
 #include <cs50.h>
-#include <math.h>
 #include <stdio.h>
 
 int main(void)
 {
     long CCN;
     CCN = get_long("Enter Credit Card Number: ");
-    if ((CCN / 1000000000000000 > 1))
-    // 16 Digit Cards
+    long ogCCN = CCN;
+    // the ogCCN will be used later to help differentiate between 16 digits Mastercard and Visa
+    int d = 0;
+    int step1sum = 0;
+    int step1helper = 0;
+    int step2sum = (CCN % 10);
+    for(d = 0; CCN > 0; d++)
     {
-        //printf("MASTERCARD OR VISA\n");
-        int VISA16 = (floor(CCN / 1000000000000000));
-        int MASTERCARD16 = (floor(CCN / 100000000000000));
-        if (VISA16 == 4)
+        CCN = (CCN / 10);
+        if (d % 2 == 0)
         {
-            //printf("VISA\n");
-            int c1 = (floor(CCN % 10) / 1);
-            int c2 = 2 * (floor(CCN % 100) / 10);
-            int c3 = (floor(CCN % 1000) / 100);
-            int c4 = 2 * (floor(CCN % 10000) / 1000);
-            int c5 = (floor(CCN % 100000) / 10000);
-            int c6 = 2 * (floor(CCN % 1000000) / 100000);
-            int c7 = (floor(CCN % 10000000) / 1000000);
-            int c8 = 2 * (floor(CCN % 100000000) / 10000000);
-            int c9 = (floor(CCN % 1000000000) / 100000000);
-            int c10 = 2 * (floor(CCN % 10000000000) / 1000000000);
-            int c11 = (floor(CCN % 100000000000) / 10000000000);
-            int c12 = 2 * (floor(CCN % 1000000000000) / 100000000000);
-            int c13 = (floor(CCN % 10000000000000) / 1000000000000);
-            int c14 = 2 * (floor(CCN % 100000000000000) / 10000000000000);
-            int c15 = (floor(CCN % 1000000000000000) / 100000000000000);
-            int c16 = 2 * (floor(CCN % 10000000000000000) / 1000000000000000);
-            //printf("Each one is: %i, %i, %i, %i, %i, %i, %i, %i\n", check1, check2, check3, check4, check5, check6, check7, check8);
-            int step1 = ((c2 / 10) + (c2 % 10) + (c4 / 10) + (c4 % 10) + (c6 / 10) + (c6 % 10) + (c8 / 10) + (c8 % 10) + (c10 / 10) + (c10 % 10) + (c12 / 10) + (c12 % 10) + (c14 / 10) + (c14 % 10) + (c16 / 10) + (c16 % 10));
-            int step2 = (step1 + c1 + c3 + c5 + c7 + c9 + c11 + c13 + c15);
-            int step3 = (step2 % 10);
-            if (step3 == 0)
-
+            step1helper = (2 * (CCN % 10));
+            if (step1helper < 10)
             {
-                printf("VISA\n");
-                printf("%i\n", c16);
+                step1sum = (step1sum + step1helper);
+            }
+            else
+            {
+                step1sum = (step1sum + (step1helper / 10) + (step1helper % 10));
             }
         }
-        else if (MASTERCARD16 == 51 || MASTERCARD16 == 52 || MASTERCARD16 == 53 || MASTERCARD16 == 54 || MASTERCARD16 == 55)
+        else
         {
-            //printf("MASTERCARD\n");
-            int c1 = (floor(CCN % 10) / 1);
-            int c2 = 2 * (floor(CCN % 100) / 10);
-            int c3 = (floor(CCN % 1000) / 100);
-            int c4 = 2 * (floor(CCN % 10000) / 1000);
-            int c5 = (floor(CCN % 100000) / 10000);
-            int c6 = 2 * (floor(CCN % 1000000) / 100000);
-            int c7 = (floor(CCN % 10000000) / 1000000);
-            int c8 = 2 * (floor(CCN % 100000000) / 10000000);
-            int c9 = (floor(CCN % 1000000000) / 100000000);
-            int c10 = 2 * (floor(CCN % 10000000000) / 1000000000);
-            int c11 = (floor(CCN % 100000000000) / 10000000000);
-            int c12 = 2 * (floor(CCN % 1000000000000) / 100000000000);
-            int c13 = (floor(CCN % 10000000000000) / 1000000000000);
-            int c14 = 2 * (floor(CCN % 100000000000000) / 10000000000000);
-            int c15 = (floor(CCN % 1000000000000000) / 100000000000000);
-            int c16 = (floor(CCN % 10000000000000000) / 1000000000000000);
-            //printf("Each one is: %i, %i, %i, %i, %i, %i, %i, %i\n", check1, check2, check3, check4, check5, check6, check7, check8);
-            int step1 = ((c2 / 10) + (c2 % 10) + (c4 / 10) + (c4 % 10) + (c6 / 10) + (c6 % 10) + (c8 / 10) + (c8 % 10) + (c10 / 10) + (c10 % 10) + (c12 / 10) + (c12 % 10) + (c14 / 10) + (c14 % 10) + (c16 / 10) + (c16 % 10));
-            int step2 = (step1 + c1 + c3 + c5 + c7 + c9 + c11 + c13 + c15);
-            int step3 = (step2 % 10);
-            if (step3 == 0)
+            step2sum = (step2sum + (CCN % 10));
+        }
+        // printf("step1sum: %i, step2sum: %i\n", step1sum, step2sum);
+    }
+    // printf("digits: %i\n", d)
+    // step1sum keeps track of Step 1 (every other digit added together starting from the second on the right)
+    // step2 keeps track of Step 2 (every other digit added together starting from the first digit on the right)
+    // d keeps track of digits in the card
+    if (((step2sum + step1sum) % 10) == 0)
+    {
+        if (d == 13)
+        {
+        printf("VISA\n");
+        }
+        else if (d == 15)
+        {
+        printf("AMEX\n");
+        }
+        else if (d == 16)
+        {
+        // printf("VISA OR MASTERCARD\n");
+        // printf("%ld\n", ogCCN);
+            if ((ogCCN / 1000000000000000) == 4)
+            {
+                printf("VISA\n");
+            }
+            else
             {
                 printf("MASTERCARD\n");
             }
@@ -74,16 +63,6 @@ int main(void)
         {
             printf("INVALID\n");
         }
-    }
-    else if ((CCN / 100000000000000) > 1)
-    // 15 Digit Cards
-    {
-        //printf("AMERICAN EXPRESS\n");
-    }
-    else if ((CCN / 1000000000000) > 1)
-    // 13 Digit Cards
-    {
-        //printf("VISA\n");
     }
     else
     {
