@@ -28,14 +28,11 @@ int main(void)
         else
         {
             step2sum = (step2sum + (CCN % 10));
-            // Running Sum for step 2 
+            // Running Sum for step 2 b/c d determines which digit of the number we're looking at
         }
         // printf("step1sum: %i, step2sum: %i\n", step1sum, step2sum);
     }
     // printf("digits: %i\n", d)
-    // step1sum keeps track of Step 1 (every other digit added together starting from the second on the right)
-    // step2 keeps track of Step 2 (every other digit added together starting from the first digit on the right)
-    // d keeps track of digits in the card
     if (((step2sum + step1sum) % 10) == 0)
     {
         int VISA1 = (ogCCN / 1000000000000);
