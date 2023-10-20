@@ -15,6 +15,7 @@ int main(void)
         if (d % 2 == 0)
         {
             int step1helper = (2 * (CCN % 10));
+            int step1sum;
             if (step1helper < 10)
             {
                 step1sum = (step1sum + step1helper);
