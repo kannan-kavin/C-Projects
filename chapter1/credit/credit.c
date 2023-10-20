@@ -8,8 +8,6 @@ int main(void)
     long ogCCN = CCN;
     // the ogCCN will be used later to help differentiate between 16 digits Mastercard and Visa
     int d = 0;
-    int step1sum = 0;
-    int step1helper = 0;
     int step2sum = (CCN % 10);
     for (d = 0; CCN > 0; d++)
     {
