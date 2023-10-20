@@ -3,10 +3,9 @@
 
 int main(void)
 {
-    long CCN;
-    CCN = get_long("Enter Credit Card Number: ");
+    long CCN = get_long("Enter Credit Card Number: ");
     long ogCCN = CCN;
-    // the ogCCN will be used later to help differentiate between 16 digits Mastercard and Visa
+    // the ogCCN will be used later to help differentiate between 16 digits Mastercard and Visa b/c CCN will be altered for checking steps
     int step1sum;
     int step2sum = (CCN % 10);
     for (int d = 0; CCN > 0; d++)
@@ -18,6 +17,7 @@ int main(void)
             if (step1helper < 10)
             {
                 step1sum = (step1sum + step1helper);
+                // 
             }
             else
             {
