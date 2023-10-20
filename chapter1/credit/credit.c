@@ -17,16 +17,18 @@ int main(void)
             if (step1helper < 10)
             {
                 step1sum = (step1sum + step1helper);
-                // 
+                // Running Sum for step 1 where the number after being multiplied by 2 is one digit
             }
             else
             {
                 step1sum = (step1sum + (step1helper / 10) + (step1helper % 10));
+                // Running Sum for step 1 where the number after being multiplied by 2 is two digits
             }
         }
         else
         {
             step2sum = (step2sum + (CCN % 10));
+            // Running Sum for step 2 
         }
         // printf("step1sum: %i, step2sum: %i\n", step1sum, step2sum);
     }
