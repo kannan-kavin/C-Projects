@@ -22,7 +22,14 @@ int main(void)
     // Iterate through string
     for (int i = 0, n = strlen(message); i < n - 1; i++)
     {
-        // YOUR CODE HERE
+        if (message[i] == message[i+1])
+        {
+            message[i+1] = 
+        }
+        else
+        {
+
+        }
     }
     printf("\n");
 }
