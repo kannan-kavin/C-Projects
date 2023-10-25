@@ -2,7 +2,7 @@
  * dblletter.c
  * YOUR TASK: Complete the code below so that double letters are removed
  * Example: An input of Halloween -> Halowen
- *
+ * done with nishil patel from f block computer science with the esteemed mr. shoutis at the helm of this powerhouse of a class we're all about to code our ways into top universities and change the world.
  * Check your work: check50 shoutiss/checks/master/dblletter
  * Submit your work: submit50 shoutiss/checks/master/dblletter
 */
