@@ -17,10 +17,10 @@ int main(void)
     string message = get_string("Enter message: ");
 
     // Print first character
-    printf("%c", message[0]);
+    // printf("%c", message[0]);
 
     // Iterate through string
-    for (int i = 0, n = strlen(message); i < n - 1; i++)
+    for (int i = 0, n = strlen(message); i < n; i++)
     {
         if (message[i] == message[i+1])
         {
