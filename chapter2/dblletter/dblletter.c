@@ -24,8 +24,7 @@ int main(void)
     {
         if (message[i] == message[i+1])
         {
-            printf("%c", message[i]);
-            i++;
+            printf("%c", message[i+1]);
         }
         else
         {
