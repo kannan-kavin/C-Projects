@@ -24,11 +24,12 @@ int main(void)
     {
         if (message[i] == message[i+1])
         {
-            message[i+1] = 
+            printf(message[i]);
+            i++;
         }
         else
         {
-
+            printf(message[i]);
         }
     }
     printf("\n");
