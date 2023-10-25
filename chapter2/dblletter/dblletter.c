@@ -17,19 +17,19 @@ int main(void)
     string message = get_string("Enter message: ");
 
     // Print first character
-    // printf("%c", message[0]);
+    printf("%c", message[0]);
 
     // Iterate through string
-    for (int i = 0, n = strlen(message); i < n; i++)
+    for (int i = 0, n = strlen(message); i < n - 1; i++)
     {
-        if (message[i] == message[i+1])
+        if (message[i+1] == message[i+2])
         {
-            printf("%c", message[i]);
+            printf("%c", message[i+1]);
             i++;
         }
         else
         {
-            printf("%c", message[i]);
+            printf("%c", message[i+1]);
         }
     }
     printf("\n");
