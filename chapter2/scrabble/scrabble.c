@@ -41,8 +41,11 @@ int compute_score(string word)
     for (int i = 0, n = strlen(word); i < n; i++)
     {
         char c = tolower(word[i]);
+        if(c <= 122 && c >= 97)
+        {
+            score = score + POINTS[c-97];
+        }
         // printf("%i", c);
-        score = score + POINTS[c-97];
     }
     return(score);
 }
