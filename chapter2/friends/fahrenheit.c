@@ -1,4 +1,5 @@
 #include <cs50.h>
+#include <stdlib.h>
 #include <stdio.h>
 
 int main(int argc, string argv[])
@@ -8,7 +9,7 @@ int main(int argc, string argv[])
         printf("Usage: ./fahrenheit <fahrenheit temperature>\n");
         return 1;
     }
-    float celcius = atof[argv[1]]
+    float celcius = atof(argv[1]);
     float fahrenheit = ((celcius * 9) / 5) + 32;
     printf("The Temperature in Fahrenheit is %.1F°\n", fahrenheit);
     return 0;
