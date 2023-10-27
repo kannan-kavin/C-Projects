@@ -1,12 +1,8 @@
-/*
-hello girlypop
-i am coding
-greetings earthlings
-*/
-
+#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-    printf("Hello, world\n");
+    string name = get_string("Name: ");
+    printf("Hello %s!\n", name);
 }
