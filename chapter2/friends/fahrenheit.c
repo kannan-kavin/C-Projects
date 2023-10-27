@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int main(void)
+int main(int argc, string argv[])
 {
     float C = get_float("Temperature in Celcius: ");
     // C represents the Temperature in Celcius that is inputted
