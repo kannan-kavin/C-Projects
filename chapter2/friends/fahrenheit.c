@@ -3,9 +3,12 @@
 
 int main(int argc, string argv[])
 {
-    float C = get_float("Temperature in Celcius: ");
-    // C represents the Temperature in Celcius that is inputted
-    float F = ((C * 9) / 5) + 32;
-    // F represents the Temperature in Fahrenheit that is returned
-    printf("The Temperature in Fahrenheit is %.1F°\n", F);
+    if (argc != 2)
+    {
+        printf("Usage: ./fahrenheit <fahrenheit temperature>\n");
+        return 1;
+    }
+    float celcius = atof[argv[1]]
+    float fahrenheit = ((celcius * 9) / 5) + 32;
+    printf("The Temperature in Fahrenheit is %.1F°\n", fahrenheit);
 }
