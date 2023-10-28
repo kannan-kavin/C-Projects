@@ -17,7 +17,7 @@ int main(void)
     }
     while (days > 31 || days < 28);
     float dollars;
-    dollars = pow(pennies, days);
+    dollars = (pennies * pow(2, days));
     dollars = (dollars / 100.0);
     printf("%.2f\n", dollars);
 }
