@@ -4,12 +4,12 @@
 
 int main(void)
 {
-    int Pennies;
-    Pennies = get_int("Pennies: \n");
+    int pennies;
+    pennies = get_int("Pennies: ");
     int days;
-    days = get_int("Days: \n");
-    int Dollars;
-    Dollars = pow(pennies, days);
-    Dollars = (Dollars / 100)
-    printf("Dollars: %.2i\n", Dollars)
+    days = get_int("Days: ");
+    float dollars;
+    dollars = pow(pennies, days);
+    dollars = (dollars / 100.0);
+    printf("Dollars: %.2f\n", dollars);
 }
