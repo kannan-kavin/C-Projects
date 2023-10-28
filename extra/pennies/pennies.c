@@ -5,11 +5,19 @@
 int main(void)
 {
     int pennies;
-    pennies = get_int("Pennies: ");
+    do
+    {
+        pennies = get_int("Pennies: ");
+    }
+    while (pennies < 1);
     int days;
-    days = get_int("Days: ");
+    do
+    {
+        days = get_int("Days: ");
+    }
+    while (days > 31 || days < 28);
     float dollars;
     dollars = pow(pennies, days);
     dollars = (dollars / 100.0);
-    printf("Dollars: %.2f\n", dollars);
+    printf("%.2f\n", dollars);
 }
