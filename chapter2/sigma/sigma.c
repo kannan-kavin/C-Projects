@@ -21,7 +21,7 @@ int main(int argc, string argv[])
     int sum = 0;
     for (int i = 0; i < argc ;i++)
     {
-        sum = sum + (argv[i]);
+        sum = sum + atoi(argv[i]);
         // int IndInt = atoi(argv[i]);
         // printf("%i\n", IndInt);
     }
