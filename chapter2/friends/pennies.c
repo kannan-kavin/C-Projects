@@ -12,8 +12,8 @@ int main(int argc, string argv[])
     }
     if ((atoi(argv[1]) >= 28 || atoi(argv[1]) <= 31) && atoi(argv[2]) > 1)
     {
-        int pennies = (atoi(argv[2]) * pow(2, atoi(argv[1])));
-        float dollars = (pennies / 100.0);
+        long long pennies = (atoi(argv[2]) * pow(2, atoi(argv[1])));
+        double dollars = (pennies / 100.0);
         printf("$%.2F\n", dollars);
         return 0;
     }
