@@ -15,12 +15,13 @@ int main(int argc, string argv[])
     // TODO 1: Ensure that there are command line arguments. Return 1 if there aren't enough.
     if (argc == 1)
     {
+        printf("Usage: ./sigma <Numbers wish to be Added>\n");
         return 1;
     }
     int sum = 0;
     for (int i = 0; i < argc ;i++)
     {
-        sum = sum + atof(argv[i]);
+        sum = sum + atoi(argv[i]);
     }
 
     // TODO 2: Add each of the command line arguments to sum. You may assume the arguments
