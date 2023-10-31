@@ -13,7 +13,7 @@
 int main(int argc, string argv[])
 {
     // TODO 1: Ensure that there are command line arguments. Return 1 if there aren't enough.
-
+    
     int sum = 0;
 
     // TODO 2: Add each of the command line arguments to sum. You may assume the arguments
