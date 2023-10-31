@@ -13,10 +13,10 @@
 int main(int argc, string argv[])
 {
     // TODO 1: Ensure that there are command line arguments. Return 1 if there aren't enough.
-    if (argc == 1)
-    {
-        return 1;
-    }
+    // if (argc == 1)
+    // {
+    //    return 1;
+    // }
     int sum = 0;
     for (int i = 0; i < argc ;i++)
     {
