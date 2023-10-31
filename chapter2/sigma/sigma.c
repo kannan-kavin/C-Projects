@@ -21,7 +21,9 @@ int main(int argc, string argv[])
     int sum = 0;
     for (int i = 0; i < argc ;i++)
     {
-        sum = sum + atoi(argv[i]);
+        sum = sum + (argv[i]);
+        // int IndInt = atoi(argv[i]);
+        // printf("%i\n", IndInt);
     }
 
     // TODO 2: Add each of the command line arguments to sum. You may assume the arguments
