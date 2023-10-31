@@ -4,11 +4,11 @@
  * add a series of command line arugments
  */
 
- // Check for correctness: check50 shoutiss/checks/master/sigma
+// Check for correctness: check50 shoutiss/checks/master/sigma
 
 #include <cs50.h>
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, string argv[])
 {
@@ -19,7 +19,7 @@ int main(int argc, string argv[])
         return 1;
     }
     int sum = 0;
-    for (int i = 0; i < argc ;i++)
+    for (int i = 0; i < argc; i++)
     {
         sum = sum + (atoi(argv[i]));
     }
