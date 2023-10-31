@@ -42,6 +42,8 @@ int compute_score(string word)
     // determine the value per index in a string and add them together while you increment
     {
         char c = tolower(word[i]);
+        // tolower will make each character we're taking a lowercase letter, thus subtracting 97 from it later will allow us to get
+        // an accurate index for points
         if (c <= 122 && c >= 97)
         {
             score = score + POINTS[c - 97];
