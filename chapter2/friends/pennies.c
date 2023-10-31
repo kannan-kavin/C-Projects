@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, string argv[])
 {
@@ -9,7 +10,10 @@ int main(int argc, string argv[])
         printf("Usage: ./pennies <# of Pennies and # of Days>\n");
         return 1;
     }
-    int pennies = (pennies * pow(2, argv[1]));
-    float dollars = (pennies / 100.0);
-    printf("$%i\n", dollars)
+    if (arg[v] >= 28 || arg[v] <= 31)
+    {
+        int pennies = (atoi(argv[0]) * pow(2, atoi(argv[1])));
+        float dollars = (pennies / 100.0);
+        printf("$%i\n", dollars);
+    }
 }
