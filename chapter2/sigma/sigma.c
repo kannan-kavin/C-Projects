@@ -19,11 +19,11 @@ int main(int argc, string argv[])
         return 1;
     }
     int sum = 0;
-    for (int i = 0; i < argc ;i++)
+    for (int i = 1; i < argc ;i++)
     {
         sum = sum + (atoi(argv[i]) - 48);
-        // int IndInt = atoi(argv[i]);
-        // printf("%i\n", IndInt);
+        int IndInt = (atoi(argv[i]) - 48);
+        printf("%i\n", IndInt);
     }
 
     // TODO 2: Add each of the command line arguments to sum. You may assume the arguments
