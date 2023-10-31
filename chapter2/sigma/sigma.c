@@ -13,8 +13,15 @@
 int main(int argc, string argv[])
 {
     // TODO 1: Ensure that there are command line arguments. Return 1 if there aren't enough.
-    
+    if (argc == 1)
+    {
+        return 1;
+    }
     int sum = 0;
+    for (int i = 0; i < argc ;i++)
+    {
+        sum = sum + atof(argv[i]);
+    }
 
     // TODO 2: Add each of the command line arguments to sum. You may assume the arguments
     // are integers, but remember what data type they come in as...
@@ -22,4 +29,3 @@ int main(int argc, string argv[])
     printf("%i\n", sum);
     return 0;
 }
-
