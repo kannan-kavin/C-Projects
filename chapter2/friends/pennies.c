@@ -2,11 +2,14 @@
 #include <math.h>
 #include <stdio.h>
 
-int main(void)
+int main(int argc, string argv[])
 {
-    int days = get_int("Days in month: \n");
-    int pennies = get_int("Pennies on first day: \n");
-    pennies = (pennies * pow(2, 31));
+    if (argc != 3)
+    {
+        printf("Usage: ./pennies <# of Pennies and # of Days>\n");
+        return 1;
+    }
+    int pennies = (pennies * pow(2, argv[1]));
     float dollars = (pennies / 100.0);
     printf("$%i\n", dollars)
 }
