@@ -39,11 +39,13 @@ int compute_score(string word)
     // TODO: Compute and return score for string
     int score = 0;
     for (int i = 0, n = strlen(word); i < n; i++)
+    // determine the value per index in a string and add them together while you increment
     {
         char c = tolower(word[i]);
         if (c <= 122 && c >= 97)
         {
             score = score + POINTS[c - 97];
+            // cumulative sum of the score (c-97 in POINTS allows us to identify the points per letter according to scrabble)
         }
         // printf("%i", c);
     }
