@@ -14,6 +14,6 @@ int main(int argc, string argv[])
     {
         int pennies = (atoi(argv[1]) * pow(2, atoi(argv[2])));
         float dollars = (pennies / 100.0);
-        printf("$%.2f\n", dollars);
+        printf("$%.2F\n", dollars);
     }
 }
