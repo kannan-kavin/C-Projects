@@ -13,7 +13,7 @@ int main(int argc, string argv[])
     int days = atoi(argv[1])
     if (days < 28 || days > 31)
     {
-        long long pennies = (atoi(argv[2]) * pow(2, atoi(argv[1])));
+        long long pennies = (atoi(argv[2]) * pow(2, days));
         double dollars = (pennies / 100.0);
         printf("$%.2F\n", dollars);
         return 0;
