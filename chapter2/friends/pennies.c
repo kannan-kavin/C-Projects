@@ -12,21 +12,14 @@
 int main(int argc, string argv[])
 {
     // Get a number of days in [28, 31]
-    int days;
-    do
+    int days = atoi(argv[1]);
+    while (days < MIN_DAYS || days > MAX_DAYS)
     {
-        days = get_int("Days in month: ");
+        printf("Usage: ./pennies <days> <pennies>\n");
+        return 1;
     }
-    while (days < MIN_DAYS || days > MAX_DAYS);
-
     // Get a number of pennies in [0, inf)
-    int pennies = atoi()
-    do
-    {
-        pennies = get_int("Pennies on first day: ");
-    }
-    while (pennies <= 0);
-
+    int pennies = atoi(argv[2]);
     // Relatively few pennies required to get out of bounds of int
     long long total = pennies;
 
