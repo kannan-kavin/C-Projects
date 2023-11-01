@@ -10,7 +10,8 @@ int main(int argc, string argv[])
         printf("Usage: ./pennies <# Days> <# Pennies>\n");
         return 1;
     }
-    if ((atoi(argv[1]) >= 28 || atoi(argv[1]) <= 31) && atoi(argv[2]) > 1)
+    int days = atoi(argv[1])
+    if (days < 28 || days > 31)
     {
         long long pennies = (atoi(argv[2]) * pow(2, atoi(argv[1])));
         double dollars = (pennies / 100.0);
