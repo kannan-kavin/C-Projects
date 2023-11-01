@@ -2,8 +2,8 @@
 
 #include <cs50.h>
 #include <math.h>
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 // Defined constants
 #define MAX_DAYS 31
@@ -13,13 +13,13 @@ int main(int argc, string argv[])
 {
     // Get a number of days in [28, 31]
     int days = atoi(argv[1]);
-    while (days < MIN_DAYS || days > MAX_DAYS)
+    int pennies = atoi(argv[2]);
+    if (days < MIN_DAYS || days > MAX_DAYS || pennies <= 1)
     {
         printf("Usage: ./pennies <days> <pennies>\n");
         return 1;
     }
     // Get a number of pennies in [0, inf)
-    int pennies = atoi(argv[2]);
     // Relatively few pennies required to get out of bounds of int
     long long total = pennies;
 
