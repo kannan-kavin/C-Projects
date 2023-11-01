@@ -2,6 +2,7 @@
 
 #include <cs50.h>
 #include <math.h>
+#include <stdlib.h>
 #include <stdio.h>
 
 // Defined constants
@@ -19,7 +20,7 @@ int main(int argc, string argv[])
     while (days < MIN_DAYS || days > MAX_DAYS);
 
     // Get a number of pennies in [0, inf)
-    int pennies;
+    int pennies = atoi()
     do
     {
         pennies = get_int("Pennies on first day: ");
