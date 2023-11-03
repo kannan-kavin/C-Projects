@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+string caesariphy(string plain)
+
 int main(int argc, string argv[])
 {
     // Get a key from the user
@@ -11,7 +13,13 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar <key>\n");
         return 1;
     }
-    list plain[] = get_string("plaintext: ")
-    printf("%c\n", plain[0]);
-    // printf("ciphertext: %s\n", cipher)
+    string plain = get_string("plaintext: ")
+    // printf("%c\n", plain[0]);
+    printf("ciphertext: %s\n", cipher)
+}
+
+string caesariphy(string plain)
+{
+    for (int i = 0, n = strlen(plain); i < n, i++)
+    
 }
