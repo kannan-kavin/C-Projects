@@ -22,8 +22,9 @@ string caesariphy(string plain)
 {
     for (int i = 0, n = strlen(plain); i < n, i++)
     char character = (plain[i])
+    
     if (c <= 122 || c >= 97)
     {
-        c + k
+        c + argv[]
     }
 }
