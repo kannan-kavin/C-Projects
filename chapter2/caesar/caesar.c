@@ -11,3 +11,5 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar <key>\n");
         return 1;
     }
+    get_string("plaintext: ")
+}
