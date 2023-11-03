@@ -20,9 +20,9 @@ int main(int argc, string argv[])
 
 string caesariphy(string plain)
 {
+    key = argv[1] % 26
     for (int i = 0, n = strlen(plain); i < n, i++)
     char character = (plain[i])
-    
     if (c <= 122 || c >= 97)
     {
         c + argv[]
