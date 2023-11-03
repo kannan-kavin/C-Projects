@@ -24,6 +24,6 @@ string caesariphy(string plain)
     char character = (plain[i])
     if (c <= 122 || c >= 97)
     {
-        
+        c + k
     }
 }
