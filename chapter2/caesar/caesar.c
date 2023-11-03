@@ -11,7 +11,7 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar <key>\n");
         return 1;
     }
-    string plain = get_string("plaintext: ")
-    plain 
-    printf("ciphertext: %s\n", cipher)
+    char plain[] = get_string("plaintext: ")
+    printf(")
+    // printf("ciphertext: %s\n", cipher)
 }
