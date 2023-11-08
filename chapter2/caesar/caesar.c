@@ -15,16 +15,15 @@ int main(int argc, string argv[])
     }
     string plain = get_string("plaintext: ");
     // printf("%c\n", plain[0]);
-    
+    string cipher = caesariphy(plain);
     printf("ciphertext: %s\n", cipher);
 }
 
-string caesariphy(string plain);
+string caesariphy(string plain)
 {
     for (int i = 0, n = strlen(plain); i < n, i++)
     // increment through each letter and convert it using the key (argv[1])
     char character = (plain[i]);
-    string cipher;
     if ((argv[1] + character) > 122)
     {
         string cipher[i] = 97 + (122 - (argv[1] + character));
