@@ -16,16 +16,17 @@ int main(int argc, string argv[])
     // printf("%c\n", plain[0]);
     int key = (atoi(argv[1]) % 26);
     int n = strlen(plain);
+
     for (int i = 0; i < n; i++)
     // increment through each letter and convert it using the key (argv[1])
-    char character = (plain[i]);
-    if (character <= 122 && character >= 97)
+    char c = (plain[i]);
+    if (c <= 122 && c >= 97)
     {
-        cipher[i] = 96 + ((character - 96 + key) % 26);
+        cipher[i] = 96 + ((c - 96 + key) % 26);
     }
     if (character >= 65 && character <=90)
     {
-        cipher[i] = 64 + ((character - 64 + key) % 26);
+        cipher[i] = 64 + ((c - 64 + key) % 26);
     }
     printf("ciphertext: %s\n", cipher);
 }
