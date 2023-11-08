@@ -13,7 +13,7 @@ int main(int argc, string argv[])
     }
     string plain = get_string("plaintext: ");
     // printf("%c\n", plain[0]);
-    int key = (argv[1] % 26)
+    int key = (atoi(argv[1]) % 26);
     for (int i = 0, n = strlen(plain); i < n, i++)
     // increment through each letter and convert it using the key (argv[1])
     char character = (plain[i]);
