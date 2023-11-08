@@ -19,9 +19,11 @@ int main(int argc, string argv[])
     char character = (plain[i]);
     if (character <= 122 && character >= 97)
     {
+        
+    }
+    if (character >= 65 && character <=90 )
+    {
 
     }
-    if (character >= 65 && character  )
-    string cipher = caesariphy(plain);
     printf("ciphertext: %s\n", cipher);
 }
