@@ -19,11 +19,11 @@ int main(int argc, string argv[])
     char character = (plain[i]);
     if (character <= 122 && character >= 97)
     {
-        97 + ((character - 96 + key) % 26)
+        cipher[i] = x
     }
     if (character >= 65 && character <=90 )
     {
-
+        cipher[i] =
     }
     printf("ciphertext: %s\n", cipher);
 }
