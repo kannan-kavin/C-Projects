@@ -19,7 +19,7 @@ int main(int argc, string argv[])
     char character = (plain[i]);
     if (character <= 122 && character >= 97)
     {
-        character - 97 
+        97 + (character - 97 + key)
     }
     if (character >= 65 && character <=90 )
     {
