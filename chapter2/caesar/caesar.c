@@ -25,10 +25,11 @@ string caesariphy(string plain);
     char character = (plain[i]);
     if ((argv[1] + character) > 122)
     {
-        
+        string cipher[i] = 97 + (122 - (argv[1] + character));
     }
     if (character <= 122 || character >= 97)
     {
-
+        string cipher[i] = (argv[1] + character);
     }
+    
 }
