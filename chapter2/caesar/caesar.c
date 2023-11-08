@@ -23,10 +23,12 @@ string caesariphy(string plain);
     for (int i = 0, n = strlen(plain); i < n, i++)
     // increment through each letter and convert it using the key (argv[1])
     char character = (plain[i]);
-    if (argv[1] + character > 122)
-
-    if (character <= 122 || character >= 97)
+    if ((argv[1] + character) > 122)
     {
         
+    }
+    if (character <= 122 || character >= 97)
+    {
+
     }
 }
