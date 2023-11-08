@@ -16,7 +16,7 @@ int main(int argc, string argv[])
     // printf("%c\n", plain[0]);
     int key = (atoi(argv[1]) % 26);
     int n = strlen(plain);
-
+    string cipher = 0;
     for (int i = 0; i < n; i++)
     {
         // increment through each letter and convert it using the key (argv[1])
@@ -25,7 +25,7 @@ int main(int argc, string argv[])
         {
             cipher[i] = 96 + ((c - 96 + key) % 26);
         }
-        if (character >= 65 && character <=90)
+        if (c >= 65 && c <=90)
         {
             cipher[i] = 64 + ((c - 64 + key) % 26);
         }
