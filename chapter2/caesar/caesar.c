@@ -25,7 +25,7 @@ int main(int argc, string argv[])
     }
     if (character >= 65 && character <=90)
     {
-        cipher[i] = 65 + ((character - 65 + key) % 26);
+        cipher[i] = 64 + ((character - 64 + key) % 26);
     }
     printf("ciphertext: %s\n", cipher);
 }
