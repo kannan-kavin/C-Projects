@@ -12,22 +12,22 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar <key>\n");
         return 1;
     }
-    string plain = get_string("plaintext: ");
+    string text = get_string("plaintext: ");
     // printf("%c\n", plain[0]);
     int key = (atoi(argv[1]) % 26);
-    int n = strlen(plain);
+    int n = strlen(text);
     for (int i = 0; i < n; i++)
     {
         // increment through each letter and convert it using the key (argv[1])
-        char c = (plain[i]);
+        char c = (text[i]);
         if (c <= 122 && c >= 97)
         {
-            plain[i] = 96 + ((c - 96 + key) % 26);
+            text[i] = 96 + ((c - 96 + key) % 26);
         }
         if (c >= 65 && c <=90)
         {
-            plain[i] = 64 + ((c - 64 + key) % 26);
+            text[i] = 64 + ((c - 64 + key) % 26);
         }
     }
-    printf("ciphertext: %s\n", plain);
+    printf("ciphertext: %s\n", text);
 }
