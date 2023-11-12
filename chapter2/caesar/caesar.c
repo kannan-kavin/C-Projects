@@ -28,6 +28,6 @@ int main(int argc, string argv[])
         {
             plain[i] = 64 + ((c - 64 + key) % 26);
         }
-        printf("ciphertext: %s\n", plain);
     }
+    printf("ciphertext: %s\n", plain);
 }
