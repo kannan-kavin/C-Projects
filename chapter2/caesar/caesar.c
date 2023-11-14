@@ -6,7 +6,7 @@
 
 int main(int argc, string argv[])
 {
-    if (argc != 2 || scanf(argv[1] != 1))
+    if (argc != 2 || scanf("%s", argv[1]) != 1)
     {
         printf("Usage: ./caesar <key>\n");
         return 1;
