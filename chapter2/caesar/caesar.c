@@ -6,12 +6,12 @@
 
 int main(int argc, string argv[])
 {
-    // Get a key from the user
-    if (argc != 2 || atoi(argv[1]) <= 0 || )
+    if (argc != 2 || strtol((argv[1], &end, 10) <= 0 || )
     {
         printf("Usage: ./caesar <key>\n");
         return 1;
     }
+    // Get a working key from the user
     string text = get_string("plaintext: ");
     // printf("%c\n", plain[0]);
     int key = (atoi(argv[1]) % 26);
