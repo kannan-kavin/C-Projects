@@ -26,7 +26,7 @@ int main(int argc, string argv[])
     // Debugging: printf("%c\n", plain[0]);
     for (int i = 0; i < strlen(text); i++)
     {
-        // increment through each letter and convert it using the key (argv[1])
+        // increment through each letter and convert it using the key
         char c = (text[i]);
         int key = (atoi(argv[1]) % 26);
         if (c <= 122 && c >= 97)
