@@ -11,7 +11,7 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar <key>\n");
         return 1;
     }
-    // command line recieves only the key
+    // Command line recieves only the key
     string keychecker = (argv[1]);
     for (int i = 0; i < strlen(keychecker); i++)
     {
@@ -21,14 +21,14 @@ int main(int argc, string argv[])
             return 1;
         }
     }
-    // Get a VALID key from the user
+    // Get a VALID key from the user by checking each character in the key
     string text = get_string("plaintext: ");
     // Debugging: printf("%c\n", plain[0]);
-    int key = (atoi(argv[1]) % 26);
     for (int i = 0; i < strlen(text); i++)
     {
         // increment through each letter and convert it using the key (argv[1])
         char c = (text[i]);
+        int key = (atoi(argv[1]) % 26);
         if (c <= 122 && c >= 97)
         {
             text[i] = 96 + ((c - 96 + key) % 26);
