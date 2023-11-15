@@ -13,10 +13,10 @@ int main(int argc, string argv[])
         return 1;
     }
     // command line recieves only the key
-    string key = (argv[1]);
-    for (int i = 0; i < strlen(key); i++)
+    string keychecker = (argv[1]);
+    for (int i = 0; i < strlen(keychecker); i++)
     {
-        if (isdigit(key[i]) == 0)
+        if (isdigit(keychecker[i]) == 0)
         {
             printf("Usage: ./caesar <key>\n");
             return 1;
@@ -26,6 +26,7 @@ int main(int argc, string argv[])
     string text = get_string("plaintext: ");
     // Debugging: printf("%c\n", plain[0]);
     int n = strlen(text);
+    int key = (atoi(argv[1]) % 26);
     for (int i = 0; i < n; i++)
     {
         // increment through each letter and convert it using the key (argv[1])
