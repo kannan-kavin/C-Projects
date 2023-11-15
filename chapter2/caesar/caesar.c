@@ -1,6 +1,7 @@
 #include <cs50.h>
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main(int argc, string argv[])
@@ -23,9 +24,8 @@ int main(int argc, string argv[])
     // Get a VALID key from the user
     string text = get_string("plaintext: ");
     // Debugging: printf("%c\n", plain[0]);
-    int n = strlen(text);
     int key = (atoi(argv[1]) % 26);
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < strlen(text); i++)
     {
         // increment through each letter and convert it using the key (argv[1])
         char c = (text[i]);
