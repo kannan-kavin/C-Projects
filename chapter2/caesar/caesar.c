@@ -11,7 +11,7 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar <key>\n");
         return 1;
     }
-    int key = ((argv[1]) % 26);
+    string key = (argv[1]);
     for (int i = 0; i < strlen(key); i++)
     {
         if (isdigit(key[i]) == 0)
