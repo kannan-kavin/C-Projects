@@ -21,9 +21,9 @@ int main(int argc, string argv[])
             return 1;
         }
     }
-    // Get a working key from the user
+    // Get a VALID key from the user
     string text = get_string("plaintext: ");
-    // printf("%c\n", plain[0]);
+    // Debugging: printf("%c\n", plain[0]);
     int n = strlen(text);
     for (int i = 0; i < n; i++)
     {
