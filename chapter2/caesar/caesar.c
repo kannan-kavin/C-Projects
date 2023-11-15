@@ -11,10 +11,17 @@ int main(int argc, string argv[])
         printf("Usage: ./caesar <key>\n");
         return 1;
     }
+    int key = ((argv[1]) % 26);
+    for (int i = 0; i < strlen(key); i++)
+    {
+        if (isdigit(key[i]) == 0)
+        {
+
+        }
+    }
     // Get a working key from the user
     string text = get_string("plaintext: ");
     // printf("%c\n", plain[0]);
-    int key = (atoi(argv[1]) % 26);
     int n = strlen(text);
     for (int i = 0; i < n; i++)
     {
