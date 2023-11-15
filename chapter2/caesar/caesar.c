@@ -33,10 +33,12 @@ int main(int argc, string argv[])
         {
             text[i] = 96 + ((c - 96 + key) % 26);
         }
+        // Shifting all Lowercase Letters
         if (c >= 65 && c <= 90)
         {
             text[i] = 64 + ((c - 64 + key) % 26);
         }
+        // Shifting all Uppercase Letters
     }
     printf("ciphertext: %s\n", text);
 }
