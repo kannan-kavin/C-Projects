@@ -16,7 +16,8 @@ int main(int argc, string argv[])
     {
         if (isdigit(key[i]) == 0)
         {
-
+            printf("Usage: ./caesar <key>\n");
+            return 1;
         }
     }
     // Get a working key from the user
