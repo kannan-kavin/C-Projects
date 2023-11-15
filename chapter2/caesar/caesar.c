@@ -34,7 +34,7 @@ int main(int argc, string argv[])
             text[i] = 96 + ((c - 96 + key) % 26);
         }
         // Shifting all Lowercase Letters
-        if (c >= 65 && c <= 90)
+        if (c <= 90 && c >= 65)
         {
             text[i] = 64 + ((c - 64 + key) % 26);
         }
