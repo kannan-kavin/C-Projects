@@ -20,6 +20,7 @@ int main(int argc, string argv[])
             printf("Key must be contain 26 characters\n");
             // printf("%i\n", keychecker[i]);
             return 1;
+        }
         // FIGURE OUT HOW TO LOWKEY DO THIS PLEASE BECAUSE LETTERS CANT BE SAME
         else (keychecker != )
         }
