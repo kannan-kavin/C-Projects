@@ -17,16 +17,16 @@ int main(int argc, string argv[])
     {
         if (65 > (keychecker[i]) || (97 > (keychecker[i]) && (keychecker[i]) < 90) || 122 < (keychecker[i]) || strlen(keychecker) != 26)
         {
-            printf("Key must be contain 26 characters\n");
+            printf("Key must be contain 26 characters.\n");
             // printf("%i\n", keychecker[i]);
             return 1;
         }
         // FIGURE OUT HOW TO LOWKEY DO THIS PLEASE BECAUSE LETTERS CANT BE SAME
         else (keychecker != )
         {
-            printf("Key cannot contain \n");
+            printf("Key must not contain repeated characters.\n");
+            return 1;
         }
-    }
     }
     // Get a key with 26 CHARACTERS from the user by checking each character in the key
     string text = get_string("plaintext: ");
