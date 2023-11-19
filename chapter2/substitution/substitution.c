@@ -17,7 +17,7 @@ int main(int argc, string argv[])
     {
         if (65 > (keychecker[i]) || (97 > (keychecker[i]) && (keychecker[i]) < 90) || 122 < (keychecker[i]) || strlen(keychecker) != 26)
         {
-            printf("Key must be contain 26 characters.\n");
+            printf("Key must only contain alphabetical characters.\n");
             // printf("%i\n", keychecker[i]);
             return 1;
         }
