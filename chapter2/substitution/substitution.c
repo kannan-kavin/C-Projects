@@ -23,7 +23,10 @@ int main(int argc, string argv[])
         }
         // FIGURE OUT HOW TO LOWKEY DO THIS PLEASE BECAUSE LETTERS CANT BE SAME
         else (keychecker != )
+        {
+            printf("Key cannot contain \n");
         }
+    }
     }
     // Get a key with 26 CHARACTERS from the user by checking each character in the key
     string text = get_string("plaintext: ");
