@@ -22,7 +22,7 @@ int main(int argc, string argv[])
             return 1;
         }
         // Checks for a 26 Letter key 👌
-        for (int j = i; j < 26; j++)
+        for (int j = i + 1; j < 26; j++)
         {
             if (key[i] == key[j])
             {
