@@ -37,16 +37,16 @@ int main(int argc, string argv[])
     {
         // increment through each letter and convert it using the key
         char c = (text[i]);
+        char inc = text[i];
         int key = (atoi(argv[1]) % 26);
         if (c <= 122 && c >= 97)
-        char inc = text[i];
         {
-            text[i] = tolower(keychecker[inc]);
+            text[i] = tolower(keychecker[]);
         }
         // Shifting all Lowercase Letters
         if (c <= 90 && c >= 65)
         {
-            text[i] = toupper(keychecker[inc]);
+            text[i] = toupper(keychecker[]);
         }
         // Shifting all Uppercase Letters
     }
