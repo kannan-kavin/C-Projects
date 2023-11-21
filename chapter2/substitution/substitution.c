@@ -15,13 +15,13 @@ int main(int argc, string argv[])
     string keychecker = (argv[1]);
     for (int i = 0; i < strlen(keychecker); i++)
     {
-        if (65 > (keychecker[i]) || (97 > (keychecker[i]) && (keychecker[i]) < 90) || 122 < (keychecker[i]) || strlen(keychecker) != 26)
+        if ((97 > (keychecker[i]) && (keychecker[i]) < 90) || 122 < (keychecker[i]) || 65 > (keychecker[i]) || strlen(keychecker) != 26)
         {
             printf("Key must only contain 26 alphabetical characters.\n");
             // DEBUGGING: printf("%i\n", keychecker[i]);
             return 1;
         }
-        // Checks for a 26 letter key 👌
+        // Checks for a 26 letter key
         /*
         else (keychecker != )
         {
