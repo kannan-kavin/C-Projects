@@ -22,12 +22,14 @@ int main(int argc, string argv[])
             return 1;
         }
         // Checks for an 26 letter key
+        /*
         else (keychecker != )
         {
             printf("Key must not contain repeated characters.\n");
             return 1;
         }
         // Checks for independence between letters
+        */
     }
     // Got a key with 26 INDEPENDENT CHARACTERS from the user
     string text = get_string("plaintext: ");
