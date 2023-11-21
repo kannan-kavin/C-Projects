@@ -11,7 +11,7 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution <key>\n");
         return 1;
     }
-    // Command line recieves only a key DONE
+    // Command line recieves only a key 👌
     string keychecker = (argv[1]);
     for (int i = 0; i < strlen(keychecker); i++)
     {
@@ -21,7 +21,7 @@ int main(int argc, string argv[])
             // DEBUGGING: printf("%i\n", keychecker[i]);
             return 1;
         }
-        // Checks for a 26 letter key
+        // Checks for a 26 letter key 👌
         /*
         else (keychecker != )
         {
