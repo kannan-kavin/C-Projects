@@ -38,12 +38,12 @@ int main(int argc, string argv[])
         int key = (atoi(argv[1]) % 26);
         if (c <= 122 && c >= 97)
         {
-            text[i] = 97 + ((c - 97 + key) % 26);
+            text[i] = keychecker[i];
         }
         // Shifting all Lowercase Letters
         if (c <= 90 && c >= 65)
         {
-            text[i] = 65 + ((c - 65 + key) % 26);
+            text[i] = keychecker[i];
         }
         // Shifting all Uppercase Letters
     }
