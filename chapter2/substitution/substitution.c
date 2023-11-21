@@ -30,9 +30,9 @@ int main(int argc, string argv[])
                 return 1;
             }
         }
-        // Checks for independence between letters
+        // Checks for independence between letters 👌
     }
-    // Got a key with 26 INDEPENDENT CHARACTERS from the user
+    // Got a key with 26 INDEPENDENT CHARACTERS from the user 👌
     string text = get_string("plaintext: ");
     for (int i = 0; i < strlen(text); i++)
     {
