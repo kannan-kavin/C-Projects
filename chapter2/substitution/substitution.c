@@ -41,7 +41,7 @@ int main(int argc, string argv[])
         int key = (atoi(argv[1]) % 26);
         if (c <= 122 && c >= 97)
         {
-            text[i] = tolower(keychecker[]);
+            text[i] = tolower(keychecker[c - ]);
         }
         // Shifting all Lowercase Letters
         if (c <= 90 && c >= 65)
