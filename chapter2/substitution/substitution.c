@@ -37,17 +37,16 @@ int main(int argc, string argv[])
     {
         // increment through each letter and convert it using the key
         char c = (text[i]);
-        int key = (atoi(argv[1]) % 26);
         if (c <= 122 && c >= 97)
         {
             text[i] = tolower(keychecker[c - 97]);
         }
-        // Shifting all Lowercase Letters
+        // Shifting all Lowercase Letters 👌
         if (c <= 90 && c >= 65)
         {
             text[i] = toupper(keychecker[c - 65]);
         }
-        // Shifting all Uppercase Letters
+        // Shifting all Uppercase Letters 👌
     }
     printf("ciphertext: %s\n", text);
 }
