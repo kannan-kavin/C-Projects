@@ -21,21 +21,18 @@ int main(int argc, string argv[])
             // DEBUGGING: printf("%i\n", keychecker[i]);
             return 1;
         }
-        // Checks for a 26 letter key
-        /*
+        // Checks for a 26 Letter key 👌
         else (keychecker != )
         {
             printf("Key must not contain repeated characters.\n");
             return 1;
         }
         // Checks for independence between letters
-        */
     }
     // Got a key with 26 INDEPENDENT CHARACTERS from the user
     string text = get_string("plaintext: ");
     for (int i = 0; i < strlen(text); i++)
     {
-        // increment through each letter and convert it using the key
         char c = (text[i]);
         if (c <= 122 && c >= 97)
         {
@@ -48,5 +45,6 @@ int main(int argc, string argv[])
         }
         // Shifting all Uppercase Letters 👌
     }
+    // Incremented through each letter and converted it using the key 👌
     printf("ciphertext: %s\n", text);
 }
