@@ -12,10 +12,10 @@ int main(int argc, string argv[])
         return 1;
     }
     // Command line recieves only a key 👌
-    string keychecker = (argv[1]);
-    for (int i = 0; i < strlen(keychecker); i++)
+    string key = (argv[1]);
+    for (int i = 0; i < strlen(key); i++)
     {
-        if ((isalpha(keychecker[i]) == 0) || (strlen(keychecker) != 26))
+        if ((isalpha(key[i]) == 0) || (strlen(keyc) != 26))
         {
             printf("Key must only contain 26 alphabetical characters.\n");
             // DEBUGGING: printf("%i\n", keychecker[i]);
@@ -39,12 +39,12 @@ int main(int argc, string argv[])
         char c = (text[i]);
         if (c <= 122 && c >= 97)
         {
-            text[i] = tolower(keychecker[c - 97]);
+            text[i] = tolower(key[c - 97]);
         }
         // Shifting all Lowercase Letters 👌
         if (c <= 90 && c >= 65)
         {
-            text[i] = toupper(keychecker[c - 65]);
+            text[i] = toupper(key[c - 65]);
         }
         // Shifting all Uppercase Letters 👌
     }
