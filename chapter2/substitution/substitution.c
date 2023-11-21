@@ -15,14 +15,14 @@ int main(int argc, string argv[])
     string key = (argv[1]);
     for (int i = 0; i < strlen(key); i++)
     {
-        if ((isalpha(key[i]) == 0) || (strlen(keyc) != 26))
+        if ((isalpha(key[i]) == 0) || (strlen(key) != 26))
         {
             printf("Key must only contain 26 alphabetical characters.\n");
             // DEBUGGING: printf("%i\n", keychecker[i]);
             return 1;
         }
         // Checks for a 26 Letter key 👌
-        else (keychecker != )
+        if (key[i] != )
         {
             printf("Key must not contain repeated characters.\n");
             return 1;
