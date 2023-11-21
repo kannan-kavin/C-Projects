@@ -39,13 +39,14 @@ int main(int argc, string argv[])
         char c = (text[i]);
         int key = (atoi(argv[1]) % 26);
         if (c <= 122 && c >= 97)
+        char inc = text[i];
         {
-            text[i] = tolower(keychecker[i]);
+            text[i] = tolower(keychecker[inc]);
         }
         // Shifting all Lowercase Letters
         if (c <= 90 && c >= 65)
         {
-            text[i] = toupper(keychecker[i]);
+            text[i] = toupper(keychecker[inc]);
         }
         // Shifting all Uppercase Letters
     }
