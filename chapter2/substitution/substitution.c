@@ -41,7 +41,7 @@ int main(int argc, string argv[])
             text[i] = tolower(key[c - 97]);
         }
         // Shifting all Lowercase Letters 👌
-        if (c <= 90 && c >= 65)
+        else if (c <= 90 && c >= 65)
         {
             text[i] = toupper(key[c - 65]);
         }
