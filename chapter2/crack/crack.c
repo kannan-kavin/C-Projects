@@ -10,5 +10,4 @@ int main(int argc, string argv[])
         printf("Usage: ./crack hash")
         return 1;
     }
-    
 }
