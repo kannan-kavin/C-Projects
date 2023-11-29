@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
+void swap(num1, num2)
 
 int main(void)
 {
