@@ -8,12 +8,10 @@ int main(void)
 {
     int num1 = get_int("Integer 1: ");
     int num2 = get_int("Integer 2: ");
-
     printf("num1: %i num2: %i\n", num1, num2);
 
     printf("Swapping!\n");
     swap(&num1, &num2);
-
     printf("num1: %i num2: %i\n", num1, num2);
 }
 
