@@ -15,5 +15,6 @@
 
 int mapping(int island[5][5])
 {
+   //YOUR CODE GOES HERE...and HERE ONLY!!!
   
 }
