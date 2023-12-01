@@ -16,9 +16,12 @@
 int mapping(int island[5][5])
 {
    //YOUR CODE GOES HERE...and HERE ONLY!!!
-   for(x = 0; x < 4; x++)
+   int perimeter = 0
+   for (x = 0; x < 4; x++)
    {
-      for (y = 0; y < 4; y++)
-      
+      if (island[x][0] == 1)
+      {
+         perimeter = perimeter + 1
+      }
    }
 }
