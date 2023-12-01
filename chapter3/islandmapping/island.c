@@ -25,6 +25,18 @@ int mapping(int island[5][5])
          {
 
          }
+         if (y == 0)
+         {
+
+         }
+         if (x == 4)
+         {
+
+         }
+         if (y == 4)
+         {
+            
+         }
       }
    }
 }
