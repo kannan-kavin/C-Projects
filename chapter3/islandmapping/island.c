@@ -21,13 +21,9 @@ int mapping(int island[5][5])
    {
       for (y = 0; y < 5; y++)
       {
-         if (island[x][0] == 1)
+         if (island[x][y] == 1)
          {
-            perimeter = perimeter + 4;
-         }
-         if ()
-         {
-
+            
          }
       }
    }
