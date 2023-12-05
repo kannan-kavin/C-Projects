@@ -25,7 +25,7 @@ int mapping(int island[5][5])
          {
             perimeter = perimeter + 4;
          }
-         if (y == 4)
+         if ()
          {
 
          }
