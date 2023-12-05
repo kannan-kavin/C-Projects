@@ -21,11 +21,11 @@ int mapping(int island[5][5])
    {
       for (y = 0; y < 5; y++)
       {
-         if (island[x][y] == 1)
+         if (x == 0)
          {
             if (island[x+1][y] == 1)
             {
-               
+
             }
             if else (island[x-1][y] == 1)
             {
@@ -36,6 +36,25 @@ int mapping(int island[5][5])
 
             }
             if else (island[x][y-1] == 1)
+         }
+         if (island[x][y] == 1)
+         {
+            if (island[x+1][y] == 1)
+            {
+
+            }
+            if else (island[x-1][y] == 1)
+            {
+
+            }
+            if else (island[x][y+1] == 1)
+            {
+
+            }
+            if else (island[x][y-1] == 1)
+            {
+
+            }
          }
       }
    }
