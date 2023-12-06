@@ -23,21 +23,21 @@ int mapping(int island[5][5])
       {
          if (( x != 0 || x! = 4 || y != 0 || y != 4) && island[x][y] == 1)
          {
-            if (island[x+1][y] == 1)
+            if (island[x+1][y] == 0)
             {
-
+               perimeter = perimeter +1
             }
-            if else (island[x-1][y] == 1)
+            if else (island[x-1][y] == 0)
             {
-
+               perimeter = perimeter +1
             }
-            if else (island[x][y+1] == 1)
+            if else (island[x][y+1] == 0)
             {
-
+               perimeter = perimeter +1
             }
-            if else (island[x][y-1] == 1)
+            if else (island[x][y-1] == 0)
             {
-
+               perimeter = perimeter +1
             }
          }
       }
