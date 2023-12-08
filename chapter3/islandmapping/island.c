@@ -23,19 +23,19 @@ int mapping(int island[5][5])
       {
          if (island[x][y] == 1)
          {
-            if (x == 0)
-            {
-               if ()
-            }
-            if (x == 4)
+            if (island[x-1][y] == 1)
             {
 
             }
-            if (y == 0)
+            if (island[x+1][y] == 1)
             {
 
             }
-            if (y == 4)
+            if (island[x][y+1] == 1)
+            {
+
+            }
+            if (island[x][y-1] == 1)
             {
 
             }
