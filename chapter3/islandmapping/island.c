@@ -25,7 +25,7 @@ int mapping(int island[5][5])
          {
             if (x==0)
             {
-
+               
             }
             if (x==4)
             {
@@ -37,7 +37,7 @@ int mapping(int island[5][5])
             }
             if (y==4)
             {
-               
+
             }
          }
       }
