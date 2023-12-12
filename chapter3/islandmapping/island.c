@@ -27,15 +27,11 @@ int mapping(int island[5][5])
             {
                perimeter = perimeter + 1;
             }
-            else if (i == 4)
+            else if (island[i-1][j] == 0)
             {
                perimeter = perimeter + 1;
             }
-            else if (j == 0)
-            {
-               perimeter = perimeter + 1;
-            }
-            else if (j == 0)
+            if (i == 4)
             {
                perimeter = perimeter + 1;
             }
@@ -43,15 +39,19 @@ int mapping(int island[5][5])
             {
                perimeter = perimeter + 1;
             }
-            else if (island[i-1][j] == 0)
-            {
-               perimeter = perimeter + 1;
-            }
-            else if (island[i][j+1] == 0)
+            if (j == 0)
             {
                perimeter = perimeter + 1;
             }
             else if (island[i][j-1] == 0)
+            {
+               perimeter = perimeter + 1;
+            }
+            if (j == 4)
+            {
+               perimeter = perimeter + 1;
+            }
+            else if (island[i][j+1] == 0)
             {
                perimeter = perimeter + 1;
             }
@@ -60,3 +60,4 @@ int mapping(int island[5][5])
    }
    return (perimeter);
 }
+
