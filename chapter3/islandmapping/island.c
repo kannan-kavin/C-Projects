@@ -58,5 +58,5 @@ int mapping(int island[5][5])
          }
       }
    }
-   return (2);
+   return (perimeter);
 }
