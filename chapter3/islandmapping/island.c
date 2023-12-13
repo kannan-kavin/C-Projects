@@ -27,11 +27,13 @@ int mapping(int island[5][5])
             {
                perimeter = perimeter + 1;
             }
-            if (i == 4)
+            // Row at 1
+            else if (i == 4)
             {
                perimeter = perimeter + 1;
             }
-            if (i > 0 && i < 4)
+            // Row at 5
+            else (i > 0 && i < 4)
             {
                if (island[i-1][j] == 0 && j < 4 && j > 0)
                {
@@ -46,10 +48,12 @@ int mapping(int island[5][5])
             {
                perimeter = perimeter + 1;
             }
+            // Column at 1
             if (j == 4)
             {
                perimeter = perimeter + 1;
             }
+            // Column at 5
             if (j > 0 && j < 4)
             {
                if (island[i][j-1] == 0 && i < 4 && i > 0)
