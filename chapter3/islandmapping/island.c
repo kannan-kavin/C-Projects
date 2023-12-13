@@ -19,7 +19,7 @@ int mapping(int island[5][5])
    for (int i = 0; i < 5; i++)
    {
       for (int j = 0; j < 5; j++)
-      // incrementing through each row and column 
+      // incrementing through each row and column
       {
          if (island[i][j] == 1)
          {
@@ -37,7 +37,7 @@ int mapping(int island[5][5])
                {
                   perimeter = perimeter + 1;
                }
-               if (island[i+1][j] == 0. && j < 4 && j > 0)
+               if (island[i+1][j] == 0 && j < 4 && j > 0)
                {
                   perimeter = perimeter + 1;
                }
