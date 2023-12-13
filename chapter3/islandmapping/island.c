@@ -33,7 +33,7 @@ int mapping(int island[5][5])
                perimeter = perimeter + 1;
             }
             // Row at 5
-            else (i > 0 && i < 4)
+            else if (i > 0 && i < 4)
             {
                if (island[i-1][j] == 0 && j < 4 && j > 0)
                {
