@@ -15,11 +15,11 @@
 
 int mapping(int island[5][5])
 {
-   //YOUR CODE GOES HERE...and HERE ONLY!!!
    int perimeter = 0;
    for (int i = 0; i < 5; i++)
    {
       for (int j = 0; j < 5; j++)
+      // incrementing through each row and column 
       {
          if (island[i][j] == 1)
          {
