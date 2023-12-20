@@ -156,8 +156,8 @@ void init(void)
     }
     if (d % 2 == 0)
     {
-        board[i][j] = 2;
-        board[i][j-1] = 1;
+        board[d-1][d-2] = 2;
+        board[d-1][d-3] = 1;
     }
 }
 
