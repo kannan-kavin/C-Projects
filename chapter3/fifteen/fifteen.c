@@ -145,7 +145,20 @@ void greet(void)
 // (i.e., fills 2D array with values but does not actually print them)
 void init(void)
 {
-
+     for (int i = 0; i < d; i++)
+    {
+        for (int j = 0; j < d; j++)
+        {
+            if(d % 2 == 0)
+            {
+                board[i][j]
+            }
+            else if
+            {
+                board[i][j]
+            }
+        }
+    }
 }
 
 // Prints the board in its current state
