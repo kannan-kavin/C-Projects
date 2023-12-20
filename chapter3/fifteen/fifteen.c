@@ -145,17 +145,17 @@ void greet(void)
 // (i.e., fills 2D array with values but does not actually print them)
 void init(void)
 {
-     for (int i = 0; i < d; i++)
+    for (int i = 0; i < d; i++)
     {
         for (int j = 0; j < d; j++)
         {
             if(d % 2 == 0)
             {
-                board[i][j]
+                board[i][j] = (d * d - (i + j +1))
             }
-            else if
+            else if(d % 2 == 1)
             {
-                board[i][j]
+                board[i][j] = (d * d - (i + j +1))
             }
         }
     }
