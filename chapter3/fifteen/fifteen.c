@@ -151,7 +151,18 @@ void init(void)
 // Prints the board in its current state
 void draw(void)
 {
-    printf()
+    for (int i = 0; i < d; i++)
+    {
+        for (int j = 0; j < d; j++)
+        {
+        printf("%i", board[i][j])
+        if (i = d)
+        {
+            j = 0
+            printf("\n")
+        }
+        }
+    }
 }
 
 // If tile borders empty space, moves tile and returns true, else returns false
