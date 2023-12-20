@@ -145,13 +145,13 @@ void greet(void)
 // (i.e., fills 2D array with values but does not actually print them)
 void init(void)
 {
-    
+
 }
 
 // Prints the board in its current state
 void draw(void)
 {
-    // TODO
+    printf()
 }
 
 // If tile borders empty space, moves tile and returns true, else returns false
