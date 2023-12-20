@@ -145,7 +145,7 @@ void greet(void)
 // (i.e., fills 2D array with values but does not actually print them)
 void init(void)
 {
-    // TODO
+    
 }
 
 // Prints the board in its current state
