@@ -150,22 +150,14 @@ void init(void)
     {
         for (int j = 0; j < d; j++)
         {
-            if(d % 2 == 0)
-            {
-                board[i][j] = value;
-                value = (value - 1);
-                if (board[i][j] == 1)
-                {
-                    board[i][j] = 2;
-                    board[i][j-1] = 1;
-                }
-            }
-            else if(d % 2 == 1)
-            {
-                board[i][j] = value;
-                value = (value - 1);
-            }
+            board[i][j] = value;
+            value = (value - 1);
         }
+    }
+    if (d % 2 == 0)
+    {
+        board[i][j] = 2;
+        board[i][j-1] = 1;
     }
 }
 
