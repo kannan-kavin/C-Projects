@@ -155,13 +155,9 @@ void draw(void)
     {
         for (int j = 0; j < d; j++)
         {
-        printf("%i", board[i][j])
-        if (i = d)
-        {
-            j = 0
-            printf("\n")
+        printf("%i", board[i][j]);
         }
-        }
+        printf("\n");
     }
 }
 
