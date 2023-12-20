@@ -1,4 +1,4 @@
-0. 3x3 pr
+0. 3x3 to 9x9
 1. TODO
-2. TODO
-3. TODO
+2. greet
+3. init, draw, move, won
