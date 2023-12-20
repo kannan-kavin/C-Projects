@@ -168,7 +168,7 @@ void draw(void)
     {
         for (int j = 0; j < d; j++)
         {
-        printf("%i", board[i][j]);
+        printf("%3i", board[i][j]);
         }
         printf("\n");
     }
