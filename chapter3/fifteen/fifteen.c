@@ -151,11 +151,11 @@ void init(void)
         {
             if(d % 2 == 0)
             {
-                board[i][j] = (d * d - (i + j +1))
+                board[i][j] = (d * d - 1 - (3 * i + j))
             }
             else if(d % 2 == 1)
             {
-                board[i][j] = (d * d - (i + j +1))
+                board[i][j] = (d * d - 1 - (3 * i + j))
             }
         }
     }
