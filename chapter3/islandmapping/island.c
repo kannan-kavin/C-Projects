@@ -32,7 +32,7 @@ int mapping(int island[5][5])
             {
                perimeter = perimeter + 1;
             }
-            //
+            // Checking 
 
             if ((j - 1) < 0)
             {
