@@ -23,7 +23,7 @@ int mapping(int island[5][5])
       {
          if (island[i][j] == 1)
          {
-            if (i == 0)
+            if ((i - 1) < 0)
             {
                perimeter = perimeter + 1;
             }
