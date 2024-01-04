@@ -32,36 +32,40 @@ int mapping(int island[5][5])
             {
                perimeter = perimeter + 1;
             }
-            // Checking 
+            // Checking all squares to the left of the one just checked
 
             if ((j - 1) < 0)
             {
                perimeter = perimeter + 1;
             }
+            // Covers incrementing outside the array
             else if (island[i][j - 1] == 0)
             {
                perimeter = perimeter + 1;
             }
-            //
+            // Checking all squares under the one just checked
 
             if ((i + 1) > 4)
             {
                perimeter = perimeter + 1;
             }
+            // Covers incrementing outside the array
             else if (island[i + 1][j] == 0)
             {
                perimeter = perimeter + 1;
             }
-            //
+            // Checking all squares to the right of the one just checked
 
             if ((j + 1) > 4)
             {
                perimeter = perimeter + 1;
             }
+            // Covers incrementing outside the array
             else if (island[i][j + 1] == 0)
             {
                perimeter = perimeter + 1;
             }
+            // Checking all squares above the one just checked
          }
       }
    }
