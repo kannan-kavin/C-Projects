@@ -66,6 +66,7 @@ int mapping(int island[5][5])
                perimeter = perimeter + 1;
             }
             // Checking all squares above the one just checked
+            printf("perimeter: %i", perimeter);
          }
       }
    }
