@@ -187,9 +187,8 @@ bool move(int tile)
                 {
                     if (board[i-1][j] == 0)
                     {
-
-                        board[i][j] = board[i-1][j];
-                        board[i-1][j] = holder;
+                        board[i][j] = 0;
+                        board[i-1][j] = tile;
                         return true;
                     }
                 }
@@ -197,9 +196,8 @@ bool move(int tile)
                 {
                     if (board[i][j-1] == 0)
                     {
-                        holder = board[i][j];
-                        board[i][j] = board[i][j-1];
-                        board[i][j-1] = holder;
+                        board[i][j] = 0;
+                        board[i][j-1] = tile;
                         return true;
                     }
                 }
@@ -207,9 +205,8 @@ bool move(int tile)
                 {
                     if (board[i+1][j] == 0)
                     {
-                        holder = board[i][j];
-                        board[i][j] = board[i+1][j];
-                        board[i+1][j] = holder;
+                        board[i][j] = 0;
+                        board[i+1][j] = tile;
                         return true;
                     }
                 }
@@ -217,9 +214,8 @@ bool move(int tile)
                 {
                     if (board[i][j+1] == 0)
                     {
-                        holder = board[i][j];
-                        board[i][j] = board[i][j+1];
-                        board[i][j+1] = holder;
+                        board[i][j] = 0;
+                        board[i][j+1] = tile;
                         return true;
                     }
                 }
