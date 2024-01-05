@@ -183,7 +183,40 @@ bool move(int tile)
         {
             if (board[i][j] == tile)
             {
-                
+                ok
+                if ((i - 1) < 0)
+                {
+                   perimeter = perimeter + 1;
+                }
+                else if (island [i - 1][j] == 0)
+                {
+                   perimeter = perimeter + 1;
+                }
+                if ((j - 1) < 0)
+                {
+                   perimeter = perimeter + 1;
+                }
+                else if (island[i][j - 1] == 0)
+                {
+                   perimeter = perimeter + 1;
+                }
+                if ((i + 1) > 4)
+                {
+                   perimeter = perimeter + 1;
+                }
+                else if (island[i + 1][j] == 0)
+                {
+                   perimeter = perimeter + 1;
+                }
+                if ((j + 1) > 4)
+                {
+                   perimeter = perimeter + 1;
+                }
+                else if (island[i][j + 1] == 0)
+                {
+                   perimeter = perimeter + 1;
+                }
+            
             }
         }
     }
