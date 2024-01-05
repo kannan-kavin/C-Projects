@@ -206,7 +206,7 @@ bool move(int tile)
                 }
                 if ((i + 1) < d)
                 {
-                    if (board[i+1][j])
+                    if (board[i+1][j] == 0)
                     {
                         holder = board[i][j];
                         board[i][j] = board[i+1][j];
@@ -216,7 +216,7 @@ bool move(int tile)
                 }
                 if ((j + 1) < d)
                 {
-                    if (board[i][j+1])
+                    if (board[i][j+1] == 0)
                     {
                         holder = board[i][j];
                         board[i][j] = board[i][j+1];
