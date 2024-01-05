@@ -191,6 +191,7 @@ bool move(int tile)
                         holder = board[i][j];
                         board[i][j] = board[i-1][j];
                         board[i-1][j] = holder;
+                        return true;
                     }
                 }
                 if ((j - 1) > 0)
@@ -200,6 +201,7 @@ bool move(int tile)
                         holder = board[i][j];
                         board[i][j] = board[i][j-1];
                         board[i][j-1] = holder;
+                        return true;
                     }
                 }
                 if ((i + 1) < d)
@@ -209,6 +211,7 @@ bool move(int tile)
                         holder = board[i][j];
                         board[i][j] = board[i+1][j];
                         board[i+1][j] = holder;
+                        return true;
                     }
                 }
                 if ((j + 1) < d)
@@ -218,11 +221,13 @@ bool move(int tile)
                         holder = board[i][j];
                         board[i][j] = board[i][j+1];
                         board[i-1][j+1] = holder;
+                        return true;
                     }
                 }
             }
         }
     }
+    return false;
 }
 
 // Returns true if game is won (i.e., board is in winning configuration), else false
