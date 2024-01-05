@@ -183,9 +183,33 @@ bool move(int tile)
         {
             if (board[i][j] == tile)
             {
-                if ((i - 1) > 0 || (j - 1) > 0 || (i + 1) < d || (j + 1) < d)
+                if ((i - 1) > 0)
                 {
-                    board
+                    if (board[i-1][j] == 0)
+                    {
+                        
+                    }
+                }
+                if ((j - 1) > 0)
+                {
+                    if (board[i][j-1] == 0)
+                    {
+
+                    }
+                }
+                if ((i + 1) < d)
+                {
+                    if (board[i+1][j])
+                    {
+
+                    }
+                }
+                if ((j + 1) < d)
+                {
+                    if (board[i][j+1])
+                    {
+
+                    }
                 }
             }
         }
