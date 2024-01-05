@@ -177,7 +177,7 @@ void draw(void)
 // If tile borders empty space, moves tile and returns true, else returns false
 bool move(int tile)
 {
-    if (tile)
+    
     return false;
 }
 
