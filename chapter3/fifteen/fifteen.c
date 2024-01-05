@@ -183,12 +183,11 @@ bool move(int tile)
         {
             if (board[i][j] == tile)
             {
-                int holder = 0;
                 if ((i - 1) > 0)
                 {
                     if (board[i-1][j] == 0)
                     {
-                        holder = board[i][j];
+
                         board[i][j] = board[i-1][j];
                         board[i-1][j] = holder;
                         return true;
