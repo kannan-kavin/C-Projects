@@ -220,7 +220,7 @@ bool move(int tile)
                     {
                         holder = board[i][j];
                         board[i][j] = board[i][j+1];
-                        board[i-1][j+1] = holder;
+                        board[i][j+1] = holder;
                         return true;
                     }
                 }
