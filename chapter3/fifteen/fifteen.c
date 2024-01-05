@@ -183,38 +183,46 @@ bool move(int tile)
         {
             if (board[i][j] == tile)
             {
+                int holder = 0;
                 if ((i - 1) > 0)
                 {
                     if (board[i-1][j] == 0)
                     {
-                        board[i-1][j] = board[i][j]
+                        holder = board[i][j];
+                        board[i][j] = board[i-1][j];
+                        board[i-1][j] = holder;
                     }
                 }
                 if ((j - 1) > 0)
                 {
                     if (board[i][j-1] == 0)
                     {
-
+                        holder = board[i][j];
+                        board[i][j] = board[i][j-1];
+                        board[i][j-1] = holder;
                     }
                 }
                 if ((i + 1) < d)
                 {
                     if (board[i+1][j])
                     {
-
+                        holder = board[i][j];
+                        board[i][j] = board[i+1][j];
+                        board[i+1][j] = holder;
                     }
                 }
                 if ((j + 1) < d)
                 {
                     if (board[i][j+1])
                     {
-
+                        holder = board[i][j];
+                        board[i][j] = board[i][j+1];
+                        board[i-1][j+1] = holder;
                     }
                 }
             }
         }
     }
-    return false;
 }
 
 // Returns true if game is won (i.e., board is in winning configuration), else false
