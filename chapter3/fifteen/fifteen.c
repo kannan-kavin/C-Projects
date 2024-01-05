@@ -177,7 +177,7 @@ void draw(void)
 // If tile borders empty space, moves tile and returns true, else returns false
 bool move(int tile)
 {
-     for (int i = 0; i < d; i++)
+    for (int i = 0; i < d; i++)
     {
         for (int j = 0; j < d; j++)
         {
@@ -228,6 +228,12 @@ bool move(int tile)
 // Returns true if game is won (i.e., board is in winning configuration), else false
 bool won(void)
 {
-    // TODO
+     for (int i = 0; i < d; i++)
+    {
+        for (int j = 0; j < d; j++)
+        {
+            
+        }
+    }
     return false;
 }
