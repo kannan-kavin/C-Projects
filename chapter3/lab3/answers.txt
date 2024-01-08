@@ -17,8 +17,8 @@ sort1 sorted: 0.444
 
 sort2 reversed: 0.504
 sort2 random: 0.440
-sort2 sorted:
+sort2 sorted: 0.516
 
 sort3 reversed: 2.444
 sort3 random: 2.359
-sort3 sorted:
+sort3 sorted: 2.222
