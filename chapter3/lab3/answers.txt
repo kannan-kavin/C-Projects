@@ -6,9 +6,9 @@ sort2 uses: TODO
 
 How do you know?: TODO
 
-sort3 uses: TODO
+sort3 uses: Selection Sort
 
-How do you know?: TODO
+How do you know?: The times for sort3 are all very similar and the average of the extremes, thus 
 
 times:
 sort1 reversed: 5.031
