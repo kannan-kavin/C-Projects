@@ -233,11 +233,12 @@ bool won(void)
         for (int j = 0; j < d; j++)
         {
             value = value - 1;
-            if (board[i][j] == value)
+            if (board[i][j] != value)
             {
                 return(false);
             }
+
         }
     }
-    return false;
+    return true;
 }
