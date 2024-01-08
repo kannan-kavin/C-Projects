@@ -231,7 +231,14 @@ bool won(void)
     {
         for (int j = 0; j < d; j++)
         {
-            
+            if (board[i][j] == tile)
+            {
+                return(true);
+            }
+            else if
+            {
+                return(false);
+            }
         }
     }
     return false;
