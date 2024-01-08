@@ -231,11 +231,11 @@ bool won(void)
     {
         for (int j = 0; j < d; j++)
         {
-            if (board[i][j] == (d * d - 1))
+            if (board[i][j] != (d * d - 1))
             {
-                return(true);
+                return(false);
             }
         }
     }
-    return false;
+    return true;
 }
