@@ -239,5 +239,5 @@ bool won(void)
             }
         }
     }
-    return true;
+    return false;
 }
