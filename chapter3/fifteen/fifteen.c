@@ -46,8 +46,7 @@ int main(int argc, string argv[])
     d = atoi(argv[1]);
     if (d < DIM_MIN || d > DIM_MAX)
     {
-        printf("Board must be between %i x %i and %i x %i, inclusive.\n",
-               DIM_MIN, DIM_MIN, DIM_MAX, DIM_MAX);
+        printf("Board must be between %i x %i and %i x %i, inclusive.\n", DIM_MIN, DIM_MIN, DIM_MAX, DIM_MAX);
         return 2;
     }
 
@@ -156,8 +155,8 @@ void init(void)
     }
     if (d % 2 == 0)
     {
-        board[d-1][d-2] = 2;
-        board[d-1][d-3] = 1;
+        board[d - 1][d - 2] = 2;
+        board[d - 1][d - 3] = 1;
     }
 }
 
@@ -168,7 +167,7 @@ void draw(void)
     {
         for (int j = 0; j < d; j++)
         {
-        printf("%3i", board[i][j]);
+            printf("%3i", board[i][j]);
         }
         printf("\n");
     }
@@ -185,37 +184,37 @@ bool move(int tile)
             {
                 if ((i - 1) > 0)
                 {
-                    if (board[i-1][j] == 0)
+                    if (board[i - 1][j] == 0)
                     {
                         board[i][j] = 0;
-                        board[i-1][j] = tile;
+                        board[i - 1][j] = tile;
                         return true;
                     }
                 }
                 if ((j - 1) > 0)
                 {
-                    if (board[i][j-1] == 0)
+                    if (board[i][j - 1] == 0)
                     {
                         board[i][j] = 0;
-                        board[i][j-1] = tile;
+                        board[i][j - 1] = tile;
                         return true;
                     }
                 }
                 if ((i + 1) < d)
                 {
-                    if (board[i+1][j] == 0)
+                    if (board[i + 1][j] == 0)
                     {
                         board[i][j] = 0;
-                        board[i+1][j] = tile;
+                        board[i + 1][j] = tile;
                         return true;
                     }
                 }
                 if ((j + 1) < d)
                 {
-                    if (board[i][j+1] == 0)
+                    if (board[i][j + 1] == 0)
                     {
                         board[i][j] = 0;
-                        board[i][j+1] = tile;
+                        board[i][j + 1] = tile;
                         return true;
                     }
                 }
@@ -232,7 +231,7 @@ bool won(void)
     {
         for (int j = 0; j < d; j++)
         {
-
+            
         }
     }
     return false;
