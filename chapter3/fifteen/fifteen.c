@@ -237,7 +237,6 @@ bool won(void)
             {
                 return(false);
             }
-
         }
     }
     return true;
