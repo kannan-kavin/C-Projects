@@ -8,7 +8,7 @@ How do you know?: TODO
 
 sort3 uses: Selection Sort
 
-How do you know?: The times for sort3 are all very similar and the average of the extremes, thus 
+How do you know?: The times for sort3 are all very similar and the average of the extremes, thus logically, the sort will always find the smallest number and move it to the front.
 
 times:
 sort1 reversed: 5.031
