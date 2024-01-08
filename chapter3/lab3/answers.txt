@@ -1,10 +1,10 @@
-sort1 uses: TODO
+sort1 uses: Bubble Sort
 
-How do you know?: TODO
+How do you know?: The bubble sort will take a long time for any list that's out of order, however for the sorted group, bubble goes extremely fast.
 
-sort2 uses: TODO
+sort2 uses: Merge Sort
 
-How do you know?: TODO
+How do you know?: Works the fastest for all sets except for sorted, which bubble sort was made for. Thus, the speediness of this sort is what makes it the merge.
 
 sort3 uses: Selection Sort
 
