@@ -9,3 +9,16 @@ How do you know?: TODO
 sort3 uses: TODO
 
 How do you know?: TODO
+
+times:
+sort1 reversed: 5.031
+sort1 random: 5.686
+sort1 sorted: 0.444
+
+sort2 reversed: 0.504
+sort2 random: 0.440
+sort2 sorted:
+
+sort3 reversed: 2.444
+sort3 random: 2.359
+sort3 sorted:
