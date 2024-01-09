@@ -251,5 +251,13 @@ bool won(void)
             value = value + 1;
         }
     }
+    // checking/matching every tile excluding the last row and column
+    for (int j = 0; j < (d - 1); j++)
+    {
+        if (board[d - 1][j] != value)
+        {
+            return false;
+        }
+    }
     return true;
 }
