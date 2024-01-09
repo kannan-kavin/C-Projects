@@ -251,6 +251,6 @@ bool won(void)
             value = value + 1;
         }
     }
-    // checking/matching every tile excluding the last row and column
+    
     return false;
 }
