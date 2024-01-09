@@ -184,7 +184,7 @@ bool move(int tile)
         for (int j = 0; j < d; j++)
         {
             if (board[i][j] == tile)
-            // checking where the tile the user inputed matches on the board
+            // checking where the tile the user inputted matches on the board
             {
                 if ((i - 1) >= 0)
                 {
@@ -194,6 +194,7 @@ bool move(int tile)
                         board[i - 1][j] = tile;
                         return true;
                     }
+                    // switching inputted with the tile above
                 }
                 if ((j - 1) >= 0)
                 {
@@ -203,6 +204,7 @@ bool move(int tile)
                         board[i][j - 1] = tile;
                         return true;
                     }
+                    // switching inputted with the tile to the left
                 }
                 if ((i + 1) < d)
                 {
@@ -212,6 +214,7 @@ bool move(int tile)
                         board[i + 1][j] = tile;
                         return true;
                     }
+                    // switching inputted with the tile below
                 }
                 if ((j + 1) < d)
                 {
@@ -221,6 +224,7 @@ bool move(int tile)
                         board[i][j + 1] = tile;
                         return true;
                     }
+                    // switching inputted with the tile to the right
                 }
             }
         }
