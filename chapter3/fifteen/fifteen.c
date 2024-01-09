@@ -153,11 +153,13 @@ void init(void)
             value = (value - 1);
         }
     }
+    // assigning each value to a tile on the board
     if (d % 2 == 0)
     {
         board[d - 1][d - 2] = 2;
         board[d - 1][d - 3] = 1;
     }
+    // switching the 2 and the 1 if the dimensions are even
 }
 
 // Prints the board in its current state
@@ -171,6 +173,7 @@ void draw(void)
         }
         printf("\n");
     }
+    // printing each initialized and assigned value to each tile
 }
 
 // If tile borders empty space, moves tile and returns true, else returns false
