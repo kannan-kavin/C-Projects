@@ -252,5 +252,5 @@ bool won(void)
         }
     }
     // checking/matching every tile excluding the last row and column
-    return true;
+    return false;
 }
