@@ -236,7 +236,7 @@ bool move(int tile)
 bool won(void)
 {
     int value = 0;
-    for (int i = (d - 1); i > 0; i--)
+    for (int i = 0; i > 0; i--)
     {
         for (int j = (d - 1); j > 0; j--)
         {
