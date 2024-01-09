@@ -209,6 +209,7 @@ bool move(int tile)
                     // switching inputted with the tile to the left
                 }
                 if ((i + 1) < d)
+                // preventing iteration outside the array
                 {
                     if (board[i + 1][j] == 0)
                     {
@@ -219,6 +220,7 @@ bool move(int tile)
                     // switching inputted with the tile below
                 }
                 if ((j + 1) < d)
+                // preventing iteration outside the array
                 {
                     if (board[i][j + 1] == 0)
                     {
