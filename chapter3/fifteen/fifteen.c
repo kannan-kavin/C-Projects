@@ -239,5 +239,9 @@ bool won(void)
             }
         }
     }
+    if (board[d - 1][d - 1] != 0)
+    {
+        return false;
+    }
     return true;
 }
