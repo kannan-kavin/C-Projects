@@ -240,9 +240,9 @@ bool move(int tile)
 bool won(void)
 {
     int value = 1;
-    for (int i = 0; i < d; i++)
+    for (int i = 0; i < (d - 1); i++)
     {
-        for (int j = 0; j < d; j++)
+        for (int j = 0; j < (d - 1); j++)
         {
             if (board[i][j] != value)
             {
@@ -251,5 +251,5 @@ bool won(void)
             value = value + 1;
         }
     }
-    return false;
+    return true;
 }
