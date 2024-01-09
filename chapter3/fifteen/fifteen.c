@@ -247,9 +247,6 @@ bool won(void)
             value = value + 1;
         }
     }
-    if (board[d - 1][d - 1] != 0)
-    {
-        return false;
-    }
     return true;
 }
+// 7 and 8
