@@ -187,6 +187,7 @@ bool move(int tile)
             // checking where the tile the user inputted matches on the board
             {
                 if ((i - 1) >= 0)
+                // preventing iteration outside the array
                 {
                     if (board[i - 1][j] == 0)
                     {
@@ -197,6 +198,7 @@ bool move(int tile)
                     // switching inputted with the tile above
                 }
                 if ((j - 1) >= 0)
+                // preventing iteration outside the array
                 {
                     if (board[i][j - 1] == 0)
                     {
