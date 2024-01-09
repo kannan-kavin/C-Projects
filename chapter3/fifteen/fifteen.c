@@ -235,9 +235,9 @@ bool won(void)
             value = value - 1;
             if (board[i][j] != value)
             {
-                return(false);
+                break;
             }
         }
     }
-    return false;
+    return true;
 }
