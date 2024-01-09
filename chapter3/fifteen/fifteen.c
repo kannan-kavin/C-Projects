@@ -244,6 +244,13 @@ bool won(void)
     {
         for (int j = 0; j < (d - 1); j++)
         {
+            if (board[i][j] == board[d - 1][d - 1])
+            {
+                if (board[i][j] != 0)
+                {
+                    return false;
+                }
+            }
             if (board[i][j] != value)
             {
                 return false;
@@ -251,6 +258,6 @@ bool won(void)
             value = value + 1;
         }
     }
-    
     return false;
 }
+// 7 and 8
