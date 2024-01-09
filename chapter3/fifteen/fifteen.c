@@ -184,6 +184,7 @@ bool move(int tile)
         for (int j = 0; j < d; j++)
         {
             if (board[i][j] == tile)
+            // checking where the tile the user inputed matches on the board
             {
                 if ((i - 1) >= 0)
                 {
