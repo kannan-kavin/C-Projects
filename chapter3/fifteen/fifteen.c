@@ -227,7 +227,7 @@ bool move(int tile)
 // Returns true if game is won (i.e., board is in winning configuration), else false
 bool won(void)
 {
-    int value = 0;
+/*    int value = 0;
     for (int i = (d - 1); i > 0; i--)
     {
         for (int j = (d - 1); j > 0; j--)
@@ -241,7 +241,7 @@ bool won(void)
     }
     if (board[d - 1][d - 1] != 0)
     {
-        return false;
+        */ return false;
     }
     return true;
 }
