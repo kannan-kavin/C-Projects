@@ -247,13 +247,16 @@ bool won(void)
             if (board[i][j] != value)
             {
                 return false;
+                // checking if the tiles don't match the winning tileset
             }
             value = value + 1;
-            if (board[d - 1][d - 1] == (d * d))
+            if (value == (d * d))
             {
                 return true;
+                // checking whether the last tile is a win / the user actually won the game properly
             }
         }
     }
     return false;
+    // everything else fails
 }
