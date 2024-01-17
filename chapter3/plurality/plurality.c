@@ -73,6 +73,7 @@ bool vote(string name)
             return true;
         }
     }
+    // incrementing through the candidates to match to the input (name) and then adding a vote to their summative votes.
     return false;
 }
 
@@ -87,6 +88,7 @@ void print_winner(void)
             maxvotes = candidates[i].votes;
         }
     }
+    // incrementing through all the candidates to find out the maximum number of votes in the entire election.
     for (int i = 0; i < candidate_count; i++)
     {
         if (candidates[i].votes == maxvotes)
@@ -95,5 +97,6 @@ void print_winner(void)
             // DEBUGGING: printf("%i\n", candidates[i].votes);
         }
     }
+    // incrementing through the candidates to find those with votes equal to the max votes and printing their names.
     return;
 }
