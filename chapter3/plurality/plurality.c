@@ -68,7 +68,10 @@ bool vote(string name)
     candidate candidates[candidate_count];
     for (i = 0; i < candidate_count; i++)
     {
-        if (strcmp(candidates[i], name))
+        if (strcmp(candidates[i], name) == 0)
+        {
+            candidates[i].vote +=
+        }
     }
     return false;
 }
