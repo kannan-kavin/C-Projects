@@ -65,7 +65,8 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    candidates 
+    candidate candidates[candidate_count];
+    
     return false;
 }
 
