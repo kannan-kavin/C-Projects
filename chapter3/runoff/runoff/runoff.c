@@ -133,9 +133,10 @@ bool vote(int voter, int rank, string name)
             {
             for (int j = 0; i < candidate_count; j++)
                 {
-                if (strcmp(candidates[i].name, name) == 0)
+                if (strcmp(voter[j].name, name) == 0)
                     {
-                        
+                        voter[i][prefer] = candidates[j]
+                        prefer++;
                     }
                 }
             }
