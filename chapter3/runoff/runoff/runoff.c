@@ -128,9 +128,9 @@ bool vote(int voter, int rank, string name)
 {
     for (int i = 0; i < voter_count; i++)
         {
-            if (strcmp(candidates[].name, name) == 0)
+            if (strcmp(candidates[i].name, name) == 0)
             {
-                candidates[j].votes++;
+                candidates[i].votes++;
                 preferences[i][j] =
                 return true;
             }
@@ -148,7 +148,7 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    
+
     return false;
 }
 
