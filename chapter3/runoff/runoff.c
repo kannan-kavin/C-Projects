@@ -143,7 +143,10 @@ void tabulate(void)
 {
     for (int i = 0; i < voter_count; i++)
     {
-        if (strcmp(voter, candidate) && candidate != eliminated)
+        if (strcmp(preferences[voter][0], candidates[i]) && candidates[i] != eliminated)
+        {
+            
+        }
     }
     return;
 }
