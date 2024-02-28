@@ -180,6 +180,7 @@ bool print_winner(void)
         {
             printf("Winner: %s", candidates[j].name);
         }
+        break;
     }
     return false;
 }
