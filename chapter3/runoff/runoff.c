@@ -128,10 +128,13 @@ int main(int argc, string argv[])
 bool vote(int voter, int rank, string name)
 {
     for (int j = 0; j < candidate_count; j++)
+    // Iterating through candidates
         {
         if (strcmp(candidates[j].name, name) == 0)
+        // Compare the candidates name to the input name
             {
             preferences[voter][rank] = j;
+            // Update the preferences of the voters to match the candidate
             return true;
             }
         }
@@ -147,17 +150,21 @@ void tabulate(void)
         {
             int vote_assigned = 0;
             for (int k = 0; k < 3; k++)
+            // Iterating through the voters, candidates, and
             {
                 if (preferences[i][k] == j && candidates[j].eliminated == 0)
+                // Checking whether the candidate is still in the election and where the voter's vote goes
                 {
                     candidates[j].votes++;
                     vote_assigned = 1;
                     break;
+                    // Breaking out of the loop to prevent repeat voters
                 }
             }
             if (vote_assigned)
             {
                 break;
+                // Breaking out of the loop to go back to the initial loop
             }
         }
     }
@@ -167,7 +174,7 @@ void tabulate(void)
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-
+    
     return false;
 }
 
