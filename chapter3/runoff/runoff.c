@@ -175,10 +175,13 @@ void tabulate(void)
 bool print_winner(void)
 {
     for (int j = 0; j < candidate_count; j++)
+    // Iterating through candidates
     {
         if (candidates[j].votes > (voter_count / 2))
+        // Checking whether the candidate more than half the votes in the election
         {
             printf("Winner: %s\n", candidates[j].name);
+            // Printing the winner of the election
             return true;
         }
     }
@@ -188,7 +191,7 @@ bool print_winner(void)
 // Return the minimum number of votes any remaining candidate has
 int find_min(void)
 {
-    // TODO
+
     return 0;
 }
 
