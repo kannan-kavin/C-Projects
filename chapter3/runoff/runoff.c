@@ -147,10 +147,12 @@ void tabulate(void)
         {
             for (int k = 0; k < 3; k++)
             {
-                if (strcmp(preferences[i][k], candidates[j]) == 0 && candidates[j].eliminated == 0)
+                if (preferences[i][k] == j && candidates[j].eliminated == 0)
                 {
-                    candidates[j].votes +=;
+                    candidates[j].votes++;
+                    break;
                 }
+                break;
             }
         }
     }
