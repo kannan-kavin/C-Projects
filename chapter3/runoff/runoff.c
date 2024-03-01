@@ -217,16 +217,19 @@ bool is_tie(int min)
     // Iterating through candidates
     {
         if (candidates[j].votes == min && candidates[j].eliminated == 0)
+        // Finding the number of candidates in the election and tied at the minimum number of votes
         {
             tied++;
         }
         if (candidates[j].eliminated == 0)
+        // Finding the number of candidates total still in the election
         {
             candidate_check++;
         }
 
     }
     if (tied == candidate_check)
+    // Comparing minimum votes candidates to total candidates to determine tie status
     {
         return true;
     }
@@ -236,6 +239,16 @@ bool is_tie(int min)
 // Eliminate the candidate (or candidates) in last place
 void eliminate(int min)
 {
-    // TODO
+     for (int j = 0; j < candidate_count; j++)
+    // Iterating through candidates
+    {
+        if (candidates[j].votes == min && candidates[j].eliminated == 0)
+        {
+            tied++;
+        }
+        if (candidates[j].eliminated == 0)
+        {
+            candidate_check++;
+        }
     return;
 }
