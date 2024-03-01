@@ -215,14 +215,14 @@ bool is_tie(int min)
     for (int j = 0; j < candidate_count; j++)
     // Iterating through candidates
     {
-        if (candidate[j].votes = min)
+        if (candidate[j].votes == min)
         {
             tiecalc++;
         }
     }
     if (tiecalc >= candidate_count)
     {
-        return true
+        return true;
     }
 }
 
