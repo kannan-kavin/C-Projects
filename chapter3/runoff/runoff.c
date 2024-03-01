@@ -248,4 +248,5 @@ void eliminate(int min)
             return;
         }
     }
+    return;
 }
