@@ -152,20 +152,14 @@ void tabulate(void)
             if (candidates[preferences[j][k]].eliminated == 0)
             // Checking whether the candidate is still in the election
             {
-                candidates[j].votes++;
-                vote_assigned = 1;
+                candidates[preferences[j][k]].votes++;
                 break;
                 // Breaking out of the loop to prevent repeat voters
             }
         }
-        if (vote_assigned)
-        {
-            break;
-            // Breaking out of the loop to go back to the initial loop
-        }
     }
+    return;
 }
-
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
