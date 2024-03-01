@@ -244,11 +244,8 @@ void eliminate(int min)
     {
         if (candidates[j].votes == min && candidates[j].eliminated == 0)
         {
-            tied++;
-        }
-        if (candidates[j].eliminated == 0)
-        {
-            candidate_check++;
+
         }
     return;
+    }
 }
