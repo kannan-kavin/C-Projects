@@ -129,15 +129,15 @@ bool vote(int voter, int rank, string name)
 {
     for (int j = 0; j < candidate_count; j++)
     // Iterating through candidates
-        {
+    {
         if (strcmp(candidates[j].name, name) == 0)
         // Compare the candidates name to the input name
-            {
+        {
             preferences[voter][rank] = j;
             // Update the preferences of the voters to match the candidate
             return true;
-            }
         }
+    }
     return false;
 }
 
@@ -150,7 +150,7 @@ void tabulate(void)
         {
             int vote_assigned = 0;
             for (int k = 0; k < 3; k++)
-            // Iterating through the voters, candidates, and ranks of those voters
+            // Iterating through the voters, candidates, and ranks for the candidates of those voters
             {
                 if (preferences[i][k] == j && candidates[j].eliminated == 0)
                 // Checking whether the candidate is still in the election and where the voter's vote goes
@@ -226,7 +226,6 @@ bool is_tie(int min)
         {
             candidate_check++;
         }
-
     }
     if (tied == candidate_check)
     // Comparing minimum votes candidates to total candidates to determine tie status
@@ -239,7 +238,7 @@ bool is_tie(int min)
 // Eliminate the candidate (or candidates) in last place
 void eliminate(int min)
 {
-     for (int j = 0; j < candidate_count; j++)
+    for (int j = 0; j < candidate_count; j++)
     // Iterating through candidates
     {
         if (candidates[j].votes == min && candidates[j].eliminated == 0)
