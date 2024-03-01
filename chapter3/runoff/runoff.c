@@ -219,8 +219,8 @@ bool is_tie(int min)
         if (candidates[j].votes == min && candidates[j].eliminated == 0)
         {
             tiecalc++;
-            candidate_check++;
         }
+        
     }
     if (tiecalc == candidate_check)
     {
