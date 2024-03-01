@@ -150,7 +150,7 @@ void tabulate(void)
         {
             int vote_assigned = 0;
             for (int k = 0; k < 3; k++)
-            // Iterating through the voters, candidates, and
+            // Iterating through the voters, candidates, and ranks of those voters
             {
                 if (preferences[i][k] == j && candidates[j].eliminated == 0)
                 // Checking whether the candidate is still in the election and where the voter's vote goes
