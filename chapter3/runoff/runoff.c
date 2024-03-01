@@ -246,6 +246,6 @@ void eliminate(int min)
         {
             candidates[j].eliminated = 1;
         }
-    return;
     }
+    return;
 }
