@@ -149,7 +149,7 @@ void tabulate(void)
         for (int j = 0; j < candidate_count; j++)
         {
             int vote_assigned = 0;
-            for (int k = 0; k < max_ranks; k++)
+            for (int k = 0; k < 3; k++)
             // Iterating through the voters, candidates, and ranks for the candidates of those voters
             {
                 if (preferences[i][k] == j && candidates[j].eliminated == 0)
@@ -168,7 +168,6 @@ void tabulate(void)
             }
         }
     }
-    return;
 }
 
 // Print the winner of the election, if there is one
