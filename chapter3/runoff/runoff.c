@@ -212,16 +212,20 @@ int find_min(void)
 bool is_tie(int min)
 {
     int tiecalc = 0;
+    int candidate_check = 0;
     for (int j = 0; j < candidate_count; j++)
     // Iterating through candidates
     {
-        if (candidates[i].eliminated == 0)
+        if (candidates[j].eliminated == 0)
+        {
+            int candidate_check++;
+        }
         if (candidate[j].votes == min)
         {
             tiecalc++;
         }
     }
-    if (tiecalc >= candidate_count)
+    if (tiecalc >= candidate_check)
     {
         return true;
     }
