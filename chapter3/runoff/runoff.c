@@ -214,7 +214,7 @@ bool is_tie(int min)
     for (int j = 0; j < candidate_count; j++)
     // Iterating through candidates
     {
-
+        
     }
 }
 
