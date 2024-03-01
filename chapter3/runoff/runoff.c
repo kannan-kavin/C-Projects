@@ -144,28 +144,24 @@ bool vote(int voter, int rank, string name)
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    for (int i = 0; i < voter_count; i++)
+    for (int j = 0; j < voter_count; j++)
     {
-        for (int j = 0; j < candidate_count; j++)
+        for (int k = 0; k < 3; k++)
+        // Iterating through the voters, candidates, and ranks for the candidates of those voters
         {
-            int vote_assigned = 0;
-            for (int k = 0; k < 3; k++)
-            // Iterating through the voters, candidates, and ranks for the candidates of those voters
+            if (candidates[preferences[j][k]].eliminated == 0)
+            // Checking whether the candidate is still in the election
             {
-                if (preferences[i][k] == j && candidates[j].eliminated == 0)
-                // Checking whether the candidate is still in the election and where the voter's vote goes
-                {
-                    candidates[j].votes++;
-                    vote_assigned = 1;
-                    break;
-                    // Breaking out of the loop to prevent repeat voters
-                }
-            }
-            if (vote_assigned)
-            {
+                candidates[j].votes++;
+                vote_assigned = 1;
                 break;
-                // Breaking out of the loop to go back to the initial loop
+                // Breaking out of the loop to prevent repeat voters
             }
+        }
+        if (vote_assigned)
+        {
+            break;
+            // Breaking out of the loop to go back to the initial loop
         }
     }
 }
