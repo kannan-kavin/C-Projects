@@ -220,6 +220,10 @@ bool is_tie(int min)
         {
             tied++;
         }
+        if (candidates[j].eliminated == 0)
+        {
+            candidate_check++;
+        }
 
     }
     if (tied == candidate_check)
