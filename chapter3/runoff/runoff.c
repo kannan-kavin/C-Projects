@@ -244,7 +244,7 @@ void eliminate(int min)
     {
         if (candidates[j].votes == min && candidates[j].eliminated == 0)
         {
-            
+            candidates[j].eliminated = 1;
         }
     return;
     }
