@@ -196,8 +196,10 @@ int find_min(void)
     // Iterating through candidates
     {
         if (candidates[j].eliminated == 0)
+        // Checking whether the candidate is still in the election
         {
             if (candidates[j].votes < min)
+            // Comparing candidate[j]'s votes to the minimum to find the new minimum
             {
                 min = candidates[j].votes;
             }
@@ -209,8 +211,11 @@ int find_min(void)
 // Return true if the election is tied between all candidates, false otherwise
 bool is_tie(int min)
 {
-    // TODO
-    return false;
+    for (int j = 0; j < candidate_count; j++)
+    // Iterating through candidates
+    {
+
+    }
 }
 
 // Eliminate the candidate (or candidates) in last place
