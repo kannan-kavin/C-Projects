@@ -149,7 +149,7 @@ void tabulate(void)
         for (int j = 0; j < candidate_count; j++)
         {
             int vote_assigned = 0;
-            for (int k = 0; k < 3; k++)
+            for (int k = 0; k < max_ranks; k++)
             // Iterating through the voters, candidates, and ranks for the candidates of those voters
             {
                 if (preferences[i][k] == j && candidates[j].eliminated == 0)
