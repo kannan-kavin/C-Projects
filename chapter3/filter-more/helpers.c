@@ -38,20 +38,22 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    float average = 0;
     for (int i = 0; i < width; i++)
     {
         for (int j = 0; j < height; j++)
         {
-            if (images[j][i] ==)
+            if ((i - 1) < 0)
             {
-                if ((i - 1) < 0)
-                {
-
-                }
-                else if (images[j][i - 1] == 0)
-                {
-
-                }
+                float red = (float)image[j][i].rgbtRed;
+                float green = (float)image[j][i].rgbtGreen;
+                float blue = (float)image[j][i].rgbtBlue;
+                float average = average + round((red + green + blue) / 3);
+            }
+            else if (images[j][i - 1] == 0)
+            {
+                
+            }
                 if ((j - 1) < 0)
                 {
 
