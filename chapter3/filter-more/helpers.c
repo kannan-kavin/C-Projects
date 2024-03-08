@@ -42,8 +42,41 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < height; j++)
         {
-            if (i = 0)
-                if (j = 0 || )
+            if (images[j][i] ==)
+            {
+                if ((i - 1) < 0)
+                {
+
+                }
+                else if (images[j][i - 1] == 0)
+                {
+
+                }
+                if ((j - 1) < 0)
+                {
+
+                }
+                else if (island[i][j - 1] == 0)
+                {
+
+                }
+                if ((i + 1) > 4)
+                {
+
+                }
+                else if (island[i + 1][j] == 0)
+                {
+
+                }
+                if ((j + 1) > 4)
+                {
+
+                }
+                else if (island[i][j + 1] == 0)
+                {
+                   perimeter = perimeter + 1;
+                }
+            }
         }
     }
     return;
