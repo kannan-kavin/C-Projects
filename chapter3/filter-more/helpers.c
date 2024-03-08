@@ -25,9 +25,9 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     for (int i = 0; i < width; i++)
     {
-        for (int j = 0; j < height, j++)
+        for (int j = 0; j < height; j++)
         {
-            image[j][i] = image[j][width-i]
+            image[j][i] = image[j][width-1-i]
         }
     }
     return;
@@ -38,7 +38,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     /* for (int i = 0; i < width; i++)
     {
-        for (int j = 0; j < height, j++)
+        for (int j = 0; j < height; j++)
         {
 
         }
@@ -51,7 +51,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 {
     /* for (int i = 0; i < width; i++)
     {
-        for (int j = 0; j < height, j++)
+        for (int j = 0; j < height; j++)
         {
 
         }
