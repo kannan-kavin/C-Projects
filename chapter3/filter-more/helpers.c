@@ -45,7 +45,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             float red = (float)image[j][i].rgbtRed;
             float green = (float)image[j][i].rgbtGreen;
             float blue = (float)image[j][i].rgbtBlue;
-            float average = round((red + green + blue) / 3);
+            float average = average + round((red + green + blue) / 3);
         }
     }
     return;
