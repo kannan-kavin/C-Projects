@@ -45,7 +45,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             int average = 0;
             if (height - 1 > 0)
             {
-                average =
+                average = image[]
             }
         }
     }
