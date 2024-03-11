@@ -9,9 +9,9 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < height; j++)
         // Iterating through the image pixel array
         {
-            float red = (float)image[j][i].rgbtRed;
-            float green = (float)image[j][i].rgbtGreen;
-            float blue = (float)image[j][i].rgbtBlue;
+            float red = (float) image[j][i].rgbtRed;
+            float green = (float) image[j][i].rgbtGreen;
+            float blue = (float) image[j][i].rgbtBlue;
             // Turning each RGB value into a float
             float average = round((red + green + blue) / 3);
             // Averaging the colors
@@ -34,9 +34,9 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
         {
             RGBTRIPLE temp = image[j][i];
             // Making a temporary array keeping the normal pixel
-            image[j][i] = image[j][width-1-i];
+            image[j][i] = image[j][width - 1 - i];
             // Assigning the pixel its reflected pixel
-            image[j][width-1-i] = temp;
+            image[j][width - 1 - i] = temp;
             // Assigning the reflected pixel its pixel using the temporary array
         }
     }
@@ -65,17 +65,17 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 {
                     if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
-                        red += image[j+l][i+k].rgbtRed;
-                        green += image[j+l][i+k].rgbtGreen;
-                        blue += image[j+l][i+k].rgbtBlue;
+                        red += image[j + l][i + k].rgbtRed;
+                        green += image[j + l][i + k].rgbtGreen;
+                        blue += image[j + l][i + k].rgbtBlue;
                         denominator++;
                     }
                 }
             }
-        average[j][i].rgbtRed = round(red / denominator);
-        average[j][i].rgbtGreen = round(green / denominator);
-        average[j][i].rgbtBlue = round(blue / denominator);
-        // Assigning the respective values of RGB to the average array
+            average[j][i].rgbtRed = round(red / denominator);
+            average[j][i].rgbtGreen = round(green / denominator);
+            average[j][i].rgbtBlue = round(blue / denominator);
+            // Assigning the respective values of RGB to the average array
         }
     }
     for (int i = 0; i < width; i++)
@@ -97,7 +97,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < height; j++)
         {
-
+            
         }
     }
     return;
