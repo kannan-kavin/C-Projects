@@ -48,7 +48,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             float green = (float)image[j][i].rgbtGreen;
             float blue = (float)image[j][i].rgbtBlue;
             float averagesun = averagesum + (red + green + blue);
-            if ((i - 1) < 0)
+            if ((i - 1) > 0)
             {
                 float red = (float)image[j][i-1].rgbtRed;
                 float green = (float)image[j][i-1].rgbtGreen;
