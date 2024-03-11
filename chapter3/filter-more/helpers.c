@@ -102,7 +102,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             float green = 0;
             float blue = 0;
             // Creating values for each pixel that will be used to find the average
-            for (int k = -1; k < 1; k += 2)
+            for (int k = -1; k < 2; k += 2)
             {
                 for (int l = -1; l < 2; l++)
                 // Iterating around the pixel we are using as our center
