@@ -39,7 +39,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
     RGBTRIPLE average = image
-    float average = 0;
+    float averagesum = 0;
     for (int i = 0; i < width; i++)
     {
         for (int j = 0; j < height; j++)
@@ -50,7 +50,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             float averagesun = averagesum + (red + green + blue);
             if ((i - 1) < 0)
             {
-                
+
             }
             else if (images[j][i - 1] == 0)
             {
