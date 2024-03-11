@@ -48,42 +48,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             float green = 0;
             float blue = 0;
             float averagesum = 0;
-            if ((i - 1) > 0)
-            {
-                float red = (float)image[j][i-1].rgbtRed;
-                float green = (float)image[j][i-1].rgbtGreen;
-                float blue = (float)image[j][i-1].rgbtBlue;
-                float averagesun = averagesum + (red + green + blue);
-            }
-            else if ((j - 1) > 0)
-            {
-
-            }
-                if ((j - 1) < 0)
-                {
-
-                }
-                else if (island[i][j - 1] == 0)
-                {
-
-                }
-                if ((i + 1) > 4)
-                {
-
-                }
-                else if (island[i + 1][j] == 0)
-                {
-
-                }
-                if ((j + 1) > 4)
-                {
-
-                }
-                else if (island[i][j + 1] == 0)
-                {
-                   perimeter = perimeter + 1;
-                }
-            }
+            for ()
         }
     }
     return;
