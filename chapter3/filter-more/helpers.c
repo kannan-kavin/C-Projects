@@ -75,16 +75,20 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
         int averagered = (red / denominator);
         int averagegreen = (green / denominator);
         int averageblue = (blue / denominator);
+        // Calculating the average values of RGB
         average[j][i].rgbtRed = averagered;
         average[j][i].rgbtGreen = averagegreen;
         average[j][i].rgbtBlue = averageblue;
+        // Assigning those values of RGB to the average array
         }
     }
     for (int i = 0; i < width; i++)
     {
         for (int j = 0; j < height; j++)
+        // Iterating through the image pixel array
         {
             image[j][i] = average[j][i];
+            // Assigning all the average values back to the original array
         }
     }
     return;
