@@ -99,28 +99,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < height; j++)
         // Iterating through the image pixel array
         {
-            float red = 0;
-            float green = 0;
-            float blue = 0;
-            // Creating values for each pixel that will be used to find the average
-            for (int k = -1; k < 2; k += 2)
-            {
-                for (int l = -1; l < 2; l++)
-                // Iterating around the pixel we are using as our center
-                {
-                    if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
-                    {
-                        red += image[j + l][i + k].rgbtRed;
-                        green += image[j + l][i + k].rgbtGreen;
-                        blue += image[j + l][i + k].rgbtBlue;
-                        denominator++;
-                    }
-                }
-            }
-            average[j][i].rgbtRed = round(red / denominator);
-            average[j][i].rgbtGreen = round(green / denominator);
-            average[j][i].rgbtBlue = round(blue / denominator);
-            // Assigning the respective values of RGB to the average array
+            matrix[j][i] = image[height][width]
+            // Making a copy of the original array to mess around with
         }
     }
     return;
