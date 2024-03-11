@@ -38,8 +38,8 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
-    RGBTRIPLE average = image
-    float averagesum = 0;
+    RGBTRIPLE average[height][width]
+    
     for (int i = 0; i < width; i++)
     {
         for (int j = 0; j < height; j++)
