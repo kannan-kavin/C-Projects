@@ -61,7 +61,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             for (int k = -1; k < 2; k++)
             {
                 for (int l = -1; l < 2; l++)
-                // Iterating around the pixel we are using
+                // Iterating around the pixel we are using as our center
                 {
                     if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
