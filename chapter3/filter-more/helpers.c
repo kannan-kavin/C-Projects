@@ -47,7 +47,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             float red = 0;
             float green = 0;
             float blue = 0;
-            float averagesum = 0;
+            float denominator = 0;
             for ()
         }
     }
