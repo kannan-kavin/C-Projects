@@ -52,7 +52,34 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             {
                 for (int l = -1; l < 2; l++)
                 {
-                    if (i + k < 0 )
+                    if (i + k > 0)
+                    {
+                        image[i+k][j].rgbtRed += red;
+                        image[i+k][j].rgbtGreen += green;
+                        image[i+k][j].rgbtBlue += blue;
+                        denominator++;
+                    }
+                    if (i + k < width)
+                    {
+                        image[i+k][j].rgbtRed += red;
+                        image[i+k][j].rgbtGreen += green;
+                        image[i+k][j].rgbtBlue += blue;
+                        denominator++;
+                    }
+                    if (j + l > 0)
+                    {
+                        image[i][j+l].rgbtRed += red;
+                        image[i][j+l].rgbtGreen += green;
+                        image[i][j+l].rgbtBlue += blue;
+                        denominator++;
+                    }
+                    if (j + l < height)
+                    {
+                        image[i][j+l].rgbtRed += red;
+                        image[i][j+l].rgbtGreen += green;
+                        image[i][j+l].rgbtBlue += blue;
+                        denominator++;
+                    }
                 }
             }
         }
