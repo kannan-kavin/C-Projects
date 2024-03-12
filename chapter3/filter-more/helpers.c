@@ -101,6 +101,13 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         {
             matrix[j][i] = image[height][width]
             // Making a copy of the original array to mess around with
+            for (int k = -1; k < 2; k++)
+            {
+                for (int l = -1; l < 2; l++)
+                // Iterating around the pixel we are using as our center
+                {
+                }
+            }
         }
     }
     return;
