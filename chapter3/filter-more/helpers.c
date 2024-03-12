@@ -120,67 +120,51 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 {
                     if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
-                        for (int m = -1; m < 2; m++)
-                        {
-                            for (int n = -1; n < 2; n++)
-                            {
-                                int value = (image[j + n][i + m].rgbtRed * Gx[m][n]);
-                                runningtotalx += value;
-                            }
-                        }
-                        for (int m = -1; m < 2; m++)
-                        {
-                            for (int n = -1; n < 2; n++)
-                            {
-                                int value = (image[j + n][i + m].rgbtRed * Gy[m][n]);
-                                runningtotaly += value;
-                            }
-                        }
-                        matrix[j][i].rgbtRed = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
-                        // RED
-                        runningtotalx = 0;
-                        runningtotaly = 0;
-                        for (int m = -1; m < 2; m++)
-                        {
-                            for (int n = -1; n < 2; n++)
-                            {
-                                int value = (image[j + n][i + m].rgbtGreen * Gx[m][n + 1]);
-                                runningtotalx += value;
-                            }
-                        }
-                        for (int m = -1; m < 2; m++)
-                        {
-                            for (int n = -1; n < 2; n++)
-                            {
-                                int value = (image[j + n][i + m].rgbtGreen * Gy[m + 1][n + 1]);
-                                runningtotaly += value;
-                            }
-                        }
-                        matrix[j][i].rgbtGreen = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
-                        // GREEN
-                        runningtotalx = 0;
-                        runningtotaly = 0;
-                        // Initializng the Sobel Operators (x and y)
-                        for (int m = -1; m < 2; m++)
-                        {
-                            for (int n = -1; n < 2; n++)
-                            {
-                                int value = (image[j + n][i + m].rgbtBlue * Gx[m + 1][n + 1]);
-                                runningtotalx += value;
-                            }
-                        }
-                        for (int m = -1; m < 2; m++)
-                        {
-                            for (int n = -1; n < 2; n++)
-                            {
-                                int value = (image[j + n][i + m].rgbtBlue * Gy[m + 1][n + 1]);
-                                runningtotaly += value;
-                            }
-                        }
-                        matrix[j][i].rgbtBlue = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
-                        // BLUE
+                        int valuex = (image[j + l][i + k].rgbtRed * Gx[j][i]);
+                        runningtotalx += valuex;
+                        int valuey = (image[j + l][i + k].rgbtRed * Gy[j][i]);
+                        runningtotaly += valuey;
                     }
                 }
+            }
+            matrix[j][i].rgbtRed = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
+            // RED
+            runningtotalx = 0;
+            runningtotaly = 0;
+            for (k = -1; k < 2; k++)
+            {
+                for (l = -1; l < 2; l++)
+                // Iterating around the pixel we are using as our center
+                {
+                if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
+                    {
+                        valuex = (image[j + l][i + k].rgbtGreen * Gx[j][i]);
+                        runningtotalx += valuex;
+                        valuey = (image[j + l][i + k].rgbtGreen * Gy[j][i]);
+                        runningtotaly += valuey;
+                    }
+                }
+            }
+                matrix[j][i].rgbtGreen = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
+                // GREEN
+                runningtotalx = 0;
+                runningtotaly = 0;
+                for (k = -1; k < 2; k++)
+                {
+                    for (l = -1; l < 2; l++)
+                    // Iterating around the pixel we are using as our center
+                    {
+                        if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
+                        {
+                            valuex = (image[j + l][i + k].rgbtRed * Gx[j][i]);
+                            runningtotalx += valuex;
+                            valuey = (image[j + l][i + k].rgbtRed * Gy[j][i]);
+                            runningtotaly += valuey;
+                        }
+                    }
+                }
+                matrix[j][i].rgbtBlue = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
+                // BLUE
             }
         }
     }
