@@ -113,7 +113,10 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 for (int l = -1; l < 2; l++)
                 // Iterating around the pixel we are using as our center
                 {
-                    if ()
+                    if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
+                    {
+                        
+                    }
                 }
             }
         }
