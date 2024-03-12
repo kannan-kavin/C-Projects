@@ -120,9 +120,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 {
                     if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
-                        int valuex = (image[j + l][i + k].rgbtRed * Gx[j][i]);
+                        int valuex = (image[j + l][i + k].rgbtRed * Gx[l][k]);
                         runningtotalx += valuex;
-                        int valuey = (image[j + l][i + k].rgbtRed * Gy[j][i]);
+                        int valuey = (image[j + l][i + k].rgbtRed * Gy[l][k]);
                         runningtotaly += valuey;
                     }
                 }
@@ -138,9 +138,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 {
                 if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
-                        int valuex = (image[j + l][i + k].rgbtGreen * Gx[j][i]);
+                        int valuex = (image[j + l][i + k].rgbtGreen * Gx[l][k]);
                         runningtotalx += valuex;
-                        int valuey = (image[j + l][i + k].rgbtGreen * Gy[j][i]);
+                        int valuey = (image[j + l][i + k].rgbtGreen * Gy[l][k]);
                         runningtotaly += valuey;
                     }
                 }
@@ -156,9 +156,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 {
                     if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
-                        int valuex = (image[j + l][i + k].rgbtRed * Gx[j][i]);
+                        int valuex = (image[j + l][i + k].rgbtRed * Gx[l][k]);
                         runningtotalx += valuex;
-                        int valuey = (image[j + l][i + k].rgbtRed * Gy[j][i]);
+                        int valuey = (image[j + l][i + k].rgbtRed * Gy[l][k]);
                         runningtotaly += valuey;
                     }
                 }
