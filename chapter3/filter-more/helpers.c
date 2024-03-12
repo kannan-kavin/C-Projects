@@ -99,7 +99,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         for (int j = 0; j < height; j++)
         // Iterating through the image pixel array
         {
-            matrix[j][i] = image[height][width]
+            matrix[j][i] = image[height][width];
             // Making a copy of the original array to mess around with
         }
     }
