@@ -103,6 +103,5 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             // Making a copy of the original array to mess around with
         }
     }
-    for (int )
     return;
 }
