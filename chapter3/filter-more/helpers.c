@@ -138,8 +138,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                         }
                         matrix[j][i].rgbtRed = (sqrt(runningtotalx) + sqrt(runningtotaly));
                         // RED
-                        int runningtotalx = 0;
-                        int runningtotaly = 0;
+                        runningtotalx = 0;
+                        runningtotaly = 0;
                         // Initializng the Sobel Operators (x and y)
                         for (int m = -1; m < 2; m++)
                         {
@@ -159,8 +159,8 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                         }
                         matrix[j][i].rgbtGreen = (sqrt(runningtotalx) + sqrt(runningtotaly));
                         // GREEN
-                        int runningtotalx = 0;
-                        int runningtotaly = 0;
+                        runningtotalx = 0;
+                        runningtotaly = 0;
                         // Initializng the Sobel Operators (x and y)
                         for (int m = -1; m < 2; m++)
                         {
