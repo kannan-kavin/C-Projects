@@ -113,12 +113,12 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 for (int l = -1; l < 2; l++)
                 // Iterating around the pixel we are using as our center
                 {
+                    int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
+                    int runningtotalx = 0;
+                    int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
+                    int runningtotaly = 0;
                     if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
-                        int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
-                        int runningtotalx = 0;
-                        int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
-                        int runningtotaly = 0;
                         // Initializng the Sobel Operators (x and y)
                         for (int m = -1; m < 2; m++)
                         {
@@ -136,10 +136,61 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                                 runningtotaly += value;
                             }
                         }
-                        
+                        matrix[j][i].rgbtRed = (sqrt(runningtotalx) + sqrt(runningtotaly));
+                        // RED
+                        int runningtotalx = 0;
+                        int runningtotaly = 0;
+                        // Initializng the Sobel Operators (x and y)
+                        for (int m = -1; m < 2; m++)
+                        {
+                            for (int n = -1; n < 2; n++)
+                            {
+                                int value = (image[j + n][i + m].rgbtGreen * Gx[m + 1][n + 1]);
+                                runningtotalx += value;
+                            }
+                        }
+                        for (int m = -1; m < 2; m++)
+                        {
+                            for (int n = -1; n < 2; n++)
+                            {
+                                int value = (image[j + n][i + m].rgbtGreen * Gy[m + 1][n + 1]);
+                                runningtotaly += value;
+                            }
+                        }
+                        matrix[j][i].rgbtGreen = (sqrt(runningtotalx) + sqrt(runningtotaly));
+                        // GREEN
+                        int runningtotalx = 0;
+                        int runningtotaly = 0;
+                        // Initializng the Sobel Operators (x and y)
+                        for (int m = -1; m < 2; m++)
+                        {
+                            for (int n = -1; n < 2; n++)
+                            {
+                                int value = (image[j + n][i + m].rgbtBlue * Gx[m + 1][n + 1]);
+                                runningtotalx += value;
+                            }
+                        }
+                        for (int m = -1; m < 2; m++)
+                        {
+                            for (int n = -1; n < 2; n++)
+                            {
+                                int value = (image[j + n][i + m].rgbtBlue * Gy[m + 1][n + 1]);
+                                runningtotaly += value;
+                            }
+                        }
+                        matrix[j][i].rgbtBlue = (sqrt(runningtotalx) + sqrt(runningtotaly));
                     }
                 }
             }
+        }
+    }
+    for (int i = 0; i < width; i++)
+    {
+        for (int j = 0; j < height; j++)
+        // Iterating through the image pixel array
+        {
+            image[j][i] = matrix[j][i];
+            // Making a copy of the original array to mess around with
         }
     }
     return;
