@@ -136,7 +136,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                                 runningtotaly += value;
                             }
                         }
-                        matrix[j][i].rgbtRed = (sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
+                        matrix[j][i].rgbtRed = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
                         // RED
                         runningtotalx = 0;
                         runningtotaly = 0;
@@ -156,7 +156,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                                 runningtotaly += value;
                             }
                         }
-                        matrix[j][i].rgbtGreen = (sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
+                        matrix[j][i].rgbtGreen = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
                         // GREEN
                         runningtotalx = 0;
                         runningtotaly = 0;
@@ -177,7 +177,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                                 runningtotaly += value;
                             }
                         }
-                        matrix[j][i].rgbtBlue = (sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
+                        matrix[j][i].rgbtBlue = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
                         // BLUE
                     }
                 }
