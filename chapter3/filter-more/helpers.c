@@ -116,15 +116,16 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
                         int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
+                        int runningtotalx = 0;
                         int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
-                        int runningtotal = 0
+                        int runningtotaly = 0;
                         // Initializng the Sobel Operators (x and y)
                         for (int m = -1; m < 2; m++)
                         {
                             for (int n = -1; n < 2; n++)
                             {
                                 int value = (image[j + n][i + m].rgbtRed * Gx[m + 1][n + 1]);
-                                int runningtotal++;
+                                int runningtotalx += value;
                             }
                         }
                         for (int m = -1; m < 2; m++)
@@ -132,7 +133,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                             for (int n = -1; n < 2; n++)
                             {
                                 int value = (image[j + n][i + m].rgbtRed * Gy[m + 1][n + 1]);
-                                int runningtotal++;
+                                int runningtotaly += value;
                             }
                         }
                     }
