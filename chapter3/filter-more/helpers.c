@@ -120,9 +120,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                 {
                     if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
-                        int valuex = (image[j + l][i + k].rgbtRed * Gx[l][k]);
+                        int valuex = (image[j + l][i + k].rgbtRed * Gx[l + 1][k + 1]);
                         runningtotalx += valuex;
-                        int valuey = (image[j + l][i + k].rgbtRed * Gy[l][k]);
+                        int valuey = (image[j + l][i + k].rgbtRed * Gy[l + 1][k + 1]);
                         runningtotaly += valuey;
                     }
                 }
