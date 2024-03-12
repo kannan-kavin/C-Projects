@@ -145,20 +145,20 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     }
                 }
             }
-                matrix[j][i].rgbtGreen = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
-                // GREEN
-                runningtotalx = 0;
-                runningtotaly = 0;
-                for (k = -1; k < 2; k++)
+            matrix[j][i].rgbtGreen = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
+            // GREEN
+            runningtotalx = 0;
+            runningtotaly = 0;
+            for (k = -1; k < 2; k++)
+            {
+                for (l = -1; l < 2; l++)
+                // Iterating around the pixel we are using as our center
                 {
-                    for (l = -1; l < 2; l++)
-                    // Iterating around the pixel we are using as our center
+                    if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
-                        if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
-                        {
-                            valuex = (image[j + l][i + k].rgbtRed * Gx[j][i]);
-                            runningtotalx += valuex;
-                            valuey = (image[j + l][i + k].rgbtRed * Gy[j][i]);
+                        valuex = (image[j + l][i + k].rgbtRed * Gx[j][i]);
+                        runningtotalx += valuex;
+                        valuey = (image[j + l][i + k].rgbtRed * Gy[j][i]);
                             runningtotaly += valuey;
                         }
                     }
