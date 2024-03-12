@@ -131,16 +131,16 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             // RED
             runningtotalx = 0;
             runningtotaly = 0;
-            for (k = -1; k < 2; k++)
+            for (int k = -1; k < 2; k++)
             {
-                for (l = -1; l < 2; l++)
+                for (int l = -1; l < 2; l++)
                 // Iterating around the pixel we are using as our center
                 {
                 if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
-                        valuex = (image[j + l][i + k].rgbtGreen * Gx[j][i]);
+                        int valuex = (image[j + l][i + k].rgbtGreen * Gx[j][i]);
                         runningtotalx += valuex;
-                        valuey = (image[j + l][i + k].rgbtGreen * Gy[j][i]);
+                        int valuey = (image[j + l][i + k].rgbtGreen * Gy[j][i]);
                         runningtotaly += valuey;
                     }
                 }
@@ -149,23 +149,22 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             // GREEN
             runningtotalx = 0;
             runningtotaly = 0;
-            for (k = -1; k < 2; k++)
+            for (int k = -1; k < 2; k++)
             {
-                for (l = -1; l < 2; l++)
+                for (int l = -1; l < 2; l++)
                 // Iterating around the pixel we are using as our center
                 {
                     if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
-                        valuex = (image[j + l][i + k].rgbtRed * Gx[j][i]);
+                        int valuex = (image[j + l][i + k].rgbtRed * Gx[j][i]);
                         runningtotalx += valuex;
-                        valuey = (image[j + l][i + k].rgbtRed * Gy[j][i]);
-                            runningtotaly += valuey;
-                        }
+                        int valuey = (image[j + l][i + k].rgbtRed * Gy[j][i]);
+                        runningtotaly += valuey;
                     }
                 }
-                matrix[j][i].rgbtBlue = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
-                // BLUE
             }
+            matrix[j][i].rgbtBlue = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
+            // BLUE
         }
     }
     for (int i = 0; i < width; i++)
