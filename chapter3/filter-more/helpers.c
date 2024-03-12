@@ -179,6 +179,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                             }
                         }
                         matrix[j][i].rgbtBlue = (sqrt(runningtotalx) + sqrt(runningtotaly));
+                        // BLUE
                     }
                 }
             }
