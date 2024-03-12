@@ -107,16 +107,16 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < height; j++)
         // Iterating through the image pixel array
-        int runningtotalx = 0;
-        int runningtotaly = 0;
         {
+            int runningtotalx = 0;
+            int runningtotaly = 0;
+            int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
+            int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
             for (int k = -1; k < 2; k++)
             {
                 for (int l = -1; l < 2; l++)
                 // Iterating around the pixel we are using as our center
                 {
-                    int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
-                    int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
                     if (i + k >= 0 && i + k < width && j + l >= 0 && j + l < height)
                     {
                         // Initializng the Sobel Operators (x and y)
