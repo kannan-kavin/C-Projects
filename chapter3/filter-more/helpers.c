@@ -144,7 +144,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                         {
                             for (int n = -1; n < 2; n++)
                             {
-                                int value = (image[j + n][i + m].rgbtGreen * Gx[m + 1][n + 1]);
+                                int value = (image[j + n][i + m].rgbtGreen * Gx[m][n + 1]);
                                 runningtotalx += value;
                             }
                         }
