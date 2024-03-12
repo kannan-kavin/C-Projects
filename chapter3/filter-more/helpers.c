@@ -117,8 +117,24 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     {
                         int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
                         int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
+                        int runningtotal = 0
                         // Initializng the Sobel Operators (x and y)
-                        
+                        for (int m = -1; m < 2; m++)
+                        {
+                            for (int n = -1; n < 2; n++)
+                            {
+                                int value = (image[j + n][i + m].rgbtRed * Gx[m + 1][n + 1]);
+                                int runningtotal++;
+                            }
+                        }
+                        for (int m = -1; m < 2; m++)
+                        {
+                            for (int n = -1; n < 2; n++)
+                            {
+                                int value = (image[j + n][i + m].rgbtRed * Gy[m + 1][n + 1]);
+                                int runningtotal++;
+                            }
+                        }
                     }
                 }
             }
