@@ -124,6 +124,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                         runningtotalx += valuex;
                         int valuey = (image[j + l][i + k].rgbtRed * Gy[l + 1][k + 1]);
                         runningtotaly += valuey;
+                        // Calculating the Red Sobel Values in x and y
                     }
                 }
             }
@@ -135,7 +136,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 matrix[j][i].rgbtRed = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
             }
-            // RED
+            // Using our Red Sobel Value to calculate the Red in the pixel of the array
             runningtotalx = 0;
             runningtotaly = 0;
             for (int k = -1; k < 2; k++)
@@ -149,6 +150,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                         runningtotalx += valuex;
                         int valuey = (image[j + l][i + k].rgbtGreen * Gy[l + 1][k + 1]);
                         runningtotaly += valuey;
+                        // Calculating the Green Sobel Values in x and y
                     }
                 }
             }
@@ -160,7 +162,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 matrix[j][i].rgbtGreen = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
             }
-            // GREEN
+            // Using our Green Sobel Value to calculate the Green in the pixel of the array
             runningtotalx = 0;
             runningtotaly = 0;
             for (int k = -1; k < 2; k++)
@@ -174,6 +176,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                         runningtotalx += valuex;
                         int valuey = (image[j + l][i + k].rgbtBlue * Gy[l + 1][k + 1]);
                         runningtotaly += valuey;
+                        // Calculating the Blue Sobel Values in x and y
                     }
                 }
             }
@@ -185,7 +188,7 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             {
                 matrix[j][i].rgbtBlue = round(sqrt(runningtotalx * runningtotalx + runningtotaly * runningtotaly));
             }
-            // BLUE
+            // Using our Blue Sobel Value to calculate the Blue in the pixel of the array
         }
     }
     for (int i = 0; i < width; i++)
