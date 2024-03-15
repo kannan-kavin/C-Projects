@@ -35,6 +35,7 @@ int main(int argc, string argv[])
 void question(int unit)
 {
     printf("What does %s mean",)
+    if (unit = 1)
 }
 
 //
