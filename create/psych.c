@@ -16,7 +16,42 @@ typedef struct
 // Pick a term to use as the question
 void question(int unit)
 {
-    printf("What does STRING mean\n");
+    if(unit == 1)
+    {
+        printf("What does %s mean\n");
+    }
+    if(unit == 2)
+    {
+        printf("What does %s mean\n");
+    }
+    if(unit == 3)
+    {
+        printf("What does %s mean\n");
+    }
+    if(unit == 4)
+    {
+        printf("What does %s mean\n");
+    }
+    if(unit == 5)
+    {
+        printf("What does %s mean\n");
+    }
+    if(unit == 6)
+    {
+        printf("What does %s mean\n");
+    }
+    if(unit == 7)
+    {
+        printf("What does %s mean\n");
+    }
+    if(unit == 8)
+    {
+        printf("What does %s mean\n");
+    }
+    if(unit == 9)
+    {
+        printf("What does %s mean\n");
+    }
 }
 // Using the choice, determine whether the user is correct or not
 void answer(char choice)
