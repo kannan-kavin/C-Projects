@@ -18,6 +18,7 @@ void question(int unit)
 {
     if(unit == 1)
     {
+        
         printf("What does %s mean\n");
     }
     if(unit == 2)
@@ -53,7 +54,7 @@ void question(int unit)
         printf("What does %s mean\n");
     }
 }
-// Using the choice, determine whether the user is correct or not
+// Using their choice, determine whether the user is correct or not and allow them to try again if they get it wrong
 void answer(char choice)
 {
 
