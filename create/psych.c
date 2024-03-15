@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+string definitions[]
 typedef struct
     {
         string term;
