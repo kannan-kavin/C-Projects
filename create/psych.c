@@ -9,7 +9,6 @@
 
 typedef struct
     {
-        int unit;
         string term;
         string definition;
     } Term;
