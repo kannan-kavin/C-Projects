@@ -34,6 +34,12 @@ int main(int argc, string argv[])
 // Pick a term to use as the question
 void question(int unit)
 {
+    typedef struct
+    {
+        char term[50]
+        char definition[200]
+    } Term;
+
     
     printf("What does %s mean", )
 }
