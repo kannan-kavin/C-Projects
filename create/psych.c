@@ -34,7 +34,8 @@ int main(int argc, string argv[])
 // Pick a term to use as the question
 void question(int unit)
 {
-    printf("What does string mean",)
+    
+    printf("What does %s mean", )
 }
 
 //
