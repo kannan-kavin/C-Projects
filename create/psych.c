@@ -17,7 +17,6 @@ typedef struct
 void question(int unit)
 {
     printf("What does STRING mean\n");
-    string choice = get_string("Choice: ");
 }
 // Using the choice, determine whether the user is correct or not
 void answer(char choice)
