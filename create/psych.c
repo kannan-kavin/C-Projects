@@ -7,7 +7,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-string definitions[]
 typedef struct
     {
         string term;
@@ -17,10 +16,14 @@ typedef struct
 // Pick a term to use as the question
 void question(int unit)
 {
-    printf("What does %s mean", )
-    string choice = get_char("Choice: ")
+    printf("What does STRING mean");
+    string choice = get_string("Choice: ");
 }
-void answer(char choice);
+// Using the choice, determine whether the user is correct or not
+void answer(char choice)
+{
+
+}
 
 int main(int argc, string argv[])
 {
@@ -44,10 +47,4 @@ int main(int argc, string argv[])
     char choice = tolower(get_char("What is your answer?\n"));
     // Congratulate the user if they answer correctly or tell the user the correct answer if they answer incorrectly
     answer(char choice);
-}
-
-//
-void answer(char choice)
-{
-
 }
