@@ -18,7 +18,8 @@ void question(int unit)
 {
     if(unit == 1)
     {
-        string terms1[term][definitions]
+        Term ("Mary Whiton Calkins");
+        Mary Whiton Calkins.definition = "Studied with William James and went on to become president of the American Psychological Association"
         printf("What does %s mean\n");
     }
     if(unit == 2)
