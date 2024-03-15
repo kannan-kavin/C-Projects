@@ -18,7 +18,7 @@ void question(int unit)
 {
     if(unit == 1)
     {
-        
+        string terms1[term][definitions]
         printf("What does %s mean\n");
     }
     if(unit == 2)
