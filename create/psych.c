@@ -14,6 +14,9 @@ typedef struct
         string definition;
     } Term;
 
+void question(int unit);
+void answer(char choice);
+
 int main(int argc, string argv[])
 {
     // Ensure proper usage
@@ -31,11 +34,11 @@ int main(int argc, string argv[])
         return 2;
     }
     // Prompt the user with the question
-    question();
+    question(int unit);
     //Get the user's answer
     char choice = tolower(get_char("What is your answer?\n"));
     // Congratulate the user if they answer correctly or tell the user the correct answer if they answer incorrectly
-    answer();
+    answer(char choice);
 }
 
 // Pick a term to use as the question
