@@ -16,7 +16,7 @@ typedef struct
 // Pick a term to use as the question
 void question(int unit)
 {
-    printf("What does STRING mean");
+    printf("What does STRING mean\n");
     string choice = get_string("Choice: ");
 }
 // Using the choice, determine whether the user is correct or not
@@ -42,9 +42,9 @@ int main(int argc, string argv[])
         return 2;
     }
     // Prompt the user with the question
-    question(int unit);
+    question(unit);
     //Get the user's answer
     char choice = tolower(get_char("What is your answer?\n"));
     // Congratulate the user if they answer correctly or tell the user the correct answer if they answer incorrectly
-    answer(char choice);
+    answer(choice);
 }
