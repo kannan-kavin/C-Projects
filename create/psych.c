@@ -140,8 +140,8 @@ void question(int unit)
         terms[1].term = "Charles Darwin";
         terms[1].definition = "Demonstration of the continuity of species, a model for the study of instinct, a book on the expression of the emotions, and a baby biography";
         terms[2].term = "Endocrine System";
-        terms[2].definition = "";
-        terms[3].term = "";
+        terms[2].definition = "A system of glands that secretes hormones into the circulatory system. These glands include the ovaries and testes, the pituitary gland, the thyroid, and pineal glands and many others, all of which control growth and development, reproduction, and body metabolism.";
+        terms[3].term = "Central Nervous System";
         terms[3].definition = "";
         terms[4].term = "";
         terms[4].definition = "";
