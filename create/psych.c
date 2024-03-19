@@ -132,7 +132,7 @@ void question(int unit)
         terms[54].term = "Local Institutional Review Board (IRB)";
         terms[54].definition = "A committee that reviews research studies involving humans for ethics";
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
-        terms[55].definition = "";
+        terms[55].definition = "reviews research studies involving animals for ethics violations. 🐶 🐱";
         terms[56].term = "";
         terms[56].definition = "";
         terms[57].term = "";
