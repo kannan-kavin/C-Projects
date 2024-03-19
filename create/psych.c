@@ -21,9 +21,9 @@ void question(int unit)
         Term terms[43];
         terms[0].term = "Mary Whiton Calkins";
         terms[0].definition = "Studied with William James and went on to become president of the American Psychological Association";
-        terms[1].term = "";
-        terms[1].definition = "";
-        terms[2].term = "";
+        terms[1].term = "Charles Darwin";
+        terms[1].definition = "Biologist who created many theories which can be applied to psychology";
+        terms[2].term = "Dorothea Dix";
         terms[2].definition = "";
         terms[3].term = "";
         terms[3].definition = "";
