@@ -16,6 +16,8 @@ typedef struct
 // Pick a term to use as the question
 void question(int unit)
 {
+    // terms[].term = "";
+    // terms[].definition = "";
     if(unit == 1)
     {
         Term terms[43];
@@ -109,8 +111,20 @@ void question(int unit)
         terms[43].definition = "Only proved through experiments, the relationship between two events or situations when one of the two is the cause of the other";
         terms[44].term = "Control";
         terms[44].definition = "Used in scientific experiments to prevent factors other than those being studied from affecting the outcome";
-        terms[].term = "";
-        terms[].definition = "";
+        terms[45].term = "Random Assignment";
+        terms[45].definition = "Needed to prove cause and effect, every participant having an equal chance of being in either the experimental group or the control group";
+        terms[46].term = "Association";
+        terms[46].definition = "Can prove a relationship, one variable provides information about another";
+        terms[47].term = "Confounding Variables";
+        terms[47].definition = "Those that affect other variables in a way that produces spurious or distorted associations between two variables and limit confidence";
+        terms[48].term = "Measures of central tendency";
+        terms[48].definition = "Mode (most common), median (middle), and mean (average)";
+        terms[49].term = "Variation";
+        terms[49].definition = "Range (max - min) and Standard Deviation ()";
+        terms[50].term = "";
+        terms[50].definition = "";
+        terms[51].term = "";
+        terms[51].definition = "";
         printf("What does %s mean\n");
     }
     if(unit == 2)
