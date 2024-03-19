@@ -105,10 +105,12 @@ void question(int unit)
         terms[41].definition = "Researchers repeatedly examine the same individuals to detect any changes that might occur over a period of time";
         terms[42].term = "Research method: cross-sectional studies";
         terms[42].definition = "A type of observational research that analyzes data of variables collected at one given point in time across a sample population or a pre-defined subset";
-        terms[43].term = "";
-        terms[43].definition = "";
-        terms[44].term = "";
-        terms[44].definition = "";
+        terms[43].term = "Cause and Effect";
+        terms[43].definition = "Only proved through experiments, the relationship between two events or situations when one of the two is the cause of the other";
+        terms[44].term = "Control";
+        terms[44].definition = "Used in scientific experiments to prevent factors other than those being studied from affecting the outcome";
+        terms[].term = "";
+        terms[].definition = "";
         printf("What does %s mean\n");
     }
     if(unit == 2)
