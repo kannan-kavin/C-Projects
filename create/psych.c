@@ -125,9 +125,9 @@ void question(int unit)
         terms[50].definition = "A number between −1 and +1 calculated so as to represent the linear dependence of two variables or sets of data.";
         terms[51].term = "Frequency Distribution";
         terms[51].definition = "An organized tabulation/graphical representation of the number of individuals in each category on the scale of measurement (Normal, Bimodal, Positive Skew, Negative Skew.)";
-        terms[52].term = "";
-        terms[52].definition = "";
-        terms[53].term = "";
+        terms[52].term = "American Psychological Association";
+        terms[52].definition = "Creates guidelines such as: Informed Consent, Deception/Deception Debriefing, Protection from Harm, Anonymity, and Coercion";
+        terms[53].term = "Federal Regulations";
         terms[53].definition = "";
         terms[54].term = "";
         terms[54].definition = "";
