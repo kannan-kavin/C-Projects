@@ -128,10 +128,10 @@ void question(int unit)
         terms[52].term = "American Psychological Association";
         terms[52].definition = "Creates guidelines such as: Informed Consent, Deception/Deception Debriefing, Protection from Harm, Anonymity, and Coercion";
         terms[53].term = "Federal Regulations";
-        terms[53].definition = "";
-        terms[54].term = "";
-        terms[54].definition = "";
-        terms[55].term = "";
+        terms[53].definition = "Act as a bedrock for ethical research practices in psychology";
+        terms[54].term = "Local Institutional Review Board (IRB)";
+        terms[54].definition = "A committee that reviews research studies involving humans for ethics";
+        terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
         terms[55].definition = "";
         terms[56].term = "";
         terms[56].definition = "";
