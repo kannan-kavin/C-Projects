@@ -21,7 +21,7 @@ void question(int unit)
     // terms[].definition = "";
     if(unit == 1)
     {
-        Term terms[43];
+        Term terms[56];
         terms[0].term = "Mary Whiton Calkins";
         terms[0].definition = "Studied with William James and went on to become president of the American Psychological Association";
         terms[1].term = "Charles Darwin";
@@ -134,10 +134,13 @@ void question(int unit)
         terms[54].definition = "A committee that reviews research studies involving humans for ethics";
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
         terms[55].definition = "reviews research studies involving animals for ethics violations. 🐶 🐱";
-        printf("What does %s mean\n");
+        srand(time(NULL));
+        int indexterm = rand() % 55;
+        printf("What does %s mean\n", terms[indexterm].term);
     }
     if(unit == 2)
     {
+        Term terms[13];
         terms[1].term = "Charles Darwin";
         terms[1].definition = "Demonstration of the continuity of species, a model for the study of instinct, a book on the expression of the emotions, and a baby biography";
         terms[2].term = "Endocrine System";
@@ -162,7 +165,7 @@ void question(int unit)
         terms[11].definition = "Substances that bind to synaptic receptors and increase the effect of the neurotransmitter";
         terms[12].term = "Antagonists";
         terms[12].definition = "Drugs that block a particular neurotransmitter from activating its receptors";
-        terms[13].term = "";
+        /* terms[13].term = "";
         terms[13].definition = "";
         terms[14].term = "";
         terms[14].definition = "";
@@ -188,10 +191,9 @@ void question(int unit)
         terms[24].definition = "";
         terms[].term = "";
         terms[].definition = "";
-        srand(time(NULL));
-        printf("What does %s mean\n");
+        printf("What does %s mean\n"); */
     }
-    if(unit == 3)
+    /* if(unit == 3)
     {
         printf("What does %s mean\n");
     }
@@ -218,7 +220,7 @@ void question(int unit)
     if(unit == 9)
     {
         printf("What does %s mean\n");
-    }
+    } */
 }
 // Using their choice, determine whether the user is correct or not and allow them to try again if they get it wrong
 void answer(char choice)
