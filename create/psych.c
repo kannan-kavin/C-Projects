@@ -188,6 +188,7 @@ void question(int unit)
         terms[24].definition = "";
         terms[].term = "";
         terms[].definition = "";
+        srand(time(NULL));
         printf("What does %s mean\n");
     }
     if(unit == 3)
