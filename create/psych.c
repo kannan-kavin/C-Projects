@@ -1,7 +1,5 @@
 // When displayed a term, pick the correct definition (a-d)
 
-// Separate into units 1-9
-
 #include <cs50.h>
 #include <stdio.h>
 #include <stdlib.h>
