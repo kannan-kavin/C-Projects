@@ -136,7 +136,11 @@ void question(int unit)
         terms[55].definition = "reviews research studies involving animals for ethics violations. 🐶 🐱";
         srand(time(NULL));
         int indexterm = rand() % 55;
-        printf("What does %s mean\n", terms[indexterm].term);
+        int indexa = rand() % 55;
+        int indexb = rand() % 55;
+        int indexc = rand() % 55;
+        int indexd = rand() % 55;
+        printf("What does %s mean?\na.)%s\nb.)%s\nc.)%s\nd.)%s\n", terms[indexterm].term, );
     }
     if(unit == 2)
     {
