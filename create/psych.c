@@ -227,7 +227,7 @@ void question(int unit)
         printf("What does %s mean\n");
     } */
 }
-// Using their choice, determine whether the user is correct or not and allow them to try again if they get it wrong
+// Using their choice, determine whether the user is correct or not and allow them to try again (FOR LOOP) if they get it wrong
 void answer(char choice)
 {
 
