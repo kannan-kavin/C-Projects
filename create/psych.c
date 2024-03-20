@@ -135,11 +135,11 @@ void question(int unit)
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
         terms[55].definition = "reviews research studies involving animals for ethics violations. 🐶 🐱";
         srand(time(NULL));
-        int indexterm = rand() % 55;
-        int indexa = rand() % 55;
-        int indexb = rand() % 55;
-        int indexc = rand() % 55;
-        int indexd = rand() % 55;
+        int indexterm = rand() % 56;
+        int indexa = rand() % 56;
+        int indexb = rand() % 56;
+        int indexc = rand() % 56;
+        int indexd = rand() % 56;
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, terms[indexa].definition, terms[indexb].definition, terms[indexc].definition, terms[indexd].definition);
     }
     if(unit == 2)
