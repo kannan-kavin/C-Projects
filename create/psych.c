@@ -140,7 +140,7 @@ void question(int unit)
         int indexb = rand() % 55;
         int indexc = rand() % 55;
         int indexd = rand() % 55;
-        printf("What does %s mean?\na.)%s\nb.)%s\nc.)%s\nd.)%s\n", terms[indexterm].term, );
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, terms[indexa].definition, terms[indexb].definition, terms[indexc].definition, terms[indexd].definition);
     }
     if(unit == 2)
     {
