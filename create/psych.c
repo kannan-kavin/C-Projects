@@ -136,6 +136,7 @@ void question(int unit)
         terms[55].definition = "reviews research studies involving animals for ethics violations. 🐶 🐱";
         srand(time(NULL));
         int indexterm = rand() % 56;
+        terms[indexterm].definition = 
         int indexa = rand() % 56;
         int indexb = rand() % 56;
         int indexc = rand() % 56;
