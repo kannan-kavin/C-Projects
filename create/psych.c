@@ -144,13 +144,16 @@ void question(int unit)
             index3 = rand() % 56;
         }
         while (index1 != indexterm && index2 != indexterm && index3 != indexterm);
-        shuffle[4];
+        string shuffled[4];
         do
         {
-            shuffle[rand() % 4] = 
+            shuffled[rand() % 4] = terms[indexterm].definition;
+            shuffled[rand() % 4] = terms[index1].definition;
+            shuffled[rand() % 4] = terms[index2].definition;
+            shuffled[rand() % 4] = terms[index3].definition;
         }
-        while
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[a], shuffled[b], shuffled[c], shuffled[d]);
+        while (shuffled[0] != shuffled[1] != shuffled[2] != shuffled[3]);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if (unit == 2)
     {
