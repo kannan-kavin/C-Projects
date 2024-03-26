@@ -1,23 +1,23 @@
 // When displayed a term, pick the correct definition (a-d)
 
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <time.h>
 
 typedef struct
-    {
-        string term;
-        string definition;
-    } Term;
+{
+    string term;
+    string definition;
+} Term;
 
 // Pick a term to use as the question
 void question(int unit)
 {
     // terms[].term = "";
     // terms[].definition = "";
-    if(unit == 1)
+    if (unit == 1)
     {
         Term terms[56];
         terms[0].term = "Mary Whiton Calkins";
@@ -134,15 +134,19 @@ void question(int unit)
         terms[55].definition = "reviews research studies involving animals for ethics violations. 🐶 🐱";
         srand(time(NULL));
         int indexterm = rand() % 56;
-        for (i = 0; i < 3; i++)
+        int index1;
+        int index2;
+        int index3;
+        do
         {
-            int index1 = rand() % 56;
-            int index2 = rand() % 56;
-            int index3 = rand() % 56;
+            index1 = rand() % 56;
+            index2 = rand() % 56;
+            index3 = rand() % 56;
         }
+        while (index1 != indexterm && index2 != indexterm && index3 != indexterm);
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, terms[index1].definition, terms[index2].definition, terms[index3].definition, terms[indexterm].definition);
     }
-    if(unit == 2)
+    if (unit == 2)
     {
         Term terms[13];
         terms[1].term = "Charles Darwin";
