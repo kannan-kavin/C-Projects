@@ -144,6 +144,7 @@ void question(int unit)
             index3 = rand() % 56;
         }
         while (index1 != indexterm && index2 != indexterm && index3 != indexterm);
+        shuffle[4];
 
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[a], shuffled[b], shuffled[c], shuffled[d]);
     }
