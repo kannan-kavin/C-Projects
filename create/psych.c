@@ -144,6 +144,7 @@ void question(int unit)
             index3 = rand() % 56;
         }
         while (index1 != indexterm && index2 != indexterm && index3 != indexterm);
+        
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, terms[index1].definition, terms[index2].definition, terms[index3].definition, terms[indexterm].definition);
     }
     if (unit == 2)
