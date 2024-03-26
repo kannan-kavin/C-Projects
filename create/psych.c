@@ -137,9 +137,7 @@ void question(int unit)
         int index1 = rand() % 56;
         int index2 = rand() % 56;
         int index3 = rand() % 56;
-        options = [terms[indexterm].definition, terms[index1].definition, terms[index2].definition, terms[index3].definition]
-        shuffle(options)
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[index].term, terms[indexa].definition, terms[indexb].definition, terms[indexc].definition, terms[indexd].definition);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, terms[index1].definition, terms[index2].definition, terms[index3].definition, terms[indexterm].definition);
     }
     if(unit == 2)
     {
