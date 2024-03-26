@@ -131,7 +131,7 @@ void question(int unit)
         terms[54].term = "Local Institutional Review Board (IRB)";
         terms[54].definition = "A committee that reviews research studies involving humans for ethics";
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
-        terms[55].definition = "reviews research studies involving animals for ethics violations. 🐶 🐱";
+        terms[55].definition = "reviews research studies involving animals for ethics violations.";
         srand(time(NULL));
         int indexterm = rand() % 56;
         int index1;
@@ -143,7 +143,7 @@ void question(int unit)
             index2 = rand() % 56;
             index3 = rand() % 56;
         }
-        while (index1 != indexterm && index2 != indexterm && index3 != indexterm);
+        while (index1 != indexterm && index2 != indexterm && index3 != indexterm && index1 != index2 && index1 != index3 && index2 != index3);
         string shuffled[4];
         do
         {
@@ -152,7 +152,7 @@ void question(int unit)
             shuffled[rand() % 4] = terms[index2].definition;
             shuffled[rand() % 4] = terms[index3].definition;
         }
-        while (shuffled[0] != shuffled[1] != shuffled[2] != shuffled[3]);
+        while (shuffled[0] != shuffled[1] && shuffled[0] != shuffled[2] && shuffled[0] != shuffled[3] && shuffled[1] != shuffled[2] && shuffled[1] != shuffled[3] && shuffled[2] != shuffled[3]);
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if (unit == 2)
