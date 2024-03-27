@@ -185,7 +185,7 @@ void question(int unit)
         terms[11].definition = "Substances that bind to synaptic receptors and increase the effect of the neurotransmitter";
         terms[12].term = "Antagonists";
         terms[12].definition = "Drugs that block a particular neurotransmitter from activating its receptors";
-        /* terms[13].term = "";
+        terms[13].term = "";
         terms[13].definition = "";
         terms[14].term = "";
         terms[14].definition = "";
@@ -211,7 +211,7 @@ void question(int unit)
         terms[24].definition = "";
         terms[].term = "";
         terms[].definition = "";
-        printf("What does %s mean\n"); */
+        printf("What does %s mean\n"); 
     }
     /* if(unit == 3)
     {
