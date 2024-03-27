@@ -185,9 +185,9 @@ void question(int unit)
         terms[11].definition = "Substances that bind to synaptic receptors and increase the effect of the neurotransmitter";
         terms[12].term = "Antagonists";
         terms[12].definition = "Drugs that block a particular neurotransmitter from activating its receptors";
-        terms[13].term = "Forebrain";
-        terms[13].definition = "Consists of the thalamus, hypothalamus, amygdala, and the hippocampus";
-        terms[14].term = "Temporal Lobe";
+        terms[13].term = "";
+        terms[13].definition = "";
+        terms[14].term = "";
         terms[14].definition = "";
         terms[15].term = "";
         terms[15].definition = "";
