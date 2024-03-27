@@ -151,9 +151,10 @@ void question(int unit)
         shuffled[3] = terms[index3].definition;
         for (int i = 3; i > 0; i--)
         {
-            j = rand() % i
+            int j = rand() % (i + 1);
+            string temp = shuffled[i]
             shuffle[i] = shuffle[j]
-            shuffle[j] = shuffle[i]
+            shuffle[j] = temp
         }
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
