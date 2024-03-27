@@ -131,7 +131,7 @@ void question(int unit)
         terms[54].term = "Local Institutional Review Board (IRB)";
         terms[54].definition = "A committee that reviews research studies involving humans for ethics";
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
-        terms[55].definition = "reviews research studies involving animals for ethics violations.";
+        terms[55].definition = "Reviews research studies involving animals for ethics violations.";
         srand(time(NULL));
         int indexterm = rand() % 56;
         int index1;
@@ -185,8 +185,8 @@ void question(int unit)
         terms[11].definition = "Substances that bind to synaptic receptors and increase the effect of the neurotransmitter";
         terms[12].term = "Antagonists";
         terms[12].definition = "Drugs that block a particular neurotransmitter from activating its receptors";
-        terms[13].term = "";
-        terms[13].definition = "";
+        terms[13].term = "Forebrain";
+        terms[13].definition = "Consists of the thalamus, hypothalamus, amygdala, and the hippocampus";
         terms[14].term = "";
         terms[14].definition = "";
         terms[15].term = "";
@@ -211,36 +211,228 @@ void question(int unit)
         terms[24].definition = "";
         terms[].term = "";
         terms[].definition = "";
-        printf("What does %s mean\n"); 
+                srand(time(NULL));
+        int indexterm = rand() % 56;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % 56;
+            index2 = rand() % 56;
+            index3 = rand() % 56;
+        }
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+        string shuffled[4];
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
-    /* if(unit == 3)
+    if(unit == 3)
     {
-        printf("What does %s mean\n");
+                srand(time(NULL));
+        int indexterm = rand() % 56;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % 56;
+            index2 = rand() % 56;
+            index3 = rand() % 56;
+        }
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+        string shuffled[4];
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if(unit == 4)
     {
-        printf("What does %s mean\n");
+                srand(time(NULL));
+        int indexterm = rand() % 56;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % 56;
+            index2 = rand() % 56;
+            index3 = rand() % 56;
+        }
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+        string shuffled[4];
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if(unit == 5)
     {
-        printf("What does %s mean\n");
+                srand(time(NULL));
+        int indexterm = rand() % 56;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % 56;
+            index2 = rand() % 56;
+            index3 = rand() % 56;
+        }
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+        string shuffled[4];
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if(unit == 6)
     {
-        printf("What does %s mean\n");
+                srand(time(NULL));
+        int indexterm = rand() % 56;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % 56;
+            index2 = rand() % 56;
+            index3 = rand() % 56;
+        }
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+        string shuffled[4];
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if(unit == 7)
     {
-        printf("What does %s mean\n");
+                srand(time(NULL));
+        int indexterm = rand() % 56;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % 56;
+            index2 = rand() % 56;
+            index3 = rand() % 56;
+        }
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+        string shuffled[4];
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if(unit == 8)
     {
-        printf("What does %s mean\n");
+                srand(time(NULL));
+        int indexterm = rand() % 56;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % 56;
+            index2 = rand() % 56;
+            index3 = rand() % 56;
+        }
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+        string shuffled[4];
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if(unit == 9)
     {
-        printf("What does %s mean\n");
-    } */
+                srand(time(NULL));
+        int indexterm = rand() % 56;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % 56;
+            index2 = rand() % 56;
+            index3 = rand() % 56;
+        }
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+        string shuffled[4];
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+    }
 }
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR LOOP) if they get it wrong
 void answer(char choice)
