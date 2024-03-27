@@ -145,6 +145,7 @@ void question(int unit)
         }
         while (index1 != indexterm && index2 != indexterm && index3 != indexterm && index1 != index2 && index1 != index3 && index2 != index3);
         string shuffled[4];
+        shuffled[0]
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if (unit == 2)
