@@ -160,7 +160,7 @@ void question(int unit)
     }
     if (unit == 2)
     {
-        Term terms[13];
+        Term terms[64];
         terms[1].term = "Charles Darwin";
         terms[1].definition = "Demonstration of the continuity of species, a model for the study of instinct, a book on the expression of the emotions, and a baby biography";
         terms[2].term = "Endocrine System";
@@ -258,7 +258,7 @@ void question(int unit)
         terms[48].term = "Hallucinogen";
         terms[48].definition = "Distort perception and evoke sensory images without any actual sensory input";
         terms[49].term = "William James";
-        terms[49].definition = "His work laid much of the groundwork for modern theories about consciousness, perception, memory, emotion, etc.;"
+        terms[49].definition = "His work laid much of the groundwork for modern theories about consciousness, perception, memory, emotion, etc.";
         terms[50].term = "Sigmund Freud";
         terms[50].definition = "Believed that the unconscious determines everything we do";
         terms[51].term = "NREM-1";
@@ -275,17 +275,19 @@ void question(int unit)
         terms[56].definition = "Sleeping in the darkness when predators loomed about kept our ancestors out of harm's way";
         terms[57].term = "Repair Theory";
         terms[57].definition = "Sleep helps restore and repair brain tissue";
-        terms[58].term = "";
-        terms[58].definition = "";
-        terms[59].term = "";
-        terms[59].definition = "";
-        terms[60].term = "";
-        terms[60].definition = "";
-        terms[61].term = "";
-        terms[61].definition = "";
-        terms[].term = "";
-        terms[].definition = "";
-                srand(time(NULL));
+        terms[58].term = "Insomnia";
+        terms[58].definition = "Persistent problems in falling or staying asleep (although they do sleep less than others they often overestimate)";
+        terms[59].term = "Narcolepsy";
+        terms[59].definition = "Victim suffers sudden, uncontrollable sleep attacks, often characterized by entry directly into REM. Attacks can last around five minutes usually but happen at the worst times.";
+        terms[60].term = "Sleep Apnea";
+        terms[60].definition = "Sleep disorder in which victims stop breathing while asleep, briefly arouses and gasps for air, and falls back asleep, and repeats this cycle through the night.";
+        terms[61].term = "Night Terrors (aka incubus attacks)";
+        terms[61].definition = "Victims experience episodes of high arousal with apparent terror. (Screaming, kicking, thrashing, etc.) Usually occurs during stage 4 sleep and common in children. Usually people with it don't remember having the episodes the next morning.";
+        terms[62].term = "Sleep Walking / sleep talking";
+        terms[62].definition = "Stage 4 sleep disorders, run in families. Usually harmless. Children and sleep deprived people are more likely to sleepwalk.";
+        terms[63].term = "REM motor behavior disorder";
+        terms[63].definition = "Disorder in which you act out vivid unpleasant dreams with violent arm or leg motions.";
+        srand(time(NULL));
         int indexterm = rand() % 56;
         int index1;
         int index2;
