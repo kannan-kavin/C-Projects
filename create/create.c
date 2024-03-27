@@ -149,6 +149,12 @@ void question(int unit)
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
         shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            j = rand() % i
+            shuffle[i] = shuffle[j]
+            shuffle[j] = shuffle[i]
+        }
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if (unit == 2)
