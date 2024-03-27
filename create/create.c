@@ -12,6 +12,34 @@ typedef struct
     string definition;
 } Term;
 
+void shuffle()
+{
+    srand(time(NULL));
+    int indexterm = rand() % 56;
+    int index1;
+    int index2;
+    int index3;
+    do
+    {
+        index1 = rand() % 56;
+        index2 = rand() % 56;
+        index3 = rand() % 56;
+    }
+    while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+    string shuffled[4];
+    shuffled[0] = terms[indexterm].definition;
+    shuffled[1] = terms[index1].definition;
+    shuffled[2] = terms[index2].definition;
+    shuffled[3] = terms[index3].definition;
+    for (int i = 3; i > 0; i--)
+    {
+        int j = rand() % (i + 1);
+        string temp = shuffled[i];
+        shuffled[i] = shuffled[j];
+        shuffled[j] = temp;
+    }
+    return (shuffled[0], shuffled[1], shuffled[2], shuffled[3])
+}
 // Pick a term to use as the question
 void question(int unit)
 {
@@ -224,34 +252,6 @@ void answer(char choice)
 
 }
 
-void shuffle()
-{
-    srand(time(NULL));
-    int indexterm = rand() % 56;
-    int index1;
-    int index2;
-    int index3;
-    do
-    {
-        index1 = rand() % 56;
-        index2 = rand() % 56;
-        index3 = rand() % 56;
-    }
-    while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
-    string shuffled[4];
-    shuffled[0] = terms[indexterm].definition;
-    shuffled[1] = terms[index1].definition;
-    shuffled[2] = terms[index2].definition;
-    shuffled[3] = terms[index3].definition;
-    for (int i = 3; i > 0; i--)
-    {
-        int j = rand() % (i + 1);
-        string temp = shuffled[i];
-        shuffled[i] = shuffled[j];
-        shuffled[j] = temp;
-    }
-    return (shuffled[0], shuffled[1], shuffled[2], shuffled[3])
-}
 int main(int argc, string argv[])
 {
     // Ensure proper usage
