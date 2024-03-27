@@ -143,9 +143,12 @@ void question(int unit)
             index2 = rand() % 56;
             index3 = rand() % 56;
         }
-        while (index1 != indexterm && index2 != indexterm && index3 != indexterm && index1 != index2 && index1 != index3 && index2 != index3);
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
         string shuffled[4];
-        shuffled[0]
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
     }
     if (unit == 2)
