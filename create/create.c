@@ -187,7 +187,7 @@ void question(int unit)
         terms[12].definition = "Drugs that block a particular neurotransmitter from activating its receptors";
         terms[13].term = "Forebrain";
         terms[13].definition = "Consists of the thalamus, hypothalamus, amygdala, and the hippocampus";
-        terms[14].term = "";
+        terms[14].term = "Temporal Lobe";
         terms[14].definition = "";
         terms[15].term = "";
         terms[15].definition = "";
