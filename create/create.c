@@ -315,7 +315,40 @@ void question(int unit)
     }
     if(unit == 3)
     {
-                srand(time(NULL));
+        Term terms[64];
+        terms[1].term = ;
+        terms[1].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        terms[].term = ;
+        terms[].definition = ;
+        srand(time(NULL));
         int indexterm = rand() % 56;
         int index1;
         int index2;
