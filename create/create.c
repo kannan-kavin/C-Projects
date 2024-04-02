@@ -465,7 +465,7 @@ void question(int unit)
     }
     if(unit == 5)
     {
-        Term terms[25];
+        Term terms[43];
         terms[0].term = "Effortful processing";
         terms[0].definition = "Active processing of information that requires sustained effort";
         terms[1].term = "Automatic processing";
@@ -530,22 +530,57 @@ void question(int unit)
         terms[30].definition = "The finding that IQ scores have steadily been surpassing previous generations";
         terms[31].term = "Stereotype threat";
         terms[31].definition = "When a person feels at risk of conforming to negative stereotypes about his or her race";
-        terms[32].term = "";
-        terms[32].definition = "";
-        terms[33].term = "";
-        terms[33].definition = "";
-        terms[34].term = "";
-        terms[34].definition = "";
-        terms[35].term = "";
-        terms[35].definition = "";
-        terms[36].term = "";
-        terms[36].definition = "";
-        terms[37].term = "";
-        terms[37].definition = "";
-        terms[38].term = "";
-        terms[38].definition = "";
-        terms[39].term = "";
-        terms[39].definition = "";
+        terms[32].term = "Savant syndrome";
+        terms[32].definition = "A condition in which someone shows exceptional ability in a single skill but limited general mental ability";
+        terms[33].term = "Charles Spearman";
+        terms[33].definition = "Pioneered the theory of general intelligence";
+        terms[34].term = "Howard Gardner";
+        terms[34].definition = "Best known for his theory of multiple intelligences";
+        terms[35].term = "Robert Sternberg";
+        terms[35].definition = "Created a theory that states that there are three aspects to intelligence. These are creative, analytical, and practical intelligence";
+        terms[36].term = "Alfred Binet";
+        terms[36].definition = "Created the first practical intelligence test by assessing the diverse abilities of Parisian schoolchildren in the 19th century";
+        terms[37].term = "Francis Galton";
+        terms[37].definition = "Developed the idea of nature vs. nurture";
+        terms[38].term = "Lewis Terman";
+        terms[38].definition = "Professor who revised Binet's IQ test and established norms for American children";
+        terms[39].term = "David Wechsler";
+        terms[39].definition = "Became well known for his inventions of intelligence tests that evaluate cognitive abilities in adults and children";
+        terms[40].term = "Gifted";
+        terms[40].definition = "The state of possessing a great amount of natural ability, talent, or intelligence, which usually becomes evident at a very young age";
+        terms[41].term = "Intellectual Disability";
+        terms[41].definition = "A condition of limited mental ability, indicated by an intelligence score of 70 or below and difficulty in adapting to the demands of life";
+        terms[42].term = "Language Acquisition";
+        terms[42].definition = "Humans are born with an innate capacity for learning language";
+        srand(time(NULL));
+        int indexterm = rand() % 43;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % 43;
+            index2 = rand() % 43;
+            index3 = rand() % 43;
+        }
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+        string shuffled[4];
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+    }
+    if(unit == 6)
+    {
+        Term terms[25];
         terms[0].term = "";
         terms[0].definition = "";
         terms[1].term = "";
@@ -566,35 +601,6 @@ void question(int unit)
         terms[8].definition = "";
         terms[9].term = "";
         terms[9].definition = "";
-        srand(time(NULL));
-        int indexterm = rand() % 56;
-        int index1;
-        int index2;
-        int index3;
-        do
-        {
-            index1 = rand() % 56;
-            index2 = rand() % 56;
-            index3 = rand() % 56;
-        }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
-        string shuffled[4];
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-    }
-    if(unit == 6)
-    {
-        Term terms[25];
         terms[].term = "";
         terms[].definition = "";
         srand(time(NULL));
