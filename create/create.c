@@ -15,8 +15,6 @@ typedef struct
 // Pick a term to use as the question
 void question(int unit)
 {
-    // terms[].term = "";
-    // terms[].definition = "";
     if (unit == 1)
     {
         Term terms[56];
@@ -315,7 +313,7 @@ void question(int unit)
     }
     if(unit == 3)
     {
-        Term terms[64];
+        Term terms[22];
         terms[0].term = "Gestalt Principles";
         terms[0].definition = "Different ways individuals group stimuli together in order to make a whole that makes sense to them; divided up into five categories: proximity, similarity, continuity, connectedness, and closure";
         terms[1].term = "Depth Perception";
@@ -341,51 +339,35 @@ void question(int unit)
         terms[11].term = "Vision process";
         terms[11].definition = "Light will initially pass through the cornea and bend through the pupil to reach the lens. The lens is responsible for taking the refracted light and refocusing it. In doing so, the refocused rays will create an inverted image on the retina";
         terms[12].term = "Theories of color vision";
-        terms[12].definition = "Human eyes only perceive three colors of light: red, blue, and green. The wavelengths of these three colors can be combined to create every color on the visible light spectrum.";
+        terms[12].definition = "Human eyes only perceive three colors of light: red, blue, and green. The wavelengths of these three colors can be combined to create every color on the visible light spectrum";
         terms[13].term = "Visual and hearing impairments";
-        terms[13].definition = ;
-        terms[14].term = ;
-        terms[14].definition = ;
-        terms[15].term = ;
-        terms[15].definition = ;
-        terms[16].term = ;
-        terms[16].definition = ;
-        terms[17].term = ;
-        terms[17].definition = ;
-        terms[18].term = ;
-        terms[18].definition = ;
-        terms[19].term = ;
-        terms[19].definition = ;
-        terms[20].term = ;
-        terms[20].definition = ;
-        terms[21].term = ;
-        terms[21].definition = ;
-        terms[22].term = ;
-        terms[22].definition = ;
-        terms[23].term = ;
-        terms[23].definition = ;
-        terms[24].term = ;
-        terms[24].definition = ;
-        terms[25].term = ;
-        terms[25].definition = ;
-        terms[26].term = ;
-        terms[26].definition = ;
-        terms[27].term = ;
-        terms[27].definition = ;
-        terms[28].term = ;
-        terms[28].definition = ;
-        terms[29].term = ;
-        terms[29].definition = ;
+        terms[13].definition = "Conductive hearing loss, Sensorineural hearing loss, remedied by ALD's";
+        terms[14].term = "Synthesia";
+        terms[14].definition = "A condition in which stimulation of one sense generates a simultaneous sensation in another.";
+        terms[15].term = "Hearing process";
+        terms[15].definition = "When the vibration of sound waves are converted to neural impulses. Each vibration causes molecules to compress and expand; the greater the compression, the higher the amplitude, and the louder the sound";
+        terms[16].term = "Taste";
+        terms[16].definition = "A sense that is picked up by the tongue and involves the detection of chemicals in food that produces different flavors";
+        terms[17].term = "Smell";
+        terms[17].definition = "A sense that is picked up by the nose and involves the detection of chemicals in the air that produce different scents";
+        terms[18].term = "Touch";
+        terms[18].definition = "A mix of 4 distinct skin senses; pressure, warmth, cold and pain";
+        terms[19].term = "Pain";
+        terms[19].definition = "Your body's message telling you that something has gone wrong";
+        terms[20].term = "Vestibular";
+        terms[20].definition = "Your sense of movement, including balance";
+        terms[21].term = "Kinesthesis";
+        terms[21].definition = "The system that enables us to sense our position and how and when our body parts move";
         srand(time(NULL));
-        int indexterm = rand() % 56;
+        int indexterm = rand() % 22;
         int index1;
         int index2;
         int index3;
         do
         {
-            index1 = rand() % 56;
-            index2 = rand() % 56;
-            index3 = rand() % 56;
+            index1 = rand() % 22;
+            index2 = rand() % 22;
+            index3 = rand() % 22;
         }
         while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
         string shuffled[4];
@@ -404,16 +386,67 @@ void question(int unit)
     }
     if(unit == 4)
     {
-                srand(time(NULL));
-        int indexterm = rand() % 56;
+        Term terms[25];
+        terms[0].term = "Albert Bandura";
+        terms[0].definition = "Creator of the social learning theory";
+        terms[1].term = "Ivan Pavlov";
+        terms[1].definition = "One of the earliest psychologists known for classical conditioning";
+        terms[2].term = "Robert Rescorla";
+        terms[2].definition = "Founder of the contingency theory";
+        terms[3].term = "B. F. Skinner";
+        terms[3].definition = "Developed the theory of operant conditioning";
+        terms[4].term = "Edward Thorndike";
+        terms[4].definition = "Came up with the law of effect";
+        terms[5].term = "Edward Tolman";
+        terms[5].definition = "The first psychologist to study latent learning";
+        terms[6].term = "John B. Watson";
+        terms[6].definition = "A classical conditioning psychologist who did the Little Albert experiment";
+        terms[7].term = "John Garcia";
+        terms[7].definition = "Discovered a phenomenon in which conditioned taste aversions develop after a specific food becomes associated with a negative reaction, such as nausea or vomiting";
+        terms[8].term = "Acquisition";
+        terms[8].definition = "When a behavior, such as a conditioned response, has been learned";
+        terms[9].term = "Extinction";
+        terms[9].definition = "The cessation of the conditioned response when the unconditioned stimulus is no longer presented";
+        terms[10].term = "Spontaneous recovery";
+        terms[10].definition = "The comeback of a conditioned response (fear) after extinction when the unconditioned stimulus (noise) is presented again";
+        terms[11].term = "Generalization";
+        terms[11].definition = "The tendency to respond in the same way to different but similar stimuli";
+        terms[12].term = "Stimulus discrimination";
+        terms[12].definition = "The ability to distinguish between similar but non-identical stimuli";
+        terms[13].term = "High-Order Learning";
+        terms[13].definition = "When a neutral stimulus becomes linked to a conditioned stimulus";
+        terms[14].term = "Unconditioned stimulus";
+        terms[14].definition = "Something that has a natural response and can be used to create certain behaviors through classical conditioning";
+        terms[15].term = "Unconditioned response";
+        terms[15].definition = "The unlearned, naturally occurring response to the unconditioned stimulus";
+        terms[16].term = "Neutral/conditioned stimulus";
+        terms[16].definition = "A stimulus that does not produce a reflexive response";
+        terms[17].term = "Conditioned response";
+        terms[17].definition = "A behavior that does not come naturally, but must be learned by the individual by pairing a neutral stimulus with a potent stimulus.";
+        terms[18].term = "Contingencies";
+        terms[18].definition = "For learning to take place, a stimulus must provide the subject information about the likelihood that certain events will occur.";
+        terms[19].term = "Positive reinforcement";
+        terms[19].definition = "A method for behavior modification that increases the likelihood or probability that a behavior will occur";
+        terms[20].term = "Negative reinforcement";
+        terms[20].definition = "The idea of taking away an unwanted stimulus in order to encourage good behavior";
+        terms[21].term = "Positive punishment";
+        terms[21].definition = "A behavior is discouraged with the application of a negative stimulus or experience";
+        terms[22].term = "Negative punishment";
+        terms[22].definition = "Taking away something pleasant in order to change a certain behavior";
+        terms[23].term = "Classical Conditioning";
+        terms[23].definition = "The process of repeatedly pairing an original (unconditioned) stimulus, which naturally produces a reflexive (unconditioned) response, with a new (neutral) stimulus, such that the new stimulus produces the same response.";
+        terms[24].term = "Operant Conditioning";
+        terms[24].definition = "A method of learning that alters the frequency of a behavior by manipulating its consequences through reinforcement or punishment.";
+        srand(time(NULL));
+        int indexterm = rand() % 25;
         int index1;
         int index2;
         int index3;
         do
         {
-            index1 = rand() % 56;
-            index2 = rand() % 56;
-            index3 = rand() % 56;
+            index1 = rand() % 25;
+            index2 = rand() % 25;
+            index3 = rand() % 25;
         }
         while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
         string shuffled[4];
@@ -432,7 +465,10 @@ void question(int unit)
     }
     if(unit == 5)
     {
-                srand(time(NULL));
+        Term terms[25];
+        terms[].term = "";
+        terms[].definition = "";
+        srand(time(NULL));
         int indexterm = rand() % 56;
         int index1;
         int index2;
@@ -460,7 +496,10 @@ void question(int unit)
     }
     if(unit == 6)
     {
-                srand(time(NULL));
+        Term terms[25];
+        terms[].term = "";
+        terms[].definition = "";
+        srand(time(NULL));
         int indexterm = rand() % 56;
         int index1;
         int index2;
@@ -488,7 +527,10 @@ void question(int unit)
     }
     if(unit == 7)
     {
-                srand(time(NULL));
+        Term terms[25];
+        terms[].term = "";
+        terms[].definition = "";
+        srand(time(NULL));
         int indexterm = rand() % 56;
         int index1;
         int index2;
@@ -516,7 +558,10 @@ void question(int unit)
     }
     if(unit == 8)
     {
-                srand(time(NULL));
+        Term terms[25];
+        terms[].term = "";
+        terms[].definition = "";
+        srand(time(NULL));
         int indexterm = rand() % 56;
         int index1;
         int index2;
@@ -544,7 +589,10 @@ void question(int unit)
     }
     if(unit == 9)
     {
-                srand(time(NULL));
+        Term terms[25];
+        terms[].term = "";
+        terms[].definition = "";
+        srand(time(NULL));
         int indexterm = rand() % 56;
         int index1;
         int index2;
