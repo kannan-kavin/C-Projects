@@ -329,8 +329,8 @@ void question(int unit)
         terms[5].term = "David Hubel";
         terms[5].definition = "Demonstrated that neurons in the occipital lobe's visual cortex receive information from individual ganglion cells in the retina and proved that the brain divides a visual scene into several subdimensions";
         terms[6].term = "Ernst Weber";
-        terms[6].definition = ;
-        terms[7].term = ;
+        terms[6].definition = "Created a law that proved that rather than a constant, absolute amount of change, there must be a constant percentage change for two stimuli to be perceived as different";
+        terms[7].term = "Torsten Wiesel";
         terms[7].definition = ;
         terms[8].term = ;
         terms[8].definition = ;
