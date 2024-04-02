@@ -510,8 +510,8 @@ void question(int unit)
         terms[20].definition = "The process of maintaining or keeping information readily available";
         terms[21].term = "Retrieving";
         terms[21].definition = "The process of recalling information from memory such as feelings, images, and events";
-        terms[22].term = "Forgetting";
-        terms[22].definition = "";
+        terms[22].term = "Forgetting and Memory Distortion";
+        terms[22].definition = "Trace decay theory, retrieval failure theory, interference theory, consolidation theory, and displacement theory.";
         terms[23].term = "";
         terms[23].definition = "";
         terms[24].term = "";
