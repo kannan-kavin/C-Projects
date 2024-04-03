@@ -816,10 +816,10 @@ void question(int unit)
         terms[24].term = "Cognitive";
         terms[24].definition = "Designed to find maladaptive and harmful thought patterns and to replace them with healthier ones";
         terms[25].term = "Humanistic";
-        terms[25].definition = "";
-        terms[26].term = "";
-        terms[26].definition = "";
-        terms[27].term = "";
+        terms[25].definition = "Treatment techniques based on the assumption that people have a tendency for positive growth and self-actualization, which may be blocked by an unhealthy environment that can include negative self-evaluation and criticism from others";
+        terms[26].term = "Psychodynamic";
+        terms[26].definition = "Help the unconscious mind's conflicts and desires come out";
+        terms[27].term = "Cognitive-behavioral";
         terms[27].definition = "";
         terms[28].term = "";
         terms[28].definition = "";
