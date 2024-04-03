@@ -869,8 +869,8 @@ void question(int unit)
         terms[1].term = "Self-serving bias";
         terms[1].definition = "A cognitive bias where individuals attribute their successes to internal factors like talent or effort, while blaming external factors like luck or other people for their failures";
         terms[2].term = "False consensus effect";
-        terms[2].definition = "";
-        terms[3].term = "";
+        terms[2].definition = "The tendency to assume that one's own opinions, beliefs, attributes, or behaviors are more widely shared than is actually the case";
+        terms[3].term = "Confirmation bias";
         terms[3].definition = "";
         terms[4].term = "";
         terms[4].definition = "";
