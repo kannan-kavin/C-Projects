@@ -871,11 +871,11 @@ void question(int unit)
         terms[2].term = "False consensus effect";
         terms[2].definition = "The tendency to assume that one's own opinions, beliefs, attributes, or behaviors are more widely shared than is actually the case";
         terms[3].term = "Confirmation bias";
-        terms[3].definition = "";
-        terms[4].term = "";
-        terms[4].definition = "";
-        terms[5].term = "";
-        terms[5].definition = "";
+        terms[3].definition = "The tendency of individuals to support or search for information that aligns with their opinions and ignore information that doesn't";
+        terms[4].term = "Just-world hypothesis";
+        terms[4].definition = "The belief that good things happen to good people and bad things happen to bad people";
+        terms[5].term = "Halo effect";
+        terms[5].definition = "The idea that people tend to overgeneralize one character trait";
         terms[6].term = "";
         terms[6].definition = "";
         terms[7].term = "";
