@@ -580,7 +580,7 @@ void question(int unit)
     }
     if(unit == 6)
     {
-        Term terms[25];
+        Term terms[15];
         terms[0].term = "Nutrition";
         terms[0].definition = "Diet during pregnancy is critical to the fetus' development and survival";
         terms[1].term = "Illness";
@@ -612,15 +612,15 @@ void question(int unit)
         terms[14].term = "Lawrence Kohlberg";
         terms[14].definition = "Most influential psychologist in the field of moral development, particularly in children";
         srand(time(NULL));
-        int indexterm = rand() % 56;
+        int indexterm = rand() % 15;
         int index1;
         int index2;
         int index3;
         do
         {
-            index1 = rand() % 56;
-            index2 = rand() % 56;
-            index3 = rand() % 56;
+            index1 = rand() % 15;
+            index2 = rand() % 15;
+            index3 = rand() % 15;
         }
         while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
         string shuffled[4];
@@ -639,7 +639,7 @@ void question(int unit)
     }
     if(unit == 7)
     {
-        Term terms[25];
+        Term terms[48];
         terms[0].term = "Instincts";
         terms[0].definition = "Inborn, fixed patterns of behavior that present in response to certain stimuli and are often species-specific";
         terms[1].term = "Incentives";
@@ -717,39 +717,35 @@ void question(int unit)
         terms[37].term = "Albert Bandura";
         terms[37].definition = "Creator of the social learning theory";
         terms[38].term = "Paul Costa";
-        terms[38].definition = "";
-        terms[39].term = "";
-        terms[39].definition = "";
-        terms[0].term = "";
-        terms[0].definition = "";
-        terms[1].term = "";
-        terms[1].definition = "";
-        terms[2].term = "";
-        terms[2].definition = "";
-        terms[3].term = "";
-        terms[3].definition = "";
-        terms[4].term = "";
-        terms[4].definition = "";
-        terms[5].term = "";
-        terms[5].definition = "";
-        terms[6].term = "";
-        terms[6].definition = "";
-        terms[7].term = "";
-        terms[7].definition = "";
-        terms[8].term = "";
-        terms[8].definition = "";
-        terms[9].term = "";
-        terms[9].definition = "";
+        terms[38].definition = "Associated with the Five Factor Model";
+        terms[39].term = "Robert McCrae";
+        terms[39].definition = "Associated with the Five Factor Theory";
+        terms[40].term = "Sigmund Freud";
+        terms[40].definition = "Attributes thoughts and actions to unconscious motives and conflicts";
+        terms[41].term = "Carl Jung";
+        terms[41].definition = "Believed that an individual's personal unconscious contains the painful or threatening memories and thoughts the person does not want to confront";
+        terms[42].term = "Abraham Maslow";
+        terms[42].definition = "Created the Hierarchy of Needs that describes motivation and the way to reach self-actualization ";
+        terms[43].term = "Carl Rogers";
+        terms[43].definition = "Believed that people are innately good, but he thought they require certain things from their interactions with others";
+        terms[44].term = "Collectivist culture";
+        terms[44].definition = "The tendency to view oneself as a member of a larger (family or social) group, rather than as an isolated, independent being";
+        terms[45].term = "Individualistic cultures";
+        terms[45].definition = "Tend to believe that independence, competition, and personal achievement are important.";
+        terms[46].term = "Personality inventory";
+        terms[46].definition = "A questionnaire (often with true-false or agree-disagree items) on which people respond to items designed to gauge a wide range of feelings and behaviors";
+        terms[47].term = "Projective tests";
+        terms[47].definition = "A personality test in which subjects are shown ambiguous images and asked to interpret them";
         srand(time(NULL));
-        int indexterm = rand() % 56;
+        int indexterm = rand() % 48;
         int index1;
         int index2;
         int index3;
         do
         {
-            index1 = rand() % 56;
-            index2 = rand() % 56;
-            index3 = rand() % 56;
+            index1 = rand() % 48;
+            index2 = rand() % 48;
+            index3 = rand() % 48;
         }
         while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
         string shuffled[4];
