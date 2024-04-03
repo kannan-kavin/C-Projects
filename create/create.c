@@ -798,7 +798,7 @@ void question(int unit)
         terms[15].term = "Personality Disorders";
         terms[15].definition = "Characterized by inflexible and enduring behavior patterns that impair social functioning";
         terms[16].term = "Aaron Beck";
-        terms[16].definition = "";
+        terms[16].definition = "Credited with creating cognitive therapy for disorders such as depression and anxiety";
         terms[17].term = "";
         terms[17].definition = "";
         terms[18].term = "";
