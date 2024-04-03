@@ -834,7 +834,7 @@ void question(int unit)
         terms[33].term = "Client-centered method";
         terms[33].definition = "Uses techniques such as active listening within a genuine, accepting, empathic environment to facilitate clients' growth";
         terms[34].term = "Behavioral method";
-        terms[34].definition = "";
+        terms[34].definition = "Focuses on observable behaviors rather than internal events like thinking and emotion";
         terms[35].term = "";
         terms[35].definition = "";
         terms[36].term = "";
