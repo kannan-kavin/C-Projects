@@ -864,11 +864,11 @@ void question(int unit)
     if(unit == 9)
     {
         Term terms[25];
-        terms[0].term = "";
-        terms[0].definition = "";
-        terms[1].term = "";
-        terms[1].definition = "";
-        terms[2].term = "";
+        terms[0].term = "Fundamental attribution error";
+        terms[0].definition = "A person's tendency to attribute another's actions to their character or personality or internal circumstances rather than external factors such as the environment while attributing their own behavior to external factors";
+        terms[1].term = "Self-serving bias";
+        terms[1].definition = "A cognitive bias where individuals attribute their successes to internal factors like talent or effort, while blaming external factors like luck or other people for their failures";
+        terms[2].term = "False consensus effect";
         terms[2].definition = "";
         terms[3].term = "";
         terms[3].definition = "";
