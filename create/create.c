@@ -764,7 +764,7 @@ void question(int unit)
     }
     if(unit == 8)
     {
-        Term terms[25];
+        Term terms[35];
         terms[0].term = "Confidentiality";
         terms[0].definition = "Experimenters will not release any information about subjects without their consent";
         terms[1].term = "Insanity defense";
@@ -817,8 +817,8 @@ void question(int unit)
         terms[24].definition = "Designed to find maladaptive and harmful thought patterns and to replace them with healthier ones";
         terms[25].term = "Humanistic";
         terms[25].definition = "Treatment techniques based on the assumption that people have a tendency for positive growth and self-actualization, which may be blocked by an unhealthy environment that can include negative self-evaluation and criticism from others";
-        terms[26].term = "Psychodynamic";
-        terms[26].definition = "Help the unconscious mind's conflicts and desires come out";
+        terms[26].term = "Biopsychosocial method";
+        terms[26].definition = "an integrated approach to psychology that incorporates three different perspectives and types of analysis: biological, psychological, and social-cultural";
         terms[27].term = "Cognitive-behavioral";
         terms[27].definition = "A structured, short-term therapeutic technique that aims to change a client's maladaptive cognitions and behaviors into more realistic and/or adaptive ones";
         terms[28].term = "Sociocultural";
@@ -835,16 +835,35 @@ void question(int unit)
         terms[33].definition = "Uses techniques such as active listening within a genuine, accepting, empathic environment to facilitate clients' growth";
         terms[34].term = "Behavioral method";
         terms[34].definition = "Focuses on observable behaviors rather than internal events like thinking and emotion";
-        terms[35].term = "";
-        terms[35].definition = "";
-        terms[36].term = "";
-        terms[36].definition = "";
-        terms[37].term = "";
-        terms[37].definition = "";
-        terms[38].term = "";
-        terms[38].definition = "";
-        terms[39].term = "";
-        terms[39].definition = "";
+        srand(time(NULL));
+        int indexterm = rand() % 35;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % 35;
+            index2 = rand() % 35;
+            index3 = rand() % 35;
+        }
+        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
+        string shuffled[4];
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+    }
+    if(unit == 9)
+    {
+        Term terms[25];
         terms[0].term = "";
         terms[0].definition = "";
         terms[1].term = "";
@@ -865,37 +884,26 @@ void question(int unit)
         terms[8].definition = "";
         terms[9].term = "";
         terms[9].definition = "";
-        srand(time(NULL));
-        int indexterm = rand() % 56;
-        int index1;
-        int index2;
-        int index3;
-        do
-        {
-            index1 = rand() % 56;
-            index2 = rand() % 56;
-            index3 = rand() % 56;
-        }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm && index1 == index2 && index1 == index3 && index2 == index3);
-        string shuffled[4];
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-    }
-    if(unit == 9)
-    {
-        Term terms[25];
-        terms[].term = "";
-        terms[].definition = "";
+        terms[0].term = "";
+        terms[0].definition = "";
+        terms[1].term = "";
+        terms[1].definition = "";
+        terms[2].term = "";
+        terms[2].definition = "";
+        terms[3].term = "";
+        terms[3].definition = "";
+        terms[4].term = "";
+        terms[4].definition = "";
+        terms[5].term = "";
+        terms[5].definition = "";
+        terms[6].term = "";
+        terms[6].definition = "";
+        terms[7].term = "";
+        terms[7].definition = "";
+        terms[8].term = "";
+        terms[8].definition = "";
+        terms[9].term = "";
+        terms[9].definition = "";
         srand(time(NULL));
         int indexterm = rand() % 56;
         int index1;
