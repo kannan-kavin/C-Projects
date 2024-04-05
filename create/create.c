@@ -18,6 +18,7 @@ void *question(int unit)
 {
     if (unit == 1)
     {
+        // Unit 1 Terms
         Term terms[56];
         terms[0].term = "Mary Whiton Calkins";
         terms[0].definition = "Studied with William James and went on to become president of the "
