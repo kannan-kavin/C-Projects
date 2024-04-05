@@ -14,7 +14,6 @@ typedef struct
 } Term;
 
 // Generate a question based on the unit
-
 void *question(int unit)
 {
     if (unit == 1)
