@@ -1426,7 +1426,7 @@ int main(int argc, string argv[])
         if (choice > 100 || choice < 97)
         {
             printf("Please choose between a and d only!\n");
-            return (0);
+            return(0);
         }
         // Check whether the users answer is correct!
         answer(choice, shuffled);
