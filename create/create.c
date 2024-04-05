@@ -258,11 +258,13 @@ void *question(int unit)
             "A committee that reviews research studies involving humans for ethics";
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
         terms[55].definition = "Reviews research studies involving animals for ethics violations.";
+        // Returning the shuffled array that will be used in the answer function
         string *shuffled = shuffle(termnumber, terms);
         return (shuffled);
     }
     if (unit == 2)
     {
+        // Unit 2 Terms
         int termnumber = 63;
         Term terms[termnumber];
         terms[0].term = "REM motor behavior disorder";
@@ -442,11 +444,13 @@ void *question(int unit)
         terms[62].term = "Sleep Walking / sleep talking";
         terms[62].definition = "Stage 4 sleep disorders, run in families. Usually harmless. "
                                "Children and sleep deprived people are more likely to sleepwalk.";
+        // Returning the shuffled array that will be used in the answer function
         string *shuffled = shuffle(termnumber, terms);
         return (shuffled);
     }
     if (unit == 3)
     {
+        // Unit 3 Terms
         int termnumber = 22;
         Term terms[termnumber];
         terms[0].term = "Gestalt Principles";
@@ -520,11 +524,13 @@ void *question(int unit)
         terms[21].term = "Kinesthesis";
         terms[21].definition =
             "The system that enables us to sense our position and how and when our body parts move";
+        // Returning the shuffled array that will be used in the answer function
         string *shuffled = shuffle(termnumber, terms);
         return (shuffled);
     }
     if (unit == 4)
     {
+        // Unit 4 Terms
         int termnumber = 25;
         Term terms[termnumber];
         terms[0].term = "Albert Bandura";
@@ -597,11 +603,13 @@ void *question(int unit)
         terms[24].term = "Operant Conditioning";
         terms[24].definition = "A method of learning that alters the frequency of a behavior by "
                                "manipulating its consequences through reinforcement or punishment.";
+        // Returning the shuffled array that will be used in the answer function
         string *shuffled = shuffle(termnumber, terms);
         return (shuffled);
     }
     if (unit == 5)
     {
+        // Unit 5 Terms
         int termnumber = 43;
         Term terms[termnumber];
         terms[0].term = "Effortful processing";
@@ -720,11 +728,13 @@ void *question(int unit)
             "below and difficulty in adapting to the demands of life";
         terms[42].term = "Language Acquisition";
         terms[42].definition = "Humans are born with an innate capacity for learning language";
+        // Returning the shuffled array that will be used in the answer function
         string *shuffled = shuffle(termnumber, terms);
         return (shuffled);
     }
     if (unit == 6)
     {
+        // Unit 6 Terms
         int termnumber = 15;
         Term terms[termnumber];
         terms[0].term = "Nutrition";
@@ -768,13 +778,16 @@ void *question(int unit)
         terms[13].term = "Carol Gilligan";
         terms[13].definition = "A pioneer in the field of gender difference psychology";
         terms[14].term = "Lawrence Kohlberg";
-        terms[14].definition = "Most influential psychologist in the field of moral development, "
-                               "particularly in children";
+        terms[14].definition =
+            "Most influential psychologist in the field of moral development"
+            // Returning the shuffled array that will be used in the answer function
+            "particularly in children";
         string *shuffled = shuffle(termnumber, terms);
         return (shuffled);
     }
     if (unit == 7)
     {
+        // Unit 7 Terms
         int termnumber = 48;
         Term terms[termnumber];
         terms[0].term = "Instincts";
@@ -924,11 +937,13 @@ void *question(int unit)
         terms[47].term = "Projective tests";
         terms[47].definition = "A personality test in which subjects are shown ambiguous images "
                                "and asked to interpret them";
+        // Returning the shuffled array that will be used in the answer function
         string *shuffled = shuffle(termnumber, terms);
         return (shuffled);
     }
     if (unit == 8)
     {
+        // Unit 8 Terms
         int termnumber = 35;
         Term terms[termnumber];
         terms[0].term = "Confidentiality";
@@ -1046,11 +1061,13 @@ void *question(int unit)
         terms[34].term = "Behavioral method";
         terms[34].definition =
             "Focuses on observable behaviors rather than internal events like thinking and emotion";
+        // Returning the shuffled array that will be used in the answer function
         string *shuffled = shuffle(termnumber, terms);
         return (shuffled);
     }
     if (unit == 9)
     {
+        // Unit 9 Terms
         int termnumber = 40;
         Term terms[termnumber];
         terms[0].term = "Fundamental attribution error";
@@ -1180,16 +1197,17 @@ void *question(int unit)
         terms[39].term = "Mere-exposure effect";
         terms[39].definition = "The idea that people tend to like things or people they are "
                                "familiar with/exposed to more often";
+        // Returning the shuffled array that will be used in the answer function
         string *shuffled = shuffle(termnumber, terms);
         return (shuffled);
     }
     return (0);
 }
 
-// Using their choice, determine whether the user is correct or not and allow them to try again (FOR
-// LOOP) if they get it wrong
+// Using their choice a-d determine whether the user is correct or, if not, print the correct answer
 void answer(char choice, string *shuffled)
 {
+    // Converting their answer choice a-d into a number to compare it to the actual answer
     int converter = choice;
     if (strcmp(shuffled[(converter - 97)], shuffled[4]) == 0)
     {
@@ -1199,6 +1217,7 @@ void answer(char choice, string *shuffled)
     {
         printf("\nYou got it wrong :(\nThe correct answer: %s\n\n", shuffled[4]);
     }
+    // Releasing the allocated memory from the pointer
     free(shuffled);
 }
 
@@ -1219,7 +1238,8 @@ int main(int argc, string argv[])
     }
     // Prompt the user with how many questions they want
     int repititions = get_int("\nHow many questions do you want?\n\n");
-    // Prompt the user with the question while assinging a pointer to the returned array
+    // Prompt the user with the question however many times they requestedwhile assinging a pointer
+    // to the returned array
     for (int i = repititions; i > 0; i--)
     {
         string *shuffled = question(unit);
