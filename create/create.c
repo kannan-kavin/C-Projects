@@ -1377,7 +1377,7 @@ string question(int unit)
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR
 // LOOP) if they get it wrong
-void answer(char choice, string correctanswer)
+void answer(char choice, shuffled)
 {
     if (strcmp(choice, correctanswer) == 0)
     {
