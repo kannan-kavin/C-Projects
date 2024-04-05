@@ -985,7 +985,7 @@ void question(int unit)
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR LOOP) if they get it wrong
 void answer(string choice, string correctanswer)
 {
-
+    strcmp()
 }
 
 int main(int argc, string argv[])
