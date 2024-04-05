@@ -17,11 +17,14 @@ typedef struct
 // their spots a-d
 void *shuffle(int termnumber, Term terms[])
 {
+    // Initializing the randomization and creating the terms that will be the answer choices and the
+    // actual question
     srand(time(NULL));
     int indexterm = rand() % termnumber;
     int index1;
     int index2;
     int index3;
+    // Ensuring independence between all definitions in the answer choices
     do
     {
         index1 = rand() % termnumber;
@@ -30,11 +33,13 @@ void *shuffle(int termnumber, Term terms[])
     }
     while (index1 == indexterm || index2 == indexterm || index3 == indexterm || index1 == index2 ||
            index1 == index3 || index2 == index3);
+    // Turning the answer choices into a returnable allocation of memory
     string *shuffled = malloc(5 * sizeof(string));
     shuffled[0] = terms[indexterm].definition;
     shuffled[1] = terms[index1].definition;
     shuffled[2] = terms[index2].definition;
     shuffled[3] = terms[index3].definition;
+    // Randomizing the answer choices a-d
     for (int i = 3; i > 0; i--)
     {
         int j = rand() % (i + 1);
@@ -42,9 +47,13 @@ void *shuffle(int termnumber, Term terms[])
         shuffled[i] = shuffled[j];
         shuffled[j] = temp;
     }
+    // Bringing the correct answer (guaranteed) along with the answer choices the user will choose
+    // from
     shuffled[4] = terms[indexterm].definition;
+    // Prompting the user with the question
     printf("\nWhat does %s mean?\n\na.) %s\n\nb.) %s\n\nc.) %s\n\nd.) %s\n\n",
            terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+    // Returning the pointer to be used in other functions
     return (shuffled);
 }
 // Generate a question based on the unit using the terms in that unit
