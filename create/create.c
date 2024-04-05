@@ -13,7 +13,7 @@ typedef struct
     string definition;
 } Term;
 
-void *shuffle(int termnumber, string terms[])
+void *shuffle(int termnumber, Term terms[])
 {
     srand(time(NULL));
         int indexterm = rand() % termnumber;
@@ -247,11 +247,11 @@ void question(int unit)
             "A committee that reviews research studies involving humans for ethics";
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
         terms[55].definition = "Reviews research studies involving animals for ethics violations.";
-        shuffle(termnumber, terms)
+        shuffle(termnumber, terms);
     }
     if (unit == 2)
     {
-        int termnumber = 63
+        int termnumber = 63;
         Term terms[termnumber];
         terms[0].term = "REM motor behavior disorder";
         terms[0].definition = "Disorder in which you act out vivid unpleasant dreams with violent "
