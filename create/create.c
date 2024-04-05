@@ -13,7 +13,7 @@ typedef struct
     string definition;
 } Term;
 
-void *shuffle(int termnumber)
+void *shuffle(int termnumber, Term terms[])
 {
     srand(time(NULL));
         int indexterm = rand() % termnumber;
