@@ -1368,7 +1368,7 @@ string question(int unit)
             shuffled[i] = shuffled[j];
             shuffled[j] = temp;
         }
-        printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0],
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
                shuffled[1], shuffled[2], shuffled[3]);
         return (correctanswer);
     }
@@ -1377,7 +1377,7 @@ string question(int unit)
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR
 // LOOP) if they get it wrong
-void answer(string choice, string correctanswer)
+void answer(char choice, string correctanswer)
 {
     if (strcmp(choice, correctanswer) == 0)
     {
@@ -1408,7 +1408,7 @@ int main(int argc, string argv[])
     // Prompt the user with the question
     string correctanswer = question(unit);
     // Get the user's answer
-    string choice = (get_string("What is your answer? (copy and paste it)\n"));
+    char choice = (get_char("What is your answer?\n"));
     // Congratulate the user if they answer correctly or tell the user the correct answer if they
     // answer incorrectly
     answer(choice, correctanswer);
