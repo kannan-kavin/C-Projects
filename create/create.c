@@ -13,13 +13,46 @@ typedef struct
     string definition;
 } Term;
 
+void *shuffle(int termnumber)
+{
+    srand(time(NULL));
+        int indexterm = rand() % termnumber;
+        int index1;
+        int index2;
+        int index3;
+        do
+        {
+            index1 = rand() % termnumber;
+            index2 = rand() % termnumber;
+            index3 = rand() % termnumber;
+        }
+        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
+               index1 == index2 || index1 == index3 || index2 == index3);
+        string *shuffled = malloc(5 * sizeof(string));
+        shuffled[0] = terms[indexterm].definition;
+        shuffled[1] = terms[index1].definition;
+        shuffled[2] = terms[index2].definition;
+        shuffled[3] = terms[index3].definition;
+        for (int i = 3; i > 0; i--)
+        {
+            int j = rand() % (i + 1);
+            string temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
+        }
+        shuffled[4] = terms[indexterm].definition;
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return (shuffled);
+}
 // Generate a question based on the unit
-void *question(int unit)
+void question(int unit)
 {
     if (unit == 1)
     {
         // Unit 1 Terms
-        Term terms[56];
+        int termnumber = 56
+        Term terms[termnumber];
         terms[0].term = "Mary Whiton Calkins";
         terms[0].definition = "Studied with William James and went on to become president of the "
                               "American Psychological Association";
@@ -214,40 +247,12 @@ void *question(int unit)
             "A committee that reviews research studies involving humans for ethics";
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
         terms[55].definition = "Reviews research studies involving animals for ethics violations.";
-        srand(time(NULL));
-        int indexterm = rand() % 56;
-        int index1;
-        int index2;
-        int index3;
-        string correctanswer = terms[indexterm].definition;
-        do
-        {
-            index1 = rand() % 56;
-            index2 = rand() % 56;
-            index3 = rand() % 56;
-        }
-        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
-               index1 == index2 || index1 == index3 || index2 == index3);
-        string *shuffled = malloc(5 * sizeof(string));
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
-               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled);
+        shuffle(termnumber)
     }
     if (unit == 2)
     {
-        Term terms[63];
+        int termnumber = 63
+        Term terms[termnumber];
         terms[0].term = "REM motor behavior disorder";
         terms[0].definition = "Disorder in which you act out vivid unpleasant dreams with violent "
                               "arm or leg motions.";
@@ -425,40 +430,12 @@ void *question(int unit)
         terms[62].term = "Sleep Walking / sleep talking";
         terms[62].definition = "Stage 4 sleep disorders, run in families. Usually harmless. "
                                "Children and sleep deprived people are more likely to sleepwalk.";
-        srand(time(NULL));
-        int indexterm = rand() % 63;
-        int index1;
-        int index2;
-        int index3;
-        string correctanswer = terms[indexterm].definition;
-        do
-        {
-            index1 = rand() % 63;
-            index2 = rand() % 63;
-            index3 = rand() % 63;
-        }
-        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
-               index1 == index2 || index1 == index3 || index2 == index3);
-        string *shuffled = malloc(5 * sizeof(string));
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
-               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled);
+
     }
     if (unit == 3)
     {
-        Term terms[22];
+        int termnumber = 22
+        Term terms[termnumber];
         terms[0].term = "Gestalt Principles";
         terms[0].definition = "Different ways individuals group stimuli together in order to make "
                               "a whole that makes sense to them; divided up into five categories: "
@@ -530,40 +507,12 @@ void *question(int unit)
         terms[21].term = "Kinesthesis";
         terms[21].definition =
             "The system that enables us to sense our position and how and when our body parts move";
-        srand(time(NULL));
-        int indexterm = rand() % 22;
-        int index1;
-        int index2;
-        int index3;
-        string correctanswer = terms[indexterm].definition;
-        do
-        {
-            index1 = rand() % 22;
-            index2 = rand() % 22;
-            index3 = rand() % 22;
-        }
-        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
-               index1 == index2 || index1 == index3 || index2 == index3);
-        string *shuffled = malloc(5 * sizeof(string));
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
-               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled);
+        shuffle(termnumber)
     }
     if (unit == 4)
     {
-        Term terms[25];
+        int termnumber = 25
+        Term terms[termnumber];
         terms[0].term = "Albert Bandura";
         terms[0].definition = "Creator of the social learning theory";
         terms[1].term = "Ivan Pavlov";
@@ -634,40 +583,12 @@ void *question(int unit)
         terms[24].term = "Operant Conditioning";
         terms[24].definition = "A method of learning that alters the frequency of a behavior by "
                                "manipulating its consequences through reinforcement or punishment.";
-        srand(time(NULL));
-        int indexterm = rand() % 25;
-        int index1;
-        int index2;
-        int index3;
-        string correctanswer = terms[indexterm].definition;
-        do
-        {
-            index1 = rand() % 25;
-            index2 = rand() % 25;
-            index3 = rand() % 25;
-        }
-        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
-               index1 == index2 || index1 == index3 || index2 == index3);
-        string *shuffled = malloc(5 * sizeof(string));
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
-               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled);
+        shuffle(termnumber)
     }
     if (unit == 5)
     {
-        Term terms[43];
+        int termnumber = 43
+        Term terms[termnumber];
         terms[0].term = "Effortful processing";
         terms[0].definition = "Active processing of information that requires sustained effort";
         terms[1].term = "Automatic processing";
@@ -784,40 +705,12 @@ void *question(int unit)
             "below and difficulty in adapting to the demands of life";
         terms[42].term = "Language Acquisition";
         terms[42].definition = "Humans are born with an innate capacity for learning language";
-        srand(time(NULL));
-        int indexterm = rand() % 43;
-        int index1;
-        int index2;
-        int index3;
-        string correctanswer = terms[indexterm].definition;
-        do
-        {
-            index1 = rand() % 43;
-            index2 = rand() % 43;
-            index3 = rand() % 43;
-        }
-        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
-               index1 == index2 || index1 == index3 || index2 == index3);
-        string *shuffled = malloc(5 * sizeof(string));
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
-               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled);
+        shuffle(termnumber)
     }
     if (unit == 6)
     {
-        Term terms[15];
+        int termnumber = 15
+        Term terms[termnumber];
         terms[0].term = "Nutrition";
         terms[0].definition =
             "Diet during pregnancy is critical to the fetus' development and survival";
@@ -861,40 +754,12 @@ void *question(int unit)
         terms[14].term = "Lawrence Kohlberg";
         terms[14].definition = "Most influential psychologist in the field of moral development, "
                                "particularly in children";
-        srand(time(NULL));
-        int indexterm = rand() % 15;
-        int index1;
-        int index2;
-        int index3;
-        string correctanswer = terms[indexterm].definition;
-        do
-        {
-            index1 = rand() % 15;
-            index2 = rand() % 15;
-            index3 = rand() % 15;
-        }
-        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
-               index1 == index2 || index1 == index3 || index2 == index3);
-        string *shuffled = malloc(5 * sizeof(string));
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
-               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled);
+        shuffle(termnumber)
     }
     if (unit == 7)
     {
-        Term terms[48];
+        int termnumber = 48
+        Term terms[termnumber];
         terms[0].term = "Instincts";
         terms[0].definition = "Inborn, fixed patterns of behavior that present in response to "
                               "certain stimuli and are often species-specific";
@@ -1042,40 +907,12 @@ void *question(int unit)
         terms[47].term = "Projective tests";
         terms[47].definition = "A personality test in which subjects are shown ambiguous images "
                                "and asked to interpret them";
-        srand(time(NULL));
-        int indexterm = rand() % 48;
-        int index1;
-        int index2;
-        int index3;
-        string correctanswer = terms[indexterm].definition;
-        do
-        {
-            index1 = rand() % 48;
-            index2 = rand() % 48;
-            index3 = rand() % 48;
-        }
-        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
-               index1 == index2 || index1 == index3 || index2 == index3);
-        string *shuffled = malloc(5 * sizeof(string));
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
-               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled);
+        shuffle(termnumber)
     }
     if (unit == 8)
     {
-        Term terms[35];
+        int termnumber = 35
+        Term terms[termnumber];
         terms[0].term = "Confidentiality";
         terms[0].definition =
             "Experimenters will not release any information about subjects without their consent";
@@ -1191,40 +1028,12 @@ void *question(int unit)
         terms[34].term = "Behavioral method";
         terms[34].definition =
             "Focuses on observable behaviors rather than internal events like thinking and emotion";
-        srand(time(NULL));
-        int indexterm = rand() % 35;
-        int index1;
-        int index2;
-        int index3;
-        string correctanswer = terms[indexterm].definition;
-        do
-        {
-            index1 = rand() % 35;
-            index2 = rand() % 35;
-            index3 = rand() % 35;
-        }
-        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
-               index1 == index2 || index1 == index3 || index2 == index3);
-        string *shuffled = malloc(5 * sizeof(string));
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
-               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled);
+        shuffle(termnumber)
     }
     if (unit == 9)
     {
-        Term terms[40];
+        int termnumber = 40;
+        Term terms[termnumber];
         terms[0].term = "Fundamental attribution error";
         terms[0].definition =
             "A person's tendency to attribute another's actions to their character or personality "
