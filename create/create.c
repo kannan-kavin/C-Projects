@@ -13,7 +13,7 @@ typedef struct
 } Term;
 
 // Pick a term to use as the question
-void shuffle(int numberofterms, int indexterm, int index1, int index2, int index3, string terms[indexterm].definition, string terms[index1].definition, string terms[index2].definition, string terms[index3].definition)
+void shuffle(int numberofterms, int indexterm, int index1, int index2, int index3, struct Term terms[])
 {
     string shuffled[4];
     shuffled[0] = terms[indexterm].definition;
