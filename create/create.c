@@ -979,14 +979,15 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return(correctanswer)
     }
 }
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR LOOP) if they get it wrong
-/*void answer(string choice, string correctanswer)
+void answer(string choice, string correctanswer)
 {
     strcmp()
-}*/
+}
 
 int main(int argc, string argv[])
 {
@@ -1009,5 +1010,5 @@ int main(int argc, string argv[])
     //Get the user's answer
     string choice = (get_string("What is your answer? (copy and paste it)\n"));
     // Congratulate the user if they answer correctly or tell the user the correct answer if they answer incorrectly
-    // answer(choice);
+    answer(choice);
 }
