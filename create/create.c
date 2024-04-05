@@ -1180,6 +1180,7 @@ void *question(int unit)
 void answer(char choice, string *shuffled)
 {
     int converter = choice;
+     printf("%s\n%s\n", shuffled[converter - 97], shuffled[4]);
     if (strcmp(shuffled[(converter - 97)], shuffled[4]) == 0)
     {
         printf("YOU GOT IT RIGHT!\n");
