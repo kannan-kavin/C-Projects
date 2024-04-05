@@ -1182,11 +1182,11 @@ void answer(char choice, string *shuffled)
     int converter = choice;
     if (strcmp(shuffled[(converter - 97)], shuffled[4]) == 0)
     {
-        printf("YOU GOT IT RIGHT!\n");
+        printf("\nYOU GOT IT RIGHT!\n\n");
     }
     else
     {
-        printf("You got it wrong :(\nThe correct answer: %s\n", shuffled[4]);
+        printf("\nYou got it wrong :(\nThe correct answer: %s\n\n", shuffled[4]);
     }
     free(shuffled);
 }
@@ -1207,13 +1207,13 @@ int main(int argc, string argv[])
         return 2;
     }
     // Prompt the user with how many questions they want
-    int repititions = get_int("How many questions do you want?\n");
+    int repititions = get_int("\nHow many questions do you want?\n\n");
     // Prompt the user with the question while assinging a pointer to the returned array
     for (int i = repititions; i > 0; i--)
     {
         string *shuffled = question(unit);
         // Get the user's answer (a-d)
-        char choice = (get_char("What is your answer?\n"));
+        char choice = (get_char("What is your answer?\n\n"));
         // Make sure the users choice is between a and d
         if (choice > 100 || choice < 97)
         {
