@@ -1002,7 +1002,7 @@ void answer(string choice, string correctanswer)
     }
     else
     {
-        printf("You got it wrong :(\n");
+        printf("You got it wrong :(\nThe correct answer is %s", correctanswer);
     }
 }
 
