@@ -247,8 +247,8 @@ void *question(int unit)
             "A committee that reviews research studies involving humans for ethics";
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
         terms[55].definition = "Reviews research studies involving animals for ethics violations.";
-        shuffle(termnumber, terms);
-        return(shuffle);
+        string *shuffled = shuffle(termnumber, terms);
+        return(shuffled);
     }
     if (unit == 2)
     {
@@ -432,7 +432,7 @@ void *question(int unit)
         terms[62].definition = "Stage 4 sleep disorders, run in families. Usually harmless. "
                                "Children and sleep deprived people are more likely to sleepwalk.";
                                string *shuffled = shuffle(termnumber, terms);
-                               return(*shuffled);
+        return(shuffled);
     }
     if (unit == 3)
     {
@@ -509,8 +509,8 @@ void *question(int unit)
         terms[21].term = "Kinesthesis";
         terms[21].definition =
             "The system that enables us to sense our position and how and when our body parts move";
-        shuffle(termnumber, terms);
-        return(shuffle);
+        string *shuffled = shuffle(termnumber, terms);
+        return(shuffled);
     }
     if (unit == 4)
     {
@@ -586,8 +586,8 @@ void *question(int unit)
         terms[24].term = "Operant Conditioning";
         terms[24].definition = "A method of learning that alters the frequency of a behavior by "
                                "manipulating its consequences through reinforcement or punishment.";
-        shuffle(termnumber, terms);
-        return(shuffle);
+        string *shuffled = shuffle(termnumber, terms);
+        return(shuffled);
     }
     if (unit == 5)
     {
@@ -709,8 +709,8 @@ void *question(int unit)
             "below and difficulty in adapting to the demands of life";
         terms[42].term = "Language Acquisition";
         terms[42].definition = "Humans are born with an innate capacity for learning language";
-        shuffle(termnumber, terms);
-        return(shuffle);
+        string *shuffled = shuffle(termnumber, terms);
+        return(shuffled);
     }
     if (unit == 6)
     {
@@ -759,8 +759,8 @@ void *question(int unit)
         terms[14].term = "Lawrence Kohlberg";
         terms[14].definition = "Most influential psychologist in the field of moral development, "
                                "particularly in children";
-        shuffle(termnumber, terms);
-        return(shuffle);
+        string *shuffled = shuffle(termnumber, terms);
+        return(shuffled);
     }
     if (unit == 7)
     {
@@ -913,8 +913,8 @@ void *question(int unit)
         terms[47].term = "Projective tests";
         terms[47].definition = "A personality test in which subjects are shown ambiguous images "
                                "and asked to interpret them";
-        shuffle(termnumber, terms);
-        return(*shuffle);
+        string *shuffled = shuffle(termnumber, terms);
+        return(shuffled);
     }
     if (unit == 8)
     {
@@ -1035,8 +1035,8 @@ void *question(int unit)
         terms[34].term = "Behavioral method";
         terms[34].definition =
             "Focuses on observable behaviors rather than internal events like thinking and emotion";
-        shuffle(termnumber, terms);
-        return(*shuffle);
+        string *shuffled = shuffle(termnumber, terms);
+        return(shuffled);
     }
     if (unit == 9)
     {
@@ -1169,8 +1169,8 @@ void *question(int unit)
         terms[39].term = "Mere-exposure effect";
         terms[39].definition = "The idea that people tend to like things or people they are "
                                "familiar with/exposed to more often";
-        shuffle(termnumber, terms);
-        return(*shuffle);
+        string *shuffled = shuffle(termnumber, terms);
+        return(shuffled);
     }
     return(0);
 }
@@ -1180,7 +1180,6 @@ void *question(int unit)
 void answer(char choice, string *shuffled)
 {
     int converter = choice;
-    printf("%s\n%s\n", shuffled[converter - 97], shuffled[4]);
     if (strcmp(shuffled[(converter - 97)], shuffled[4]) == 0)
     {
         printf("YOU GOT IT RIGHT!\n");
