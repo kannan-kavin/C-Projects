@@ -13,7 +13,7 @@ typedef struct
 } Term;
 
 // Generate a question based on the unit
-string question(int unit)
+void* question(int unit)
 {
     if (unit == 1)
     {
@@ -1377,9 +1377,9 @@ string question(int unit)
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR
 // LOOP) if they get it wrong
-void answer(char choice, shuffled)
+void answer(char choice, string shuffled)
 {
-    if (strcmp(choice, correctanswer) == 0)
+    if (strcmp(shuffled[choice - 97], shuffled[5]) == 0)
     {
         printf("YOU GOT IT RIGHT!\n");
     }
