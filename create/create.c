@@ -13,6 +13,7 @@ typedef struct
     string definition;
 } Term;
 
+// Used in the question function for creating independency between answer choices and randomizing their spots a-d
 void *shuffle(int termnumber, Term terms[])
 {
     srand(time(NULL));
@@ -45,7 +46,7 @@ void *shuffle(int termnumber, Term terms[])
                shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
 }
-// Generate a question based on the unit
+// Generate a question based on the unit using the terms in that unit
 void *question(int unit)
 {
     if (unit == 1)
