@@ -1170,7 +1170,9 @@ void *question(int unit)
         terms[39].definition = "The idea that people tend to like things or people they are "
                                "familiar with/exposed to more often";
         shuffle(termnumber, terms);
+        return(shuffle);
     }
+    return(0);
 }
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR
