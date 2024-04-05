@@ -247,7 +247,7 @@ void question(int unit)
             "A committee that reviews research studies involving humans for ethics";
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
         terms[55].definition = "Reviews research studies involving animals for ethics violations.";
-        shuffle(termnumber)
+        shuffle(termnumber, terms[])
     }
     if (unit == 2)
     {
