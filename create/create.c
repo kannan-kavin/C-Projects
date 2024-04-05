@@ -13,7 +13,7 @@ typedef struct
 } Term;
 
 // Generate a question based on the unit
-void* question(int unit)
+void *question(int unit)
 {
     if (unit == 1)
     {
@@ -226,7 +226,7 @@ void* question(int unit)
         }
         while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
                index1 == index2 || index1 == index3 || index2 == index3);
-        string* shuffled = malloc(5 * sizeof(string));
+        string *shuffled = malloc(5 * sizeof(string));
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
@@ -239,8 +239,8 @@ void* question(int unit)
             shuffled[j] = temp;
         }
         shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
-               shuffled[1], shuffled[2], shuffled[3]);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
     }
     if (unit == 2)
@@ -437,7 +437,7 @@ void* question(int unit)
         }
         while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
                index1 == index2 || index1 == index3 || index2 == index3);
-        string* shuffled = malloc(5 * sizeof(string));
+        string *shuffled = malloc(5 * sizeof(string));
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
@@ -450,8 +450,8 @@ void* question(int unit)
             shuffled[j] = temp;
         }
         shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
-               shuffled[1], shuffled[2], shuffled[3]);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
     }
     if (unit == 3)
@@ -542,7 +542,7 @@ void* question(int unit)
         }
         while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
                index1 == index2 || index1 == index3 || index2 == index3);
-        string* shuffled = malloc(5 * sizeof(string));
+        string *shuffled = malloc(5 * sizeof(string));
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
@@ -555,8 +555,8 @@ void* question(int unit)
             shuffled[j] = temp;
         }
         shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
-               shuffled[1], shuffled[2], shuffled[3]);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
     }
     if (unit == 4)
@@ -646,7 +646,7 @@ void* question(int unit)
         }
         while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
                index1 == index2 || index1 == index3 || index2 == index3);
-        string* shuffled = malloc(5 * sizeof(string));
+        string *shuffled = malloc(5 * sizeof(string));
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
@@ -659,8 +659,8 @@ void* question(int unit)
             shuffled[j] = temp;
         }
         shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
-               shuffled[1], shuffled[2], shuffled[3]);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
     }
     if (unit == 5)
@@ -796,7 +796,7 @@ void* question(int unit)
         }
         while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
                index1 == index2 || index1 == index3 || index2 == index3);
-        string* shuffled = malloc(5 * sizeof(string));
+        string *shuffled = malloc(5 * sizeof(string));
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
@@ -809,8 +809,8 @@ void* question(int unit)
             shuffled[j] = temp;
         }
         shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
-               shuffled[1], shuffled[2], shuffled[3]);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
     }
     if (unit == 6)
@@ -873,7 +873,7 @@ void* question(int unit)
         }
         while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
                index1 == index2 || index1 == index3 || index2 == index3);
-        string* shuffled = malloc(5 * sizeof(string));
+        string *shuffled = malloc(5 * sizeof(string));
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
@@ -886,8 +886,8 @@ void* question(int unit)
             shuffled[j] = temp;
         }
         shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
-               shuffled[1], shuffled[2], shuffled[3]);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
     }
     if (unit == 7)
@@ -1054,7 +1054,7 @@ void* question(int unit)
         }
         while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
                index1 == index2 || index1 == index3 || index2 == index3);
-        string* shuffled = malloc(5 * sizeof(string));
+        string *shuffled = malloc(5 * sizeof(string));
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
@@ -1067,8 +1067,8 @@ void* question(int unit)
             shuffled[j] = temp;
         }
         shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
-               shuffled[1], shuffled[2], shuffled[3]);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
     }
     if (unit == 8)
@@ -1203,7 +1203,7 @@ void* question(int unit)
         }
         while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
                index1 == index2 || index1 == index3 || index2 == index3);
-        string* shuffled = malloc(5 * sizeof(string));
+        string *shuffled = malloc(5 * sizeof(string));
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
@@ -1216,8 +1216,8 @@ void* question(int unit)
             shuffled[j] = temp;
         }
         shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
-               shuffled[1], shuffled[2], shuffled[3]);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
     }
     if (unit == 9)
@@ -1363,7 +1363,7 @@ void* question(int unit)
         }
         while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
                index1 == index2 || index1 == index3 || index2 == index3);
-        string* shuffled = malloc(5 * sizeof(string));
+        string *shuffled = malloc(5 * sizeof(string));
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
@@ -1376,8 +1376,8 @@ void* question(int unit)
             shuffled[j] = temp;
         }
         shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
-               shuffled[1], shuffled[2], shuffled[3]);
+        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
     }
     return (0);
@@ -1385,7 +1385,7 @@ void* question(int unit)
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR
 // LOOP) if they get it wrong
-void answer(char choice, string* shuffled)
+void answer(char choice, string *shuffled)
 {
     int converter = choice;
     if (strcmp(shuffled[(converter - 97)], shuffled[4]) == 0)
@@ -1417,14 +1417,19 @@ int main(int argc, string argv[])
     // Prompt the user with how many questions they want
     int repititions = get_int("How many questions do you want?\n");
     // Prompt the user with the question while assinging a pointer to the returned array
-    for(int i = repititions; i > 0; i--)
+    for (int i = repititions; i > 0; i--)
     {
-    string* shuffled = question(unit);
-    // Get the user's answer (a-d)
-    char choice = (get_char("What is your answer?\n"));
-    // Congratulate the user if they answer correctly or tell the user the correct answer if they
-    // answer incorrectly
-    answer(choice, shuffled);
+        string *shuffled = question(unit);
+        // Get the user's answer (a-d)
+        char choice = (get_char("What is your answer?\n"));
+        // Make sure the users choice is between a and d
+        if (choice > 100 || choice < 97)
+        {
+            printf("Please choose between a and d only!\n");
+            return (0);
+        }
+        // Check whether the users answer is correct!
+        answer(choice, shuffled);
     }
-    return(0);
+    return (0);
 }
