@@ -1385,7 +1385,7 @@ void* question(int unit)
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR
 // LOOP) if they get it wrong
-void answer(char choice, string shuffled)
+void answer(char choice, string* shuffled)
 {
     int converter = choice;
     if (strcmp(shuffled[(converter - 97)], shuffled[4]) == 0)
@@ -1394,7 +1394,7 @@ void answer(char choice, string shuffled)
     }
     else
     {
-        printf("You got it wrong :(\nThe correct answer: %s\n", correctanswer);
+        printf("You got it wrong :(\nThe correct answer: %s\n", shuffled[4]);
     }
     free(shuffled);
 }
@@ -1416,10 +1416,10 @@ int main(int argc, string argv[])
         return 2;
     }
     // Prompt the user with the question
-    string correctanswer = question(unit);
+    string* shuffled = question(unit);
     // Get the user's answer
     char choice = (get_char("What is your answer?\n"));
     // Congratulate the user if they answer correctly or tell the user the correct answer if they
     // answer incorrectly
-    answer(choice, correctanswer);
+    answer(choice, shuffled);
 }
