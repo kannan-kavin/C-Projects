@@ -13,38 +13,39 @@ typedef struct
     string definition;
 } Term;
 
-// Used in the question function for creating independency between answer choices and randomizing their spots a-d
+// Used in the question function for creating independency between answer choices and randomizing
+// their spots a-d
 void *shuffle(int termnumber, Term terms[])
 {
     srand(time(NULL));
-        int indexterm = rand() % termnumber;
-        int index1;
-        int index2;
-        int index3;
-        do
-        {
-            index1 = rand() % termnumber;
-            index2 = rand() % termnumber;
-            index3 = rand() % termnumber;
-        }
-        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
-               index1 == index2 || index1 == index3 || index2 == index3);
-        string *shuffled = malloc(5 * sizeof(string));
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        shuffled[4] = terms[indexterm].definition;
-        printf("\nWhat does %s mean?\n\na.) %s\n\nb.) %s\n\nc.) %s\n\nd.) %s\n\n", terms[indexterm].term,
-               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled);
+    int indexterm = rand() % termnumber;
+    int index1;
+    int index2;
+    int index3;
+    do
+    {
+        index1 = rand() % termnumber;
+        index2 = rand() % termnumber;
+        index3 = rand() % termnumber;
+    }
+    while (index1 == indexterm || index2 == indexterm || index3 == indexterm || index1 == index2 ||
+           index1 == index3 || index2 == index3);
+    string *shuffled = malloc(5 * sizeof(string));
+    shuffled[0] = terms[indexterm].definition;
+    shuffled[1] = terms[index1].definition;
+    shuffled[2] = terms[index2].definition;
+    shuffled[3] = terms[index3].definition;
+    for (int i = 3; i > 0; i--)
+    {
+        int j = rand() % (i + 1);
+        string temp = shuffled[i];
+        shuffled[i] = shuffled[j];
+        shuffled[j] = temp;
+    }
+    shuffled[4] = terms[indexterm].definition;
+    printf("\nWhat does %s mean?\n\na.) %s\n\nb.) %s\n\nc.) %s\n\nd.) %s\n\n",
+           terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+    return (shuffled);
 }
 // Generate a question based on the unit using the terms in that unit
 void *question(int unit)
@@ -249,7 +250,7 @@ void *question(int unit)
         terms[55].term = "The Institutional Animal Care and Use Committee (IACUC)";
         terms[55].definition = "Reviews research studies involving animals for ethics violations.";
         string *shuffled = shuffle(termnumber, terms);
-        return(shuffled);
+        return (shuffled);
     }
     if (unit == 2)
     {
@@ -432,8 +433,8 @@ void *question(int unit)
         terms[62].term = "Sleep Walking / sleep talking";
         terms[62].definition = "Stage 4 sleep disorders, run in families. Usually harmless. "
                                "Children and sleep deprived people are more likely to sleepwalk.";
-                               string *shuffled = shuffle(termnumber, terms);
-        return(shuffled);
+        string *shuffled = shuffle(termnumber, terms);
+        return (shuffled);
     }
     if (unit == 3)
     {
@@ -511,7 +512,7 @@ void *question(int unit)
         terms[21].definition =
             "The system that enables us to sense our position and how and when our body parts move";
         string *shuffled = shuffle(termnumber, terms);
-        return(shuffled);
+        return (shuffled);
     }
     if (unit == 4)
     {
@@ -588,7 +589,7 @@ void *question(int unit)
         terms[24].definition = "A method of learning that alters the frequency of a behavior by "
                                "manipulating its consequences through reinforcement or punishment.";
         string *shuffled = shuffle(termnumber, terms);
-        return(shuffled);
+        return (shuffled);
     }
     if (unit == 5)
     {
@@ -711,7 +712,7 @@ void *question(int unit)
         terms[42].term = "Language Acquisition";
         terms[42].definition = "Humans are born with an innate capacity for learning language";
         string *shuffled = shuffle(termnumber, terms);
-        return(shuffled);
+        return (shuffled);
     }
     if (unit == 6)
     {
@@ -761,7 +762,7 @@ void *question(int unit)
         terms[14].definition = "Most influential psychologist in the field of moral development, "
                                "particularly in children";
         string *shuffled = shuffle(termnumber, terms);
-        return(shuffled);
+        return (shuffled);
     }
     if (unit == 7)
     {
@@ -915,7 +916,7 @@ void *question(int unit)
         terms[47].definition = "A personality test in which subjects are shown ambiguous images "
                                "and asked to interpret them";
         string *shuffled = shuffle(termnumber, terms);
-        return(shuffled);
+        return (shuffled);
     }
     if (unit == 8)
     {
@@ -1037,7 +1038,7 @@ void *question(int unit)
         terms[34].definition =
             "Focuses on observable behaviors rather than internal events like thinking and emotion";
         string *shuffled = shuffle(termnumber, terms);
-        return(shuffled);
+        return (shuffled);
     }
     if (unit == 9)
     {
@@ -1171,9 +1172,9 @@ void *question(int unit)
         terms[39].definition = "The idea that people tend to like things or people they are "
                                "familiar with/exposed to more often";
         string *shuffled = shuffle(termnumber, terms);
-        return(shuffled);
+        return (shuffled);
     }
-    return(0);
+    return (0);
 }
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR
