@@ -431,8 +431,8 @@ void *question(int unit)
         terms[62].term = "Sleep Walking / sleep talking";
         terms[62].definition = "Stage 4 sleep disorders, run in families. Usually harmless. "
                                "Children and sleep deprived people are more likely to sleepwalk.";
-                               shuffle(termnumber, terms);
-                               return(shuffle);
+                               string *shuffled = shuffle(termnumber, terms);
+                               return(*shuffled);
     }
     if (unit == 3)
     {
