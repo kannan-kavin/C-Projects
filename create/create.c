@@ -914,7 +914,7 @@ void *question(int unit)
         terms[47].definition = "A personality test in which subjects are shown ambiguous images "
                                "and asked to interpret them";
         shuffle(termnumber, terms);
-        return(shuffle);
+        return(*shuffle);
     }
     if (unit == 8)
     {
@@ -1036,7 +1036,7 @@ void *question(int unit)
         terms[34].definition =
             "Focuses on observable behaviors rather than internal events like thinking and emotion";
         shuffle(termnumber, terms);
-        return(shuffle);
+        return(*shuffle);
     }
     if (unit == 9)
     {
@@ -1170,7 +1170,7 @@ void *question(int unit)
         terms[39].definition = "The idea that people tend to like things or people they are "
                                "familiar with/exposed to more often";
         shuffle(termnumber, terms);
-        return(shuffle);
+        return(*shuffle);
     }
     return(0);
 }
@@ -1180,7 +1180,7 @@ void *question(int unit)
 void answer(char choice, string *shuffled)
 {
     int converter = choice;
-     printf("%s\n%s\n", shuffled[converter - 97], shuffled[4]);
+    printf("%s\n%s\n", shuffled[converter - 97], shuffled[4]);
     if (strcmp(shuffled[(converter - 97)], shuffled[4]) == 0)
     {
         printf("YOU GOT IT RIGHT!\n");
