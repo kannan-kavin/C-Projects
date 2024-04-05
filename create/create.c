@@ -430,10 +430,11 @@ void question(int unit)
         terms[62].term = "Sleep Walking / sleep talking";
         terms[62].definition = "Stage 4 sleep disorders, run in families. Usually harmless. "
                                "Children and sleep deprived people are more likely to sleepwalk.";
+                               shuffle(termnumber, terms);
     }
     if (unit == 3)
     {
-        int termnumber = 22
+        int termnumber = 22;
         Term terms[termnumber];
         terms[0].term = "Gestalt Principles";
         terms[0].definition = "Different ways individuals group stimuli together in order to make "
@@ -506,11 +507,11 @@ void question(int unit)
         terms[21].term = "Kinesthesis";
         terms[21].definition =
             "The system that enables us to sense our position and how and when our body parts move";
-        shuffle(termnumber)
+        shuffle(termnumber, terms);
     }
     if (unit == 4)
     {
-        int termnumber = 25
+        int termnumber = 25;
         Term terms[termnumber];
         terms[0].term = "Albert Bandura";
         terms[0].definition = "Creator of the social learning theory";
@@ -582,11 +583,11 @@ void question(int unit)
         terms[24].term = "Operant Conditioning";
         terms[24].definition = "A method of learning that alters the frequency of a behavior by "
                                "manipulating its consequences through reinforcement or punishment.";
-        shuffle(termnumber)
+        shuffle(termnumber, terms);
     }
     if (unit == 5)
     {
-        int termnumber = 43
+        int termnumber = 43;
         Term terms[termnumber];
         terms[0].term = "Effortful processing";
         terms[0].definition = "Active processing of information that requires sustained effort";
@@ -704,11 +705,11 @@ void question(int unit)
             "below and difficulty in adapting to the demands of life";
         terms[42].term = "Language Acquisition";
         terms[42].definition = "Humans are born with an innate capacity for learning language";
-        shuffle(termnumber)
+        shuffle(termnumber, terms);
     }
     if (unit == 6)
     {
-        int termnumber = 15
+        int termnumber = 15;
         Term terms[termnumber];
         terms[0].term = "Nutrition";
         terms[0].definition =
@@ -753,11 +754,11 @@ void question(int unit)
         terms[14].term = "Lawrence Kohlberg";
         terms[14].definition = "Most influential psychologist in the field of moral development, "
                                "particularly in children";
-        shuffle(termnumber)
+        shuffle(termnumber, terms);
     }
     if (unit == 7)
     {
-        int termnumber = 48
+        int termnumber = 48;
         Term terms[termnumber];
         terms[0].term = "Instincts";
         terms[0].definition = "Inborn, fixed patterns of behavior that present in response to "
@@ -906,11 +907,11 @@ void question(int unit)
         terms[47].term = "Projective tests";
         terms[47].definition = "A personality test in which subjects are shown ambiguous images "
                                "and asked to interpret them";
-        shuffle(termnumber)
+        shuffle(termnumber, terms);
     }
     if (unit == 8)
     {
-        int termnumber = 35
+        int termnumber = 35;
         Term terms[termnumber];
         terms[0].term = "Confidentiality";
         terms[0].definition =
@@ -1027,7 +1028,7 @@ void question(int unit)
         terms[34].term = "Behavioral method";
         terms[34].definition =
             "Focuses on observable behaviors rather than internal events like thinking and emotion";
-        shuffle(termnumber)
+        shuffle(termnumber, terms);
     }
     if (unit == 9)
     {
@@ -1160,37 +1161,8 @@ void question(int unit)
         terms[39].term = "Mere-exposure effect";
         terms[39].definition = "The idea that people tend to like things or people they are "
                                "familiar with/exposed to more often";
-        srand(time(NULL));
-        int indexterm = rand() % 40;
-        int index1;
-        int index2;
-        int index3;
-        do
-        {
-            index1 = rand() % 40;
-            index2 = rand() % 40;
-            index3 = rand() % 40;
-        }
-        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
-               index1 == index2 || index1 == index3 || index2 == index3);
-        string *shuffled = malloc(5 * sizeof(string));
-        shuffled[0] = terms[indexterm].definition;
-        shuffled[1] = terms[index1].definition;
-        shuffled[2] = terms[index2].definition;
-        shuffled[3] = terms[index3].definition;
-        for (int i = 3; i > 0; i--)
-        {
-            int j = rand() % (i + 1);
-            string temp = shuffled[i];
-            shuffled[i] = shuffled[j];
-            shuffled[j] = temp;
-        }
-        shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
-               shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled);
+        shuffle(termnumber, terms);
     }
-    return (0);
 }
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR
