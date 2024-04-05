@@ -157,7 +157,6 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (correctanswer)
     }
     if (unit == 2)
     {
@@ -314,7 +313,6 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (correctanswer)
     }
     if(unit == 3)
     {
@@ -389,7 +387,6 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (correctanswer)
     }
     if(unit == 4)
     {
@@ -470,7 +467,6 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (correctanswer)
     }
     if(unit == 5)
     {
@@ -587,7 +583,6 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (correctanswer)
     }
     if(unit == 6)
     {
@@ -648,7 +643,6 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (correctanswer)
     }
     if(unit == 7)
     {
@@ -775,7 +769,6 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (correctanswer)
     }
     if(unit == 8)
     {
@@ -876,7 +869,6 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (correctanswer)
     }
     if(unit == 9)
     {
@@ -987,8 +979,8 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
-        return (correctanswer)
     }
+    return (string correctanswer)
 }
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR LOOP) if they get it wrong
