@@ -1379,7 +1379,8 @@ void* question(int unit)
 // LOOP) if they get it wrong
 void answer(char choice, string shuffled)
 {
-    if (strcmp(shuffled[choice - 97], shuffled[5]) == 0)
+    int converter = choice;
+    if (strcmp(shuffled[converter - 97], shuffled[5]) == 0)
     {
         printf("YOU GOT IT RIGHT!\n");
     }
