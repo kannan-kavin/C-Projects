@@ -998,7 +998,7 @@ int main(int argc, string argv[])
     // Prompt the user with the question
     question(unit);
     //Get the user's answer
-    char choice = tolower(get_char("What is your answer?\n"));
+    string choice = tolower(get_string("What is your answer? (copy and paste it)\n"));
     // Congratulate the user if they answer correctly or tell the user the correct answer if they answer incorrectly
     answer(choice);
 }
