@@ -41,7 +41,7 @@ void *shuffle(int termnumber, Term terms[])
             shuffled[j] = temp;
         }
         shuffled[4] = terms[indexterm].definition;
-        printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term,
+        printf("\nWhat does %s mean?\n\na.) %s\n\nb.) %s\n\nc.) %s\n\nd.) %s\n\n", terms[indexterm].term,
                shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
         return (shuffled);
 }
