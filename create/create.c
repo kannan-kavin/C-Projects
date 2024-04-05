@@ -901,9 +901,9 @@ void question(int unit)
         terms[17].term = "Bystander effect";
         terms[17].definition = "The more people who witness someone in distress, the less likely someone is to intervene";
         terms[18].term = "Social facilitation";
-        terms[18].definition = "";
-        terms[19].term = "";
-        terms[19].definition = "";
+        terms[18].definition = "The phenomenon where the presence of other people can enhance an individual's performance on a task";
+        terms[19].term = "Social inhibition";
+        terms[19].definition = "The tendency to perform complex or difficult tasks more poorly in the presence of others";
         terms[0].term = "";
         terms[0].definition = "";
         terms[1].term = "";
