@@ -13,9 +13,21 @@ typedef struct
 } Term;
 
 // Pick a term to use as the question
-void shuffle(int numberofterms)
+void shuffle(int numberofterms, string )
 {
-
+    string shuffled[4];
+    shuffled[0] = terms[indexterm].definition;
+    shuffled[1] = terms[index1].definition;
+    shuffled[2] = terms[index2].definition;
+    shuffled[3] = terms[index3].definition;
+    for (int i = 3; i > 0; i--)
+    {
+        int j = rand() % (i + 1);
+        string temp = shuffled[i];
+        shuffled[i] = shuffled[j];
+        shuffled[j] = temp;
+    }
+    return ()
 }
 
 // Generate a question using the shuffle function to shuffle w/ independency
