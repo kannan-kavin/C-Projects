@@ -51,7 +51,7 @@ void question(int unit)
     if (unit == 1)
     {
         // Unit 1 Terms
-        int termnumber = 56
+        int termnumber = 56;
         Term terms[termnumber];
         terms[0].term = "Mary Whiton Calkins";
         terms[0].definition = "Studied with William James and went on to become president of the "
@@ -430,7 +430,6 @@ void question(int unit)
         terms[62].term = "Sleep Walking / sleep talking";
         terms[62].definition = "Stage 4 sleep disorders, run in families. Usually harmless. "
                                "Children and sleep deprived people are more likely to sleepwalk.";
-
     }
     if (unit == 3)
     {
