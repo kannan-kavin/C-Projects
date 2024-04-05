@@ -1385,7 +1385,7 @@ void answer(string choice, string correctanswer)
     }
     else
     {
-        printf("You got it wrong :(\nThe correct answer:%s\n", correctanswer);
+        printf("You got it wrong :(\nThe correct answer: %s\n", correctanswer);
     }
 }
 
@@ -1394,7 +1394,7 @@ int main(int argc, string argv[])
     // Ensure proper usage
     if (argc != 2)
     {
-        printf("Usage: ./psych [unit]\n");
+        printf("Usage: ./create [unit]\n");
         return 1;
     }
 
