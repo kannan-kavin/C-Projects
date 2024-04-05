@@ -136,6 +136,7 @@ void question(int unit)
         int index1;
         int index2;
         int index3;
+        string correctanswer = terms[indexterm].definition;
         do
         {
             index1 = rand() % 56;
@@ -156,6 +157,7 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return (correctanswer)
     }
     if (unit == 2)
     {
@@ -291,6 +293,7 @@ void question(int unit)
         int index1;
         int index2;
         int index3;
+        string correctanswer = terms[indexterm].definition;
         do
         {
             index1 = rand() % 63;
@@ -311,6 +314,7 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return (correctanswer)
     }
     if(unit == 3)
     {
@@ -364,6 +368,7 @@ void question(int unit)
         int index1;
         int index2;
         int index3;
+        string correctanswer = terms[indexterm].definition;
         do
         {
             index1 = rand() % 22;
@@ -384,6 +389,7 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return (correctanswer)
     }
     if(unit == 4)
     {
@@ -443,6 +449,7 @@ void question(int unit)
         int index1;
         int index2;
         int index3;
+        string correctanswer = terms[indexterm].definition;
         do
         {
             index1 = rand() % 25;
@@ -463,6 +470,7 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return (correctanswer)
     }
     if(unit == 5)
     {
@@ -558,6 +566,7 @@ void question(int unit)
         int index1;
         int index2;
         int index3;
+        string correctanswer = terms[indexterm].definition;
         do
         {
             index1 = rand() % 43;
@@ -578,6 +587,7 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return (correctanswer)
     }
     if(unit == 6)
     {
@@ -617,6 +627,7 @@ void question(int unit)
         int index1;
         int index2;
         int index3;
+        string correctanswer = terms[indexterm].definition;
         do
         {
             index1 = rand() % 15;
@@ -637,6 +648,7 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return (correctanswer)
     }
     if(unit == 7)
     {
@@ -742,6 +754,7 @@ void question(int unit)
         int index1;
         int index2;
         int index3;
+        string correctanswer = terms[indexterm].definition;
         do
         {
             index1 = rand() % 48;
@@ -762,6 +775,7 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return (correctanswer)
     }
     if(unit == 8)
     {
@@ -841,6 +855,7 @@ void question(int unit)
         int index1;
         int index2;
         int index3;
+        string correctanswer = terms[indexterm].definition;
         do
         {
             index1 = rand() % 35;
@@ -861,6 +876,7 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return (correctanswer)
     }
     if(unit == 9)
     {
@@ -950,6 +966,7 @@ void question(int unit)
         int index1;
         int index2;
         int index3;
+        string correctanswer = terms[indexterm].definition;
         do
         {
             index1 = rand() % 40;
@@ -970,11 +987,12 @@ void question(int unit)
             shuffled[j] = temp;
         }
         printf("What does %s mean?\n%s\n%s\n%s\n%s\n", terms[indexterm].term, shuffled[0], shuffled[1], shuffled[2], shuffled[3]);
+        return (correctanswer)
     }
 }
 
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR LOOP) if they get it wrong
-void answer(string choice, struct Term terms[], int indexterm)
+void answer(string choice, string correctanswer)
 {
 
 }
