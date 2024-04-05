@@ -1347,7 +1347,6 @@ string question(int unit)
         int index1;
         int index2;
         int index3;
-        string correctanswer = terms[indexterm].definition;
         do
         {
             index1 = rand() % 40;
@@ -1356,7 +1355,7 @@ string question(int unit)
         }
         while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
                index1 == index2 || index1 == index3 || index2 == index3);
-        string shuffled[4];
+        string shuffled[5];
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
         shuffled[2] = terms[index2].definition;
@@ -1368,9 +1367,10 @@ string question(int unit)
             shuffled[i] = shuffled[j];
             shuffled[j] = temp;
         }
+        shuffled[4] = terms[indexterm].definition;
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
                shuffled[1], shuffled[2], shuffled[3]);
-        return (correctanswer);
+        return (shuffled[]);
     }
     return (0);
 }
