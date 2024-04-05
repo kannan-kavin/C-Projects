@@ -1367,11 +1367,11 @@ string question(int unit)
             shuffled[i] = shuffled[j];
             shuffled[j] = temp;
         }
-        shuffled[4] = terms[indexterm].definition;
+        shuffledpointer[4] = terms[indexterm].definition;
         string* shuffled = malloc(5 * sizeof(shuffled))
         printf("What does %s mean?\na.) %s\nb.) %s\nc.) %s\nd.) %s\n", terms[indexterm].term, shuffled[0],
                shuffled[1], shuffled[2], shuffled[3]);
-        return (shuffled[]);
+        return (shuffledpointer);
     }
     return (0);
 }
