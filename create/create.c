@@ -1024,6 +1024,7 @@ int main(int argc, string argv[])
     }
     // Prompt the user with the question
     question(unit);
+    string correctanswer = question();
     //Get the user's answer
     string choice = (get_string("What is your answer? (copy and paste it)\n"));
     // Congratulate the user if they answer correctly or tell the user the correct answer if they answer incorrectly
