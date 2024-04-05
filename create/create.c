@@ -13,11 +13,18 @@ typedef struct
 } Term;
 
 // Pick a term to use as the question
+void shuffle(int numberofterms)
+{
+
+}
+
+// Generate a question using the shuffle function to shuffle w/ independency
 void question(int unit)
 {
     if (unit == 1)
     {
-        Term terms[56];
+        int numberofterms = 56;
+        Term terms[numberofterms];
         terms[0].term = "Mary Whiton Calkins";
         terms[0].definition = "Studied with William James and went on to become president of the American Psychological Association";
         terms[1].term = "Charles Darwin";
@@ -972,7 +979,7 @@ void question(int unit)
     }
 }
 
-void shuffle 
+void shuffle
 // Using their choice, determine whether the user is correct or not and allow them to try again (FOR LOOP) if they get it wrong
 void answer(char choice)
 {
