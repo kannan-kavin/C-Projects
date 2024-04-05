@@ -900,7 +900,7 @@ void question(int unit)
         terms[16].definition = "Created Prison experiment (6 days - the guards became evil and by the end everyone thought it was a real prison), fried grasshopper experiment";
         terms[17].term = "Bystander effect";
         terms[17].definition = "The more people who witness someone in distress, the less likely someone is to intervene";
-        terms[18].term = "";
+        terms[18].term = "Social facilitation";
         terms[18].definition = "";
         terms[19].term = "";
         terms[19].definition = "";
