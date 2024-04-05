@@ -1407,7 +1407,6 @@ int main(int argc, string argv[])
         printf("Usage: ./create [unit]\n");
         return 1;
     }
-
     // Ensure valid unit
     int unit = atoi(argv[1]);
     if (unit < 1 || unit > 9)
@@ -1415,11 +1414,17 @@ int main(int argc, string argv[])
         printf("Unit must be between 1 to 9");
         return 2;
     }
-    // Prompt the user with the question
+    // Prompt the user with how many questions they want
+    int repititions = get_int("How many questions do you want?\n");
+    // Prompt the user with the question while assinging a pointer to the returned array
+    for(int i = repititions; i > 0; i--)
+    {
     string* shuffled = question(unit);
-    // Get the user's answer
+    // Get the user's answer (a-d)
     char choice = (get_char("What is your answer?\n"));
     // Congratulate the user if they answer correctly or tell the user the correct answer if they
     // answer incorrectly
     answer(choice, shuffled);
+    }
+    return(0);
 }
