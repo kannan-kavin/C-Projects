@@ -224,8 +224,8 @@ string question(int unit)
             index2 = rand() % 56;
             index3 = rand() % 56;
         }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm &&
-               index1 == index2 && index1 == index3 && index2 == index3);
+        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
+               index1 == index2 || index1 == index3 || index2 == index3);
         string shuffled[4];
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
@@ -434,8 +434,8 @@ string question(int unit)
             index2 = rand() % 63;
             index3 = rand() % 63;
         }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm &&
-               index1 == index2 && index1 == index3 && index2 == index3);
+        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
+               index1 == index2 || index1 == index3 || index2 == index3);
         string shuffled[4];
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
@@ -538,8 +538,8 @@ string question(int unit)
             index2 = rand() % 22;
             index3 = rand() % 22;
         }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm &&
-               index1 == index2 && index1 == index3 && index2 == index3);
+        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
+               index1 == index2 || index1 == index3 || index2 == index3);
         string shuffled[4];
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
@@ -641,8 +641,8 @@ string question(int unit)
             index2 = rand() % 25;
             index3 = rand() % 25;
         }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm &&
-               index1 == index2 && index1 == index3 && index2 == index3);
+        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
+               index1 == index2 || index1 == index3 || index2 == index3);
         string shuffled[4];
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
@@ -790,8 +790,8 @@ string question(int unit)
             index2 = rand() % 43;
             index3 = rand() % 43;
         }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm &&
-               index1 == index2 && index1 == index3 && index2 == index3);
+        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
+               index1 == index2 || index1 == index3 || index2 == index3);
         string shuffled[4];
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
@@ -866,8 +866,8 @@ string question(int unit)
             index2 = rand() % 15;
             index3 = rand() % 15;
         }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm &&
-               index1 == index2 && index1 == index3 && index2 == index3);
+        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
+               index1 == index2 || index1 == index3 || index2 == index3);
         string shuffled[4];
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
@@ -1046,8 +1046,8 @@ string question(int unit)
             index2 = rand() % 48;
             index3 = rand() % 48;
         }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm &&
-               index1 == index2 && index1 == index3 && index2 == index3);
+        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
+               index1 == index2 || index1 == index3 || index2 == index3);
         string shuffled[4];
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
@@ -1194,8 +1194,8 @@ string question(int unit)
             index2 = rand() % 35;
             index3 = rand() % 35;
         }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm &&
-               index1 == index2 && index1 == index3 && index2 == index3);
+        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
+               index1 == index2 || index1 == index3 || index2 == index3);
         string shuffled[4];
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
@@ -1354,8 +1354,8 @@ string question(int unit)
             index2 = rand() % 40;
             index3 = rand() % 40;
         }
-        while (index1 == indexterm && index2 == indexterm && index3 == indexterm &&
-               index1 == index2 && index1 == index3 && index2 == index3);
+        while (index1 == indexterm || index2 == indexterm || index3 == indexterm ||
+               index1 == index2 || index1 == index3 || index2 == index3);
         string shuffled[4];
         shuffled[0] = terms[indexterm].definition;
         shuffled[1] = terms[index1].definition;
