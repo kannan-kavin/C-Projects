@@ -1,4 +1,5 @@
-// When displayed a term, pick the correct definition (a-d)
+// When displayed a term based on the unit the user chooses, pick the correct definition (a-d) and
+// repeat the amount of times the user wished for.
 
 #include <cs50.h>
 #include <stdio.h>
@@ -1426,7 +1427,7 @@ int main(int argc, string argv[])
         if (choice > 100 || choice < 97)
         {
             printf("Please choose between a and d only!\n");
-            return(0);
+            return (0);
         }
         // Check whether the users answer is correct!
         answer(choice, shuffled);
