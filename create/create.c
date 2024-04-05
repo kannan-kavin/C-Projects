@@ -1,9 +1,8 @@
 // When displayed a term, pick the correct definition (a-d)
 
 #include <cs50.h>
-#include <ctype.h>
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <time.h>
 #include <string.h>
 
@@ -1002,7 +1001,7 @@ void answer(string choice, string correctanswer)
     }
     else
     {
-        printf("You got it wrong :(\nThe correct answer is %s", correctanswer);
+        printf("You got it wrong :(\nThe correct answer:%s\n", correctanswer);
     }
 }
 
