@@ -8,5 +8,6 @@ int main(int argc, char *argv[])
     {
         return(1)
     }
-    fread 
+    unsigned char buffer[512];
+    size_t bytesRead = fread(buffer, sizeof(unsigned char), 512, file);
 }
