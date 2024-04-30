@@ -3,8 +3,8 @@
 
 int main(int argc, char *argv[])
 {
-    FILE *file = fopen("card.raw", "rb");
-    if(file == NULL)
+    FILE *f = fopen("card.raw", "rb");
+    if(f == NULL)
     {
         return(1)
     }
