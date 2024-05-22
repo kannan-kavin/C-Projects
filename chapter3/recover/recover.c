@@ -26,19 +26,19 @@ int main(int argc, char *argv[])
             if(Firstjpeg == false)
             {
                 Firstjpeg = true;
-                FILE *file = fopen("%03i.jpg", "w");
+                FILE *file = fopen("filename.jpg", "w");
             }
             // Checking whether it's not the first jpeg
             else
             {
-                FILE *file = fopen("%03i.jpg", "w");
+                FILE *file = fopen("filename.jpg", "w");
             }
             file_counter++;
         }
         // Checking whether it's not the start of a new jpeg
         else
         {
-
+            fwrite
         }
     }
     return (false);
