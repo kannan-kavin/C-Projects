@@ -24,16 +24,18 @@ int main(int argc, char *argv[])
             if(Firstjpeg == false)
             {
                 Firstjpeg = true;
-                FILE *file = fopen("picture1.jpg", "w");
+                FILE *file = fopen("1.jpg", "w");
             }
             // Checking whether it's not the first jpeg
             else
             {
+
             }
         }
-        // Checking wheter it's not the start of a new jpeg
+        // Checking whether it's not the start of a new jpeg
         else
         {
+            FILE *file = fopen("%03i.jpg", "w");
         }
     }
 }
