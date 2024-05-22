@@ -30,13 +30,13 @@ int main(int argc, char *argv[])
             // Checking whether it's not the first jpeg
             else
             {
-                
+                FILE *file = fopen("%03i.jpg", "w");
             }
         }
         // Checking whether it's not the start of a new jpeg
         else
         {
-            FILE *file = fopen("%03i.jpg", "w");
+
         }
     }
     return (false);
