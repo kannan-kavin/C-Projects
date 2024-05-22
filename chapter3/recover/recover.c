@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
             if(Firstjpeg == false)
             {
                 Firstjpeg = true;
+                FILE *file = fopen("picture1.jpg", "w");
             }
             // Checking whether it's not the first jpeg
             else
