@@ -39,7 +39,10 @@ int main(int argc, char *argv[])
         // Checking whether it's not the start of a new jpeg
         else
         {
-            fwrite(buffer, 1, 512, file);
+            if(file != NULL)
+            {
+                fwrite(buffer, 1, 512, file);
+            }
         }
         fclose(file);
     }
