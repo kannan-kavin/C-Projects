@@ -27,12 +27,12 @@ int main(int argc, char *argv[])
             if(Firstjpeg == false)
             {
                 Firstjpeg = true;
-                FILE *file = fopen("filename", "w");
+                FILE *file = fopen(filename, "w");
             }
             // Checking whether it's not the first jpeg
             else
             {
-                FILE *file = fopen("filename", "w");
+                FILE *file = fopen(filename, "w");
             }
             file_counter++;
         }
@@ -41,7 +41,7 @@ int main(int argc, char *argv[])
         {
             fwrite(buffer, 1, 512, file);
         }
-        fclose;
+        fclose(file);
     }
     return (false);
 }
