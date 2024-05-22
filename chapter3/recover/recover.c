@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     size_t bytesRead = fread(buffer, sizeof(unsigned char), 512, f);
     // Reading through the 512 Bytes of the Memory Card File
     bool Firstjpeg = false;
+    int filecounter = 0;
     for(int j = 0; j < 512, j++)
     {
         // Checking whether it's the start of a new jpeg
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
             if(Firstjpeg == false)
             {
                 Firstjpeg = true;
-                FILE *file = fopen("1.jpg", "w");
+                FILE *file = fopen("%03i.jpg", "w");
             }
             // Checking whether it's not the first jpeg
             else
