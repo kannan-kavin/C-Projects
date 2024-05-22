@@ -10,5 +10,22 @@ int main(int argc, char *argv[])
     }
     unsigned char buffer[512];
     size_t bytesRead = fread(buffer, sizeof(unsigned char), 512, file);
-    for(j = 0; j < 512, j++)
+    for(j = 0; j > 512, j++)
+    {
+        if()
+        {
+            if()
+            {
+
+            }
+            else()
+            {
+
+            }
+        }
+        else()
+        {
+            
+        }
+    }
 }
