@@ -22,17 +22,17 @@ int main(int argc, char *argv[])
         // Checking whether it's the start of a new jpeg
         if(buffer[j] == 0xff && buffer[j + 1] == 0xd8 && buffer[j + 2] == 0xff && (buffer[j + 3] & 0xf0) == 0xe0)
         {
-            sprintf(filename, "%03i.jpg", file_counter);
+            sprintf(namefile, "%03i.jpg", file_counter);
             // Checking whether it's the first jpeg
             if(Firstjpeg == false)
             {
                 Firstjpeg = true;
-                FILE *file = fopen(filename, "w");
+                FILE *file = fopen(namefile, "w");
             }
             // Checking whether it's not the first jpeg
             else
             {
-                FILE *file = fopen(filename, "w");
+                FILE *file = fopen(namefile, "w");
             }
             file_counter++;
         }
