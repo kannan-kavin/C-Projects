@@ -46,10 +46,9 @@ int main(int argc, char *argv[])
             }
         }
         // Checking whether it's not the start of a new jpeg
-        {
-            if(file == NULL)
+            if(Firstjpeg == true)
             {
-                return (false);
+                fwrite(buffer, sizeof(unsigned char), 512, file);
             }
         }
     }
