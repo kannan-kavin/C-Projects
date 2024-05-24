@@ -28,6 +28,7 @@ int main(int argc, char *argv[])
             {
                 Firstjpeg = true;
                 FILE *file = fopen(namefile, "w");
+                fwrite(buffer, 1, 512, file);
             }
             // Checking whether it's not the first jpeg
             else
