@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
     // Reading through the 512 Bytes of the Memory Card File
     bool Firstjpeg = false;
     int filecounter = 0;
+    FILE *file = NULL;
     for(int j = 0; j < 512; j++)
     {
-        FILE *file = NULL;
         sprintf(namefile, "%03i.jpg", file_counter);
         // Checking whether it's the start of a new jpeg
         if(buffer[j] == 0xff && buffer[j + 1] == 0xd8 && buffer[j + 2] == 0xff && (buffer[j + 3] & 0xf0) == 0xe0)
@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
             // Checking whether it's not the first jpeg
             else
             {
+                fclose(file);
                 FILE *file = fopen(namefile, "w");
             }
             file_counter++;
@@ -44,7 +45,6 @@ int main(int argc, char *argv[])
                 fwrite(buffer, 1, 512, file);
             }
         }
-        fclose(file);
     }
     return (false);
 }
