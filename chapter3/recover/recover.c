@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
     size_t bytesRead = fread(buffer, sizeof(unsigned char), 512, f);
     // Reading through the 512 Bytes of the Memory Card File
     bool Firstjpeg = false;
-    int filecounter = 0;
+    int file_counter = 0;
+    char namefile[8];
     FILE *file = NULL;
     for(int j = 0; j < 512; j++)
     {
