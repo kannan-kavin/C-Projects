@@ -26,7 +26,6 @@ int main(int argc, char *argv[])
     for (int i = 0; i < 512; i++)
     {
         size_t bytesRead = fread(buffer, sizeof(unsigned char), 512, f);
-
         for (int j = 0; j < 512; j++)
         {
             sprintf(namefile, "%03i.jpg", file_counter);
