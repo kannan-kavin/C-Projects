@@ -5,11 +5,11 @@
 int main(int argc, char *argv[])
 {
     // Opening the Memory Card File
-    if(argc != 1)
+    if(argc != 2)
     {
-        return(1);
+        return 1;
     }
-    FILE *f = fopen("card.raw", "rb");
+    FILE *f = fopen("card.raw", "r");
     if(f == NULL)
     {
         printf("Could not open file\n");
