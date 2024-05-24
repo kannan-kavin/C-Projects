@@ -4,24 +4,25 @@
 
 int main(int argc, char *argv[])
 {
-    // Opening the Memory Card File
+    // Checking Command Line
     if(argc != 2)
     {
         return 1;
     }
+    // Checking if the File can be Opened
     FILE *f = fopen("card.raw", "r");
     if(f == NULL)
     {
         printf("Could not open file\n");
         return 1;
     }
+     // Beginning to read the Memory Card File
     unsigned char buffer[512];
-    // Beginning to read the Memory Card File
-    // Reading through the 512 Bytes of the Memory Card File
     bool Firstjpeg = false;
     int file_counter = 0;
     char namefile[8];
     FILE *file = NULL;
+    // Reading through the 512 Bytes of the Memory Card File
     for(int j = 0; j < 512; j++)
     {
         size_t bytesRead = fread(buffer, sizeof(unsigned char), 512, f);
