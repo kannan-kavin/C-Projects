@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     // Opening the Memory Card File
     FILE *f = fopen("card.raw", "rb");
-    if(f == NULL)
+    if(f == NULL || argc != 1)
     {
         return(1);
     }
