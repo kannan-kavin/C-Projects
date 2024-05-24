@@ -12,7 +12,8 @@ int main(int argc, char *argv[])
     FILE *f = fopen("card.raw", "rb");
     if(f == NULL)
     {
-        return(1);
+        printf("Could not open file\n");
+        return 1;
     }
     unsigned char buffer[512];
     // Beginning to read the Memory Card File
