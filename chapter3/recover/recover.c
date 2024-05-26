@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     }
     // Variables setup to begin reading the Memory Card File
     unsigned char buffer[512];
-    bool first_jpeg = false;
+    bool notfirst_jpeg = false;
     int file_counter = 0;
     char namefile[8];
     FILE *file = NULL;
@@ -31,9 +31,9 @@ int main(int argc, char *argv[])
             (buffer[3] & 0xf0) == 0xe0)
         {
             // Checking whether it's the first jpeg
-            if (first_jpeg == false)
+            if (notfirst_jpeg == false)
             {
-                first_jpeg = true;
+                notfirst_jpeg = true;
             }
             // Closing the file if it's not the first jpeg
             else
@@ -50,11 +50,15 @@ int main(int argc, char *argv[])
             }
             file_counter++;
         }
-        if (first_jpeg == true)
+        if (notfirst_jpeg == true)
         {
             fwrite(buffer, sizeof(unsigned char), 512, file);
         }
-        if
+        if (file != NULL)
+        {
+            fclose(file);
+        }
     }
+    fclose(file);
     return 0;
 }
