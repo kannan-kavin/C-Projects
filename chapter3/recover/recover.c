@@ -44,11 +44,16 @@ int main(int argc, char *argv[])
         // Creating a file for a new jpeg writing in binary
         sprintf(namefile, "%03i.jpg", file_counter);
         file = fopen(namefile, "wb");
-        if (first_jpeg == true)
+        if (file == NULL)
         {
-            fwrite(buffer, sizeof(unsigned char), 512, file);
+            fclose(file)
+            return 1;
         }
         file_counter++;
+    }
+    if ()
+    {
+        fwrite(buffer, sizeof(unsigned char), 512, file);
     }
     return 0;
 }
