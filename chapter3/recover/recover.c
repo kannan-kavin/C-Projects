@@ -40,20 +40,20 @@ int main(int argc, char *argv[])
             {
                 fclose(file);
             }
-        // Creating a file for a new jpeg writing in binary
-        sprintf(namefile, "%03i.jpg", file_counter);
-        file = fopen(namefile, "wb");
-        if (file == NULL)
-        {
-            fclose(file)
-            return 1;
+            // Creating a file for a new jpeg writing in binary
+            sprintf(namefile, "%03i.jpg", file_counter);
+            file = fopen(namefile, "wb");
+            if (file == NULL)
+            {
+                fclose(file);
+                return 1;
+            }
+            file_counter++;
         }
-        file_counter++;
+        if (first_jpeg == true)
+        {
+            fwrite(buffer, sizeof(unsigned char), 512, file);
+        }
+        return 0;
     }
-    if (first_jpeg == true)
-    {
-        fwrite(buffer, sizeof(unsigned char), 512, file);
-    }
-    return 0;
-}
 }
