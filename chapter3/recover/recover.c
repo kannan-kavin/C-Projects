@@ -50,4 +50,5 @@ int main(int argc, char *argv[])
         }
         file_counter++;
     }
+    return 0;
 }
