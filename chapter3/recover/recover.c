@@ -33,17 +33,11 @@ int main(int argc, char *argv[])
             if(Firstjpeg == false)
             {
                 Firstjpeg = true;
-                file = fopen(namefile, "wb");
-                fwrite(buffer, 1, 512, file);
-                file_counter++;
             }
             // Checking whether it's not the first jpeg
             else
             {
                 fclose(file);
-                file = fopen(namefile, "wb");
-                fwrite(buffer, 1, 512, file);
-                file_counter++;
             }
         }
         // Checking whether it's not the start of a new jpeg
