@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
         printf("Could not open file\n");
         return 1;
     }
-    // Beginning to read the Memory Card File
+    // Variables setup to begin reading the Memory Card File
     unsigned char buffer[512];
     bool first_jpeg = false;
     int file_counter = 0;
