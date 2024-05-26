@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
             {
                 first_jpeg = true;
             }
-            // Checking whether it's not the first jpeg
+            // Closing the file if it's not the first jpeg
             else
             {
                 fclose(file);
