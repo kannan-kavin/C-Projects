@@ -41,12 +41,13 @@ int main(int argc, char *argv[])
                 fclose(file);
             }
         }
-        // Checking whether it's not the start of a new jpeg
+        // Creating a file for a new jpeg writing in binary
         sprintf(namefile, "%03i.jpg", file_counter);
+        file = fopen(filename, wb)
         if (first_jpeg == true)
         {
             fwrite(buffer, sizeof(unsigned char), 512, file);
         }
+        file_counter++;
     }
-    return (false);
 }
