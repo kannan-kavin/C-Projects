@@ -7,16 +7,17 @@ int main(int argc, char *argv[])
     // Checking Command Line
     if(argc != 2)
     {
+        printf("Usage ./recover <raw data>\n")
         return 1;
     }
-    // Checking if the File can be Opened
-    FILE *f = fopen("card.raw", "rb");
+    // Checking if the Binary File provided by the user can be Opened
+    FILE *f = fopen(argv[1], "rb");
     if(f == NULL)
     {
         printf("Could not open file\n");
         return 1;
     }
-     // Beginning to read the Memory Card File
+    // Beginning to read the Memory Card File
     unsigned char buffer[512];
     bool Firstjpeg = false;
     int file_counter = 0;
