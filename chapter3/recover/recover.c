@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     }
     // Beginning to read the Memory Card File
     unsigned char buffer[512];
-    bool Firstjpeg = false;
+    bool first_jpeg = false;
     int file_counter = 0;
     char namefile[8];
     FILE *file = NULL;
