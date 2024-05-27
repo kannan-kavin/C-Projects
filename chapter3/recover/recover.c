@@ -54,10 +54,10 @@ int main(int argc, char *argv[])
         {
             fwrite(buffer, sizeof(unsigned char), 512, file);
         }
-        if (file != NULL)
-        {
-            fclose(file);
-        }
+    }
+    if (file != NULL)
+    {
+        fclose(file);
     }
     fclose(file);
     return 0;
