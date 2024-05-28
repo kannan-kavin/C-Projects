@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
             // Closing the file if it's not the first jpeg
             else
             {
-                notfirst_jpeg = true
+                notfirst_jpeg = true;
             }
             // Creating a file for a new jpeg writing in binary
             sprintf(namefile, "%03i.jpg", file_counter);
