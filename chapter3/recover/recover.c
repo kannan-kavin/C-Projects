@@ -31,14 +31,14 @@ int main(int argc, char *argv[])
             (buffer[3] & 0xf0) == 0xe0)
         {
             // Checking whether it's the first jpeg
-            if (notfirst_jpeg == false)
+            if (notfirst_jpeg == true)
             {
-                notfirst_jpeg = true;
+                fclose(file);
             }
             // Closing the file if it's not the first jpeg
             else
             {
-                fclose(file);
+                notfirst_jpeg = true
             }
             // Creating a file for a new jpeg writing in binary
             sprintf(namefile, "%03i.jpg", file_counter);
