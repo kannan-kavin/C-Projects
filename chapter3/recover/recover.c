@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
             file = fopen(namefile, "wb");
             if (file == NULL)
             {
-                fclose(file);
+                fclose(f);
                 return 1;
             }
             file_counter++;
@@ -59,6 +59,6 @@ int main(int argc, char *argv[])
     {
         fclose(file);
     }
-    fclose(file);
+    fclose(f);
     return 0;
 }
