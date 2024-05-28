@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
             // Creating a file for a new jpeg writing in binary
             sprintf(namefile, "%03i.jpg", file_counter);
             file = fopen(namefile, "wb");
-            // Check whether memory card is readable
+            // Makes sure output file is created
             if (file == NULL)
             {
                 fclose(f);
