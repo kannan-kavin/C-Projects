@@ -1,0 +1,24 @@
+sort1 uses: Bubble Sort
+
+How do you know?: The bubble sort will take a long time for any list that's out of order, however for the sorted group, bubble goes extremely fast.
+
+sort2 uses: Merge Sort
+
+How do you know?: Works the fastest for all sets except for sorted, which bubble sort was made for. Thus, the speediness of this sort is what makes it the merge.
+
+sort3 uses: Selection Sort
+
+How do you know?: The times for sort3 are all very similar and the average of the extremes, thus logically, the sort will always find the smallest number and move it to the front.
+
+times:
+sort1 reversed: 5.031
+sort1 random: 5.686
+sort1 sorted: 0.444
+
+sort2 reversed: 0.504
+sort2 random: 0.440
+sort2 sorted: 0.516
+
+sort3 reversed: 2.444
+sort3 random: 2.359
+sort3 sorted: 2.222

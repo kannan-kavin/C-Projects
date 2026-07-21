@@ -1,0 +1,41 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int height;
+    do
+    {
+        height = get_int("Height: ");
+    }
+    while (height > 8 || height < 1);
+    // printf("Height: %i\n", height);
+    // used to get an input between 1 and 8 inclusive for our height
+
+    int i;
+    // used to separate each row from the next
+    int j;
+    // used to calculate hashes per row
+    int k;
+    // used to calculate spaces per row
+    for (i = 0; i < height; i++)
+    {
+        for (j = 1; j < (height - i); j++)
+        {
+            printf(" ");
+        }
+        // all the spaces in each row, decreasing by 1 as we go down every row
+        for (k = 0; k <= (height - j); k++)
+        {
+            printf("#");
+        }
+        // all the hashes in each row, increasing by 1 as we go down every row
+        printf("  ");
+        for (k = 0; k <= (height - j); k++)
+        {
+            printf("#");
+        }
+        // printing the same number of hashes as above after 2 spaces
+        printf("\n");
+    }
+}
